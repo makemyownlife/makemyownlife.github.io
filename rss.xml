@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://javaguide.cn/rss.xsl"?>
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://javayong.cn/rss.xsl"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <atom:link href="https://javaguide.cn/rss.xml" rel="self" type="application/rss+xml"/>
-    <title>勇哥Java实战</title>
-    <link>https://javaguide.cn/</link>
-    <description>Java基础知识、缓存、消息队列、分库分表等高并发解决方案！</description>
+    <atom:link href="https://javayong.cn/rss.xml" rel="self" type="application/rss+xml"/>
+    <title></title>
+    <link>https://javayong.cn/</link>
+    <description>Java 基础、高并发三剑客（缓存、消息队列、分库分表）、实战项目讲解。</description>
     <language>zh-CN</language>
-    <pubDate>Sat, 29 Jul 2023 01:02:54 GMT</pubDate>
-    <lastBuildDate>Sat, 29 Jul 2023 01:02:54 GMT</lastBuildDate>
+    <pubDate>Tue, 14 Nov 2023 04:56:03 GMT</pubDate>
+    <lastBuildDate>Tue, 14 Nov 2023 04:56:03 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Java</category>
     <item>
-      <title>勇哥Java实战</title>
-      <link>https://javaguide.cn/home.html</link>
-      <guid>https://javaguide.cn/home.html</guid>
-      <source url="https://javaguide.cn/rss.xml">勇哥Java实战</source>
+      <title>勇哥Java实战 | 首页</title>
+      <link>https://javayong.cn/home_back.html</link>
+      <guid>https://javayong.cn/home_back.html</guid>
+      <source url="https://javayong.cn/rss.xml">勇哥Java实战 | 首页</source>
       <description>友情提示 面试专版：准备 Java 面试的小伙伴可以考虑面试专版：《Java 面试指北 》 (质量很高，专为面试打造，配合 JavaGuide 食用)。 知识星球：专属面试小册/一对一交流/简历修改/专属求职指南，欢迎加入 JavaGuide 知识星球（点击链接即可查看星球的详细介绍，一定确定自己真的需要再加入）。 使用建议 ：有水平的面试官都是顺着项目经历挖掘技术问题。一定不要死记硬背技术八股文！详细的学习建议请参考：JavaGuide 使用建议。 求个Star：如果觉得 JavaGuide 的内容对你有帮助的话，还请点个免费的 Star，这是对我最大的鼓励，感谢各位一起同行，共勉！Github 地址：https://github.com/Snailclimb/JavaGuide 。 转载须知：以下所有文章如非文首说明为转载皆为 JavaGuide 原创，转载请在文首注明出处。如发现恶意抄袭/搬运，会动用法律武器维护自己的权益。让我们一起维护一个良好的技术创作环境！</description>
-      <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
+      <pubDate>Tue, 14 Nov 2023 04:38:01 GMT</pubDate>
       <content:encoded><![CDATA[<hr>
 <div class="hint-container tip">
 <p class="hint-container-title">友情提示</p>
@@ -386,10 +386,365 @@
       <enclosure url="https://oss.javaguide.cn/github/javaguide/csdn/1c00413c65d1995993bf2b0daf7b4f03.png" type="image/png"/>
     </item>
     <item>
+      <title>勇哥Java实战 | 首页</title>
+      <link>https://javayong.cn/home.html</link>
+      <guid>https://javayong.cn/home.html</guid>
+      <source url="https://javayong.cn/rss.xml">勇哥Java实战 | 首页</source>
+      <description>Java 基础 知识点/面试题总结 : (必看👍 )： Java 基础常见知识点&amp;amp;面试题总结(上) Java 基础常见知识点&amp;amp;面试题总结(中) Java 基础常见知识点&amp;amp;面试题总结(下)</description>
+      <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
+      <content:encoded><![CDATA[<hr>
+<h2> Java</h2>
+<h3> 基础</h3>
+<p><strong>知识点/面试题总结</strong> : (必看👍 )：</p>
+<ul>
+<li><a href="/java/basis/java-basic-questions-01.html" target="blank">Java 基础常见知识点&amp;面试题总结(上)</a></li>
+<li><a href="/java/basis/java-basic-questions-02.html" target="blank">Java 基础常见知识点&amp;面试题总结(中)</a></li>
+<li><a href="/java/basis/java-basic-questions-03.html" target="blank">Java 基础常见知识点&amp;面试题总结(下)</a></li>
+</ul>
+<p><strong>重要知识点详解</strong>：</p>
+<ul>
+<li><a href="/java/basis/why-there-only-value-passing-in-java.html" target="blank">为什么 Java 中只有值传递？</a></li>
+<li><a href="/java/basis/serialization.html" target="blank">Java 序列化详解</a></li>
+<li><a href="/java/basis/generics-and-wildcards.html" target="blank">泛型&amp;通配符详解</a></li>
+<li><a href="/java/basis/reflection.html" target="blank">Java 反射机制详解</a></li>
+<li><a href="/java/basis/proxy.html" target="blank">Java 代理模式详解</a></li>
+<li><a href="/java/basis/bigdecimal.html" target="blank">BigDecimal 详解</a></li>
+<li><a href="/java/basis/unsafe.html" target="blank">Java 魔法类 Unsafe 详解</a></li>
+<li><a href="/java/basis/spi.html" target="blank">Java SPI 机制详解</a></li>
+<li><a href="/java/basis/syntactic-sugar.html" target="blank">Java 语法糖详解</a></li>
+</ul>
+<h3> 集合</h3>
+<p><strong>知识点/面试题总结</strong>：</p>
+<ul>
+<li><a href="/java/collection/java-collection-questions-01.html" target="blank">Java 集合常见知识点&amp;面试题总结(上)</a> (必看 👍)</li>
+<li><a href="/java/collection/java-collection-questions-02.html" target="blank">Java 集合常见知识点&amp;面试题总结(下)</a> (必看 👍)</li>
+<li><a href="/java/collection/java-collection-precautions-for-use.html" target="blank">Java 容器使用注意事项总结</a></li>
+</ul>
+<p><strong>源码分析</strong>：</p>
+<ul>
+<li><a href="/java/collection/arraylist-source-code.html" target="blank">ArrayList 核心源码+扩容机制分析</a></li>
+<li><a href="/java/collection/linkedlist-source-code.html" target="blank">LinkedList 核心源码分析</a></li>
+<li><a href="/java/collection/hashmap-source-code.html" target="blank">HashMap 核心源码+底层数据结构分析</a></li>
+<li><a href="/java/collection/concurrent-hash-map-source-code.html" target="blank">ConcurrentHashMap 核心源码+底层数据结构分析</a></li>
+<li><a href="/java/collection/copyonwritearraylist-source-code.html" target="blank">CopyOnWriteArrayList 核心源码分析</a></li>
+<li><a href="/java/collection/arrayblockingqueue-source-code.html" target="blank">ArrayBlockingQueue 核心源码分析</a></li>
+</ul>
+<h3> IO</h3>
+<ul>
+<li><a href="/java/io/io-basis.html" target="blank">IO 基础知识总结</a></li>
+<li><a href="/java/io/io-design-patterns.html" target="blank">IO 设计模式总结</a></li>
+<li><a href="/java/io/io-model.html" target="blank">IO 模型详解</a></li>
+<li><a href="/java/io/nio-basis.html" target="blank">NIO 核心知识总结</a></li>
+</ul>
+<h3> 并发</h3>
+<p><strong>知识点/面试题总结</strong> : (必看 👍)</p>
+<ul>
+<li><a href="/java/concurrent/java-concurrent-questions-01.html" target="blank">Java 并发常见知识点&amp;面试题总结（上）</a></li>
+<li><a href="/java/concurrent/java-concurrent-questions-02.html" target="blank">Java 并发常见知识点&amp;面试题总结（中）</a></li>
+<li><a href="/java/concurrent/java-concurrent-questions-03.html" target="blank">Java 并发常见知识点&amp;面试题总结（下）</a></li>
+</ul>
+<p><strong>重要知识点详解</strong>：</p>
+<ul>
+<li><a href="/java/concurrent/jmm.html" target="blank">JMM（Java 内存模型）详解</a></li>
+<li><strong>线程池</strong>：<a href="/java/concurrent/java-thread-pool-summary.html" target="blank">Java 线程池详解</a>、<a href="/java/concurrent/java-thread-pool-best-practices.html" target="blank">Java 线程池最佳实践</a></li>
+<li><a href="/java/concurrent/threadlocal.html" target="blank">ThreadLocal 详解</a></li>
+<li><a href="/java/concurrent/java-concurrent-collections.html" target="blank">Java 并发容器总结</a></li>
+<li><a href="/java/concurrent/atomic-classes.html" target="blank">Atomic 原子类总结</a></li>
+<li><a href="/java/concurrent/aqs.html" target="blank">AQS 详解</a></li>
+<li><a href="/java/concurrent/completablefuture-intro.html" target="blank">CompletableFuture 详解</a></li>
+</ul>
+<h3> JVM (必看 👍)</h3>
+<p>JVM 这部分内容主要参考 <a href="https://docs.oracle.com/javase/specs/jvms/se8/html/index.html" target="_blank" rel="noopener noreferrer">JVM 虚拟机规范-Java8</a> 和周志明老师的<a href="https://book.douban.com/subject/34907497/" target="_blank" rel="noopener noreferrer">《深入理解 Java 虚拟机（第 3 版）》</a> （强烈建议阅读多遍！）。</p>
+<ul>
+<li><strong><a href="/java/jvm/memory-area.html" target="blank">Java 内存区域</a></strong></li>
+<li><strong><a href="/java/jvm/jvm-garbage-collection.html" target="blank">JVM 垃圾回收</a></strong></li>
+<li><a href="/java/jvm/class-file-structure.html" target="blank">类文件结构</a></li>
+<li><strong><a href="/java/jvm/class-loading-process.html" target="blank">类加载过程</a></strong></li>
+<li><a href="/java/jvm/classloader.html" target="blank">类加载器</a></li>
+<li><a href="/java/jvm/jvm-parameters-intro.html" target="blank">【待完成】最重要的 JVM 参数总结（翻译完善了一半）</a></li>
+<li><a href="/java/jvm/jvm-intro.html" target="blank">【加餐】大白话带你认识 JVM</a></li>
+<li><a href="/java/jvm/jdk-monitoring-and-troubleshooting-tools.html" target="blank">JDK 监控和故障处理工具</a></li>
+</ul>
+<h3> 新特性</h3>
+<ul>
+<li><strong>Java 8</strong>：<a href="/java/new-features/java8-tutorial-translate.html" target="blank">Java 8 新特性总结（翻译）</a>、<a href="/java/new-features/java8-common-new-features.html" target="blank">Java8 常用新特性总结</a></li>
+<li><a href="/java/new-features/java9.html" target="blank">Java 9 新特性概览</a></li>
+<li><a href="/java/new-features/java10.html" target="blank">Java 10 新特性概览</a></li>
+<li><a href="/java/new-features/java11.html" target="blank">Java 11 新特性概览</a></li>
+<li><a href="/java/new-features/java12-13.html" target="blank">Java 12 &amp; 13 新特性概览</a></li>
+<li><a href="/java/new-features/java14-15.html" target="blank">Java 14 &amp; 15 新特性概览</a></li>
+<li><a href="/java/new-features/java16.html" target="blank">Java 16 新特性概览</a></li>
+<li><a href="/java/new-features/java17.html" target="blank">Java 17 新特性概览</a></li>
+<li><a href="/java/new-features/java18.html" target="blank">Java 18 新特性概览</a></li>
+<li><a href="/java/new-features/java19.html" target="blank">Java 19 新特性概览</a></li>
+<li><a href="/java/new-features/java20.html" target="blank">Java 20 新特性概览</a></li>
+</ul>
+<h2> 计算机基础</h2>
+<h3> 操作系统</h3>
+<ul>
+<li><a href="/cs-basics/operating-system/operating-system-basic-questions-01.html" target="blank">操作系统常见知识点&amp;面试题总结(上)</a></li>
+<li><a href="/cs-basics/operating-system/operating-system-basic-questions-02.html" target="blank">操作系统常见知识点&amp;面试题总结(下)</a></li>
+<li><strong>Linux</strong>：
+<ul>
+<li><a href="/cs-basics/operating-system/linux-intro.html" target="blank">后端程序员必备的 Linux 基础知识总结</a></li>
+<li><a href="/cs-basics/operating-system/shell-intro.html" target="blank">Shell 编程基础知识总结</a></li>
+</ul>
+</li>
+</ul>
+<h3> 网络</h3>
+<p><strong>知识点/面试题总结</strong>：</p>
+<ul>
+<li><a href="/cs-basics/network/other-network-questions.html" target="blank">计算机网络常见知识点&amp;面试题总结(上)</a></li>
+<li><a href="/cs-basics/network/other-network-questions2.html" target="blank">计算机网络常见知识点&amp;面试题总结(下)</a></li>
+<li><a href="/cs-basics/network/computer-network-xiexiren-summary.html" target="blank">谢希仁老师的《计算机网络》内容总结（补充）</a></li>
+</ul>
+<p><strong>重要知识点详解</strong>：</p>
+<ul>
+<li><a href="/cs-basics/network/osi-and-tcp-ip-model.html" target="blank">OSI 和 TCP/IP 网络分层模型详解（基础）</a></li>
+<li><a href="/cs-basics/network/application-layer-protocol.html" target="blank">应用层常见协议总结（应用层）</a></li>
+<li><a href="/cs-basics/network/http-vs-https.html" target="blank">HTTP vs HTTPS（应用层）</a></li>
+<li><a href="/cs-basics/network/http1.0-vs-http1.1.html" target="blank">HTTP 1.0 vs HTTP 1.1（应用层）</a></li>
+<li><a href="/cs-basics/network/http-status-codes.html" target="blank">HTTP 常见状态码（应用层）</a></li>
+<li><a href="/cs-basics/network/dns.html" target="blank">DNS 域名系统详解（应用层）</a></li>
+<li><a href="/cs-basics/network/tcp-connection-and-disconnection.html" target="blank">TCP 三次握手和四次挥手（传输层）</a></li>
+<li><a href="/cs-basics/network/tcp-reliability-guarantee.html" target="blank">TCP 传输可靠性保障（传输层）</a></li>
+<li><a href="/cs-basics/network/arp.html" target="blank">ARP 协议详解(网络层)</a></li>
+<li><a href="/cs-basics/network/nat.html" target="blank">NAT 协议详解(网络层)</a></li>
+<li><a href="/cs-basics/network/network-attack-means.html" target="blank">网络攻击常见手段总结（安全）</a></li>
+</ul>
+<h3> 数据结构</h3>
+<p><strong>图解数据结构：</strong></p>
+<ul>
+<li><a href="/cs-basics/data-structure/linear-data-structure.html" target="blank">线性数据结构 :数组、链表、栈、队列</a></li>
+<li><a href="/cs-basics/data-structure/graph.html" target="blank">图</a></li>
+<li><a href="/cs-basics/data-structure/heap.html" target="blank">堆</a></li>
+<li><a href="/cs-basics/data-structure/tree.html" target="blank">树</a>：重点关注<a href="/cs-basics/data-structure/red-black-tree.html" target="blank">红黑树</a>、B-，B+，B*树、LSM 树</li>
+</ul>
+<p>其他常用数据结构：</p>
+<ul>
+<li><a href="/cs-basics/data-structure/bloom-filter.html" target="blank">布隆过滤器</a></li>
+</ul>
+<h3> 算法</h3>
+<p>算法这部分内容非常重要，如果你不知道如何学习算法的话，可以看下我写的：</p>
+<ul>
+<li><a href="https://www.zhihu.com/question/323359308/answer/1545320858" target="_blank" rel="noopener noreferrer">算法学习书籍+资源推荐</a> 。</li>
+<li><a href="https://www.zhihu.com/question/31092580/answer/1534887374" target="_blank" rel="noopener noreferrer">如何刷 Leetcode?</a></li>
+</ul>
+<p><strong>常见算法问题总结</strong>：</p>
+<ul>
+<li><a href="/cs-basics/algorithms/string-algorithm-problems.html" target="blank">几道常见的字符串算法题总结</a></li>
+<li><a href="/cs-basics/algorithms/linkedlist-algorithm-problems.html" target="blank">几道常见的链表算法题总结</a></li>
+<li><a href="/cs-basics/algorithms/the-sword-refers-to-offer.html" target="blank">剑指 offer 部分编程题</a></li>
+<li><a href="/cs-basics/algorithms/10-classical-sorting-algorithms.html" target="blank">十大经典排序算法</a></li>
+</ul>
+<p>另外，<a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/" target="_blank" rel="noopener noreferrer">GeeksforGeeks</a> 这个网站总结了常见的算法 ，比较全面系统。</p>
+<h2> 数据库</h2>
+<h3> 基础</h3>
+<ul>
+<li><a href="/database/basis.html" target="blank">数据库基础知识总结</a></li>
+<li><a href="/database/nosql.html" target="blank">NoSQL 基础知识总结</a></li>
+<li><a href="/database/character-set.html" target="blank">字符集详解</a></li>
+<li>SQL :
+<ul>
+<li><a href="/database/sql/sql-syntax-summary.html" target="blank">SQL 语法基础知识总结</a></li>
+<li><a href="/database/sql/sql-questions-01.html" target="blank">SQL 常见面试题总结</a></li>
+</ul>
+</li>
+</ul>
+<h3> MySQL</h3>
+<p><strong>知识点/面试题总结：</strong></p>
+<ul>
+<li><strong><a href="/database/mysql/mysql-questions-01.html" target="blank">MySQL 常见知识点&amp;面试题总结</a></strong> (必看 👍)</li>
+<li><a href="/database/mysql/mysql-high-performance-optimization-specification-recommendations.html" target="blank">MySQL 高性能优化规范建议总结</a></li>
+</ul>
+<p><strong>重要知识点：</strong></p>
+<ul>
+<li><a href="/database/mysql/mysql-index.html" target="blank">MySQL 索引详解</a></li>
+<li><a href="/database/mysql/transaction-isolation-level.html" target="blank">MySQL 事务隔离级别图文详解)</a></li>
+<li><a href="/database/mysql/mysql-logs.html" target="blank">MySQL 三大日志(binlog、redo log 和 undo log)详解</a></li>
+<li><a href="/database/mysql/innodb-implementation-of-mvcc.html" target="blank">InnoDB 存储引擎对 MVCC 的实现</a></li>
+<li><a href="/database/mysql/how-sql-executed-in-mysql.html" target="blank">SQL 语句在 MySQL 中的执行过程</a></li>
+<li><a href="/database/mysql/mysql-query-cache.html" target="blank">MySQL 查询缓存详解</a></li>
+<li><a href="/database/mysql/mysql-query-execution-plan.html" target="blank">MySQL 执行计划分析</a></li>
+<li><a href="/database/mysql/mysql-auto-increment-primary-key-continuous.html" target="blank">MySQL 自增主键一定是连续的吗</a></li>
+<li><a href="/database/mysql/some-thoughts-on-database-storage-time.html" target="blank">MySQL 时间类型数据存储建议</a></li>
+<li><a href="/database/mysql/index-invalidation-caused-by-implicit-conversion.html" target="blank">MySQL 隐式转换造成索引失效</a></li>
+</ul>
+<h3> Redis</h3>
+<p><strong>知识点/面试题总结</strong> : (必看👍 )：</p>
+<ul>
+<li><a href="/database/redis/redis-questions-01.html" target="blank">Redis 常见知识点&amp;面试题总结(上)</a></li>
+<li><a href="/database/redis/redis-questions-02.html" target="blank">Redis 常见知识点&amp;面试题总结(下)</a></li>
+</ul>
+<p><strong>重要知识点：</strong></p>
+<ul>
+<li><a href="/database/redis/3-commonly-used-cache-read-and-write-strategies.html" target="blank">3 种常用的缓存读写策略详解</a></li>
+<li><a href="/database/redis/redis-data-structures-01.html" target="blank">Redis 5 种基本数据结构详解</a></li>
+<li><a href="/database/redis/redis-data-structures-02.html" target="blank">Redis 3 种特殊数据结构详解</a></li>
+<li><a href="/database/redis/redis-persistence.html" target="blank">Redis 持久化机制详解</a></li>
+<li><a href="/database/redis/redis-memory-fragmentation.html" target="blank">Redis 内存碎片详解</a></li>
+<li><a href="/database/redis/redis-common-blocking-problems-summary.html" target="blank">Redis 常见阻塞原因总结</a></li>
+<li><a href="/database/redis/redis-cluster.html" target="blank">Redis 集群详解</a></li>
+</ul>
+<h3> MongoDB</h3>
+<ul>
+<li><a href="/database/mongodb/mongodb-questions-01.html" target="blank">MongoDB 常见知识点&amp;面试题总结(上)</a></li>
+<li><a href="/database/mongodb/mongodb-questions-02.html" target="blank">MongoDB 常见知识点&amp;面试题总结(下)</a></li>
+</ul>
+<h2> 搜索引擎</h2>
+<p><a href="/database/elasticsearch/elasticsearch-questions-01.html" target="blank">Elasticsearch 常见面试题总结(付费)</a></p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/gongzhonghaoxuanchuan.png" alt="JavaGuide 官方公众号" tabindex="0"><figcaption>JavaGuide 官方公众号</figcaption></figure>
+<h2> 开发工具</h2>
+<h3> Maven</h3>
+<p><a href="/tools/maven/maven-core-concepts.html" target="blank">Maven 核心概念总结</a></p>
+<h3> Gradle</h3>
+<p><a href="/tools/gradle/gradle-core-concepts.html" target="blank">Gradle 核心概念总结</a>（可选，目前国内还是使用 Maven 普遍一些）</p>
+<h3> Docker</h3>
+<ul>
+<li><a href="/tools/docker/docker-intro.html" target="blank">Docker 核心概念总结</a></li>
+<li><a href="/tools/docker/docker-in-action.html" target="blank">Docker 实战</a></li>
+</ul>
+<h3> Git</h3>
+<ul>
+<li><a href="/tools/git/git-intro.html" target="blank">Git 核心概念总结</a></li>
+<li><a href="/tools/git/github-tips.html" target="blank">GitHub 实用小技巧总结</a></li>
+</ul>
+<h2> 系统设计</h2>
+<ul>
+<li><a href="/system-design/system-design-questions.html" target="blank">系统设计常见面试题总结</a></li>
+<li><a href="/system-design/design-pattern.html" target="blank">设计模式常见面试题总结</a></li>
+</ul>
+<h3> 基础</h3>
+<ul>
+<li><a href="/system-design/basis/RESTfulAPI.html" target="blank">RestFul API 简明教程</a></li>
+<li><a href="/system-design/basis/software-engineering.html" target="blank">软件工程简明教程简明教程</a></li>
+<li><a href="/system-design/basis/naming.html" target="blank">代码命名指南</a></li>
+<li><a href="/system-design/basis/refactoring.html" target="blank">代码重构指南</a></li>
+<li><a href="/system-design/basis/unit-test.html" target="blank">单元测试指南</a></li>
+</ul>
+<h3> 常用框架</h3>
+<h4> Spring/SpringBoot (必看 👍)</h4>
+<p><strong>知识点/面试题总结</strong> :</p>
+<ul>
+<li><a href="/system-design/framework/spring/spring-knowledge-and-questions-summary.html" target="blank">Spring 常见知识点&amp;面试题总结</a></li>
+<li><a href="/system-design/framework/spring/springboot-knowledge-and-questions-summary.html" target="blank">SpringBoot 常见知识点&amp;面试题总结</a></li>
+<li><a href="/system-design/framework/spring/spring-common-annotations.html" target="blank">Spring/Spring Boot 常用注解总结</a></li>
+<li><a href="https://github.com/Snailclimb/springboot-guide" target="_blank" rel="noopener noreferrer">SpringBoot 入门指南</a></li>
+</ul>
+<p><strong>重要知识点详解</strong>：</p>
+<ul>
+<li><a href="/system-design/framework/spring/spring-transaction.html" target="blank">Spring 事务详解</a></li>
+<li><a href="/system-design/framework/spring/spring-design-patterns-summary.html" target="blank">Spring 中的设计模式详解</a></li>
+<li><a href="/system-design/framework/spring/spring-boot-auto-assembly-principles.html" target="blank">SpringBoot 自动装配原理详解</a></li>
+</ul>
+<h4> MyBatis</h4>
+<p><a href="/system-design/framework/mybatis/mybatis-interview.html" target="blank">MyBatis 常见面试题总结</a></p>
+<h3> 安全</h3>
+<h4> 认证授权</h4>
+<ul>
+<li><a href="/system-design/security/basis-of-authority-certification.html" target="blank">认证授权基础概念详解</a></li>
+<li><a href="/system-design/security/jwt-intro.html" target="blank">JWT 基础概念详解</a></li>
+<li><a href="/system-design/security/advantages-and-disadvantages-of-jwt.html" target="blank">JWT 优缺点分析以及常见问题解决方案</a></li>
+<li><a href="/system-design/security/sso-intro.html" target="blank">SSO 单点登录详解</a></li>
+<li><a href="/system-design/security/design-of-authority-system.html" target="blank">权限系统设计详解</a></li>
+</ul>
+<h4> 数据脱敏</h4>
+<p>数据脱敏说的就是我们根据特定的规则对敏感信息数据进行变形，比如我们把手机号、身份证号某些位数使用 * 来代替。</p>
+<h4> 敏感词过滤</h4>
+<p><a href="/system-design/security/sentive-words-filter.html" target="blank">敏感词过滤方案总结</a></p>
+<h3> 定时任务</h3>
+<p><a href="/system-design/schedule-task.html" target="blank">Java 定时任务详解</a></p>
+<h3> Web 实时消息推送</h3>
+<p><a href="/system-design/web-real-time-message-push.html" target="blank">Web 实时消息推送详解</a></p>
+<h2> 分布式</h2>
+<h3> 理论&amp;算法&amp;协议</h3>
+<ul>
+<li><a href="/distributed-system/protocol/cap-and-base-theorem.html" target="blank">CAP 理论和 BASE 理论解读</a></li>
+<li><a href="/distributed-system/protocol/paxos-algorithm.html" target="blank">Paxos 算法解读</a></li>
+<li><a href="/distributed-system/protocol/raft-algorithm.html" target="blank">Raft 算法解读</a></li>
+<li><a href="/distributed-system/protocol/gossip-protocl.html" target="blank">Gossip 协议详解</a></li>
+</ul>
+<h3> RPC</h3>
+<ul>
+<li><a href="/distributed-system/rpc/rpc-intro.html" target="blank">RPC 基础知识总结</a></li>
+<li><a href="/distributed-system/rpc/dubbo.html" target="blank">Dubbo 常见知识点&amp;面试题总结</a></li>
+</ul>
+<h3> ZooKeeper</h3>
+<blockquote>
+<p>这两篇文章可能有内容重合部分，推荐都看一遍。</p>
+</blockquote>
+<ul>
+<li><a href="/distributed-system/distributed-process-coordination/zookeeper/zookeeper-intro.html" target="blank">ZooKeeper 相关概念总结(入门)</a></li>
+<li><a href="/distributed-system/distributed-process-coordination/zookeeper/zookeeper-plus.html" target="blank">ZooKeeper 相关概念总结(进阶)</a></li>
+</ul>
+<h3> API 网关</h3>
+<ul>
+<li><a href="/distributed-system/api-gateway.html" target="blank">API 网关基础知识总结</a></li>
+<li><a href="/distributed-system/spring-cloud-gateway-questions.html" target="blank">Spring Cloud Gateway 常见知识点&amp;面试题总结</a></li>
+</ul>
+<h3> 分布式 ID</h3>
+<ul>
+<li><a href="/distributed-system/distributed-id.html" target="blank">分布式 ID 常见知识点&amp;面试题总结</a></li>
+<li><a href="/distributed-system/distributed-id-design.html" target="blank">分布式 ID 设计指南</a></li>
+</ul>
+<h3> 分布式锁</h3>
+<ul>
+<li><a href="https://javaguide.cn/distributed-system/distributed-lock.html" target="_blank" rel="noopener noreferrer">分布式锁介绍</a></li>
+<li><a href="https://javaguide.cn/distributed-system/distributed-lock-implementations.html" target="_blank" rel="noopener noreferrer">分布式锁常见实现方案总结</a></li>
+</ul>
+<h3> 分布式事务</h3>
+<p><a href="/distributed-system/distributed-transaction.html" target="blank">分布式事务常见知识点&amp;面试题总结</a></p>
+<h3> 分布式配置中心</h3>
+<p><a href="/distributed-system/distributed-configuration-center.html" target="blank">分布式配置中心常见知识点&amp;面试题总结</a></p>
+<h2> 高性能</h2>
+<h3> 数据库读写分离&amp;分库分表</h3>
+<p><a href="/high-performance/read-and-write-separation-and-library-subtable.html" target="blank">数据库读写分离和分库分表常见知识点&amp;面试题总结</a></p>
+<h3> 负载均衡</h3>
+<p><a href="/high-performance/load-balancing.html" target="blank">负载均衡常见知识点&amp;面试题总结</a></p>
+<h3> SQL 优化</h3>
+<p><a href="/high-performance/sql-optimization.html" target="blank">常见 SQL 优化手段总结</a></p>
+<h3> CDN</h3>
+<p><a href="/high-performance/cdn.html" target="blank">CDN（内容分发网络）常见知识点&amp;面试题总结</a></p>
+<h3> 消息队列</h3>
+<ul>
+<li><a href="/high-performance/message-queue/message-queue.html" target="blank">消息队列基础知识总结</a></li>
+<li><a href="/high-performance/message-queue/disruptor-questions.html" target="blank">Disruptor 常见知识点&amp;面试题总结</a></li>
+<li><a href="/high-performance/message-queue/rabbitmq-questions.html" target="blank">RabbitMQ 常见知识点&amp;面试题总结</a></li>
+<li><a href="/high-performance/message-queue/rocketmq-questions.html" target="blank">RocketMQ 常见知识点&amp;面试题总结</a></li>
+<li><a href="/high-performance/message-queue/kafka-questions-01.html" target="blank">Kafka 常常见知识点&amp;面试题总结</a></li>
+</ul>
+<h2> 高可用</h2>
+<p><a href="/high-availability/high-availability-system-design.html" target="blank">高可用系统设计指南</a></p>
+<h3> 冗余设计</h3>
+<p><a href="/high-availability/redundancy.html" target="blank">冗余设计详解</a></p>
+<h3> 限流</h3>
+<p><a href="/high-availability/limit-request.html" target="blank">服务限流详解</a></p>
+<h3> 降级&amp;熔断</h3>
+<p><a href="/high-availability/fallback-and-circuit-breaker.html" target="blank">降级&amp;熔断详解</a></p>
+<h3> 超时&amp;重试</h3>
+<p><a href="/high-availability/timeout-and-retry.html" target="blank">超时&amp;重试详解</a></p>
+<h3> 集群</h3>
+<p>相同的服务部署多份，避免单点故障。</p>
+<h3> 灾备设计和异地多活</h3>
+<p><strong>灾备</strong> = 容灾 + 备份。</p>
+<ul>
+<li><strong>备份</strong>：将系统所产生的的所有重要数据多备份几份。</li>
+<li><strong>容灾</strong>：在异地建立两个完全相同的系统。当某个地方的系统突然挂掉，整个应用系统可以切换到另一个，这样系统就可以正常提供服务了。</li>
+</ul>
+<p><strong>异地多活</strong> 描述的是将服务部署在异地并且服务同时对外提供服务。和传统的灾备设计的最主要区别在于“多活”，即所有站点都是同时在对外提供服务的。异地多活是为了应对突发状况比如火灾、地震等自然或者人为灾害。</p>
+<h2> Star 趋势</h2>
+<figure><img src="https://api.star-history.com/svg?repos=Snailclimb/JavaGuide&amp;type=Date" alt="Stars" tabindex="0"><figcaption>Stars</figcaption></figure>
+<h2> 公众号</h2>
+<p>如果大家想要实时关注我更新的文章以及分享的干货的话，可以关注我的公众号“<strong>JavaGuide</strong>”。</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/gongzhonghaoxuanchuan.png" alt="JavaGuide 官方公众号" tabindex="0"><figcaption>JavaGuide 官方公众号</figcaption></figure>
+]]></content:encoded>
+      <enclosure url="https://oss.javaguide.cn/github/javaguide/gongzhonghaoxuanchuan.png" type="image/png"/>
+    </item>
+    <item>
       <title>BigDecimal 详解</title>
-      <link>https://javaguide.cn/java/basis/bigdecimal.html</link>
-      <guid>https://javaguide.cn/java/basis/bigdecimal.html</guid>
-      <source url="https://javaguide.cn/rss.xml">BigDecimal 详解</source>
+      <link>https://javayong.cn/java/basis/bigdecimal.html</link>
+      <guid>https://javayong.cn/java/basis/bigdecimal.html</guid>
+      <source url="https://javayong.cn/rss.xml">BigDecimal 详解</source>
       <description>《阿里巴巴 Java 开发手册》中提到：“为了避免精度丢失，可以使用 BigDecimal 来进行浮点数的运算”。 浮点数的运算竟然还会有精度丢失的风险吗？确实会！ 示例代码： float a = 2.0f - 1.9f; float b = 1.8f - 1.7f; System.out.println(a);// 0.100000024 System.out.println(b);// 0.099999905 System.out.println(a == b);// false</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -439,9 +794,9 @@
     </item>
     <item>
       <title>泛型&amp;通配符详解</title>
-      <link>https://javaguide.cn/java/basis/generics-and-wildcards.html</link>
-      <guid>https://javaguide.cn/java/basis/generics-and-wildcards.html</guid>
-      <source url="https://javaguide.cn/rss.xml">泛型&amp;通配符详解</source>
+      <link>https://javayong.cn/java/basis/generics-and-wildcards.html</link>
+      <guid>https://javayong.cn/java/basis/generics-and-wildcards.html</guid>
+      <source url="https://javayong.cn/rss.xml">泛型&amp;通配符详解</source>
       <description>泛型&amp;amp;通配符 相关的面试题为我的知识星球（点击链接即可查看详细介绍以及加入方法）专属内容，已经整理到了《Java 面试指北》（点击链接即可查看详细介绍以及获取方法）中。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -475,9 +830,9 @@
     </item>
     <item>
       <title>Java基础常见面试题总结(上)</title>
-      <link>https://javaguide.cn/java/basis/java-basic-questions-01.html</link>
-      <guid>https://javaguide.cn/java/basis/java-basic-questions-01.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java基础常见面试题总结(上)</source>
+      <link>https://javayong.cn/java/basis/java-basic-questions-01.html</link>
+      <guid>https://javayong.cn/java/basis/java-basic-questions-01.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java基础常见面试题总结(上)</source>
       <description>这是一则或许对你有用的小广告 面试专版：准备 Java 面试的小伙伴可以考虑面试专版：《Java 面试指北 》 (质量很高，专为面试打造，配合 JavaGuide 食用)。 知识星球：专属面试小册/一对一交流/简历修改/专属求职指南，欢迎加入 JavaGuide 知识星球（点击链接即可查看星球的详细介绍，一定一定一定确定自己真的需要再加入，一定一定要看完详细介绍之后再加我）。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -1085,9 +1440,9 @@
     </item>
     <item>
       <title>Java基础常见面试题总结(中)</title>
-      <link>https://javaguide.cn/java/basis/java-basic-questions-02.html</link>
-      <guid>https://javaguide.cn/java/basis/java-basic-questions-02.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java基础常见面试题总结(中)</source>
+      <link>https://javayong.cn/java/basis/java-basic-questions-02.html</link>
+      <guid>https://javayong.cn/java/basis/java-basic-questions-02.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java基础常见面试题总结(中)</source>
       <description>面向对象基础 面向对象和面向过程的区别 两者的主要区别在于解决问题的方式不同： 面向过程把解决问题的过程拆成一个个方法，通过一个个方法的执行解决问题。 面向对象会先抽象出对象，然后用对象执行方法的方式解决问题。 另外，面向对象开发的程序一般更易维护、易复用、易扩展。 相关 issue : 面向过程：面向过程性能比面向对象高？？ 。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -1358,9 +1713,9 @@
     </item>
     <item>
       <title>Java基础常见面试题总结(下)</title>
-      <link>https://javaguide.cn/java/basis/java-basic-questions-03.html</link>
-      <guid>https://javaguide.cn/java/basis/java-basic-questions-03.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java基础常见面试题总结(下)</source>
+      <link>https://javayong.cn/java/basis/java-basic-questions-03.html</link>
+      <guid>https://javayong.cn/java/basis/java-basic-questions-03.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java基础常见面试题总结(下)</source>
       <description>异常 Java 异常类层次结构图概览： Java 异常类层次结构图 Exception 和 Error 有什么区别？ 在 Java 中，所有的异常都有一个共同的祖先 java.lang 包中的 Throwable 类。Throwable 类有两个重要的子类:</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -1614,9 +1969,9 @@
     </item>
     <item>
       <title>final,static,this,super 关键字总结</title>
-      <link>https://javaguide.cn/java/basis/java-keyword-summary.html</link>
-      <guid>https://javaguide.cn/java/basis/java-keyword-summary.html</guid>
-      <source url="https://javaguide.cn/rss.xml">final,static,this,super 关键字总结</source>
+      <link>https://javayong.cn/java/basis/java-keyword-summary.html</link>
+      <guid>https://javayong.cn/java/basis/java-keyword-summary.html</guid>
+      <source url="https://javayong.cn/rss.xml">final,static,this,super 关键字总结</source>
       <description>final,static,this,super 关键字总结 final 关键字 final 关键字，意思是最终的、不可修改的，最见不得变化 ，用来修饰类、方法和变量，具有以下特点： final 修饰的类不能被继承，final 类中的所有成员方法都会被隐式的指定为 final 方法； final 修饰的方法不能被重写； final 修饰的变量是常量，如果是基本数据类型的变量，则其数值一旦在初始化之后便不能更改；如果是引用类型的变量，则在对其初始化之后便不能让其指向另一个对象。</description>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
       <content:encoded><![CDATA[<h1> final,static,this,super 关键字总结</h1>
@@ -1739,9 +2094,9 @@
     </item>
     <item>
       <title>Java 代理模式详解</title>
-      <link>https://javaguide.cn/java/basis/proxy.html</link>
-      <guid>https://javaguide.cn/java/basis/proxy.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 代理模式详解</source>
+      <link>https://javayong.cn/java/basis/proxy.html</link>
+      <guid>https://javayong.cn/java/basis/proxy.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 代理模式详解</source>
       <description>1. 代理模式 代理模式是一种比较好理解的设计模式。简单来说就是 我们使用代理对象来代替对真实对象(real object)的访问，这样就可以在不修改原目标对象的前提下，提供额外的功能操作，扩展目标对象的功能。 代理模式的主要作用是扩展目标对象的功能，比如说在目标对象的某个方法执行前后你可以增加一些自定义的操作。 举个例子：新娘找来了自己的姨妈来代替自己处理新郎的提问，新娘收到的提问都是经过姨妈处理过滤之后的。姨妈在这里就可以看作是代理你的代理对象，代理的行为（方法）是接收和回复新郎的提问。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -1855,9 +2210,9 @@
     </item>
     <item>
       <title>Java 反射机制详解</title>
-      <link>https://javaguide.cn/java/basis/reflection.html</link>
-      <guid>https://javaguide.cn/java/basis/reflection.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 反射机制详解</source>
+      <link>https://javayong.cn/java/basis/reflection.html</link>
+      <guid>https://javayong.cn/java/basis/reflection.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 反射机制详解</source>
       <description>何为反射？ 如果说大家研究过框架的底层原理或者咱们自己写过框架的话，一定对反射这个概念不陌生。 反射之所以被称为框架的灵魂，主要是因为它赋予了我们在运行时分析类以及执行类中方法的能力。 通过反射你可以获取任意一个类的所有属性和方法，你还可以调用这些方法和属性。 反射的应用场景了解么？ 像咱们平时大部分时候都是在写业务代码，很少会接触到直接使用反射机制的场景。 但是，这并不代表反射没有用。相反，正是因为反射，你才能这么轻松地使用各种框架。像 Spring/Spring Boot、MyBatis 等等框架中都大量使用了反射机制。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -1898,9 +2253,9 @@
     </item>
     <item>
       <title>Java 序列化详解</title>
-      <link>https://javaguide.cn/java/basis/serialization.html</link>
-      <guid>https://javaguide.cn/java/basis/serialization.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 序列化详解</source>
+      <link>https://javayong.cn/java/basis/serialization.html</link>
+      <guid>https://javayong.cn/java/basis/serialization.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 序列化详解</source>
       <description>什么是序列化和反序列化? 如果我们需要持久化 Java 对象比如将 Java 对象保存在文件中，或者在网络传输 Java 对象，这些场景都需要用到序列化。 简单来说： 序列化：将数据结构或对象转换成二进制字节流的过程 反序列化：将在序列化过程中所生成的二进制字节流转换成数据结构或者对象的过程 对于 Java 这种面向对象编程语言来说，我们序列化的都是对象（Object）也就是实例化后的类(Class)，但是在 C++这种半面向对象的语言中，struct(结构体)定义的是数据结构类型，而 class 对应的是对象类型。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -1998,9 +2353,9 @@
     </item>
     <item>
       <title>Java SPI 机制详解</title>
-      <link>https://javaguide.cn/java/basis/spi.html</link>
-      <guid>https://javaguide.cn/java/basis/spi.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java SPI 机制详解</source>
+      <link>https://javayong.cn/java/basis/spi.html</link>
+      <guid>https://javayong.cn/java/basis/spi.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java SPI 机制详解</source>
       <description>本文来自 Kingshion 投稿。欢迎更多朋友参与到 JavaGuide 的维护工作，这是一件非常有意义的事情。详细信息请看：JavaGuide 贡献指南 。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -2110,9 +2465,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java 语法糖详解</title>
-      <link>https://javaguide.cn/java/basis/syntactic-sugar.html</link>
-      <guid>https://javaguide.cn/java/basis/syntactic-sugar.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 语法糖详解</source>
+      <link>https://javayong.cn/java/basis/syntactic-sugar.html</link>
+      <guid>https://javayong.cn/java/basis/syntactic-sugar.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 语法糖详解</source>
       <description>作者：Hollis 原文：https://mp.weixin.qq.com/s/o4XdEMq1DL-nBS-f8Za5Aw 语法糖是大厂 Java 面试常问的一个知识点。 本文从 Java 编译原理角度，深入字节码及 class 文件，抽丝剥茧，了解 Java 中的语法糖原理及用法，帮助大家在学会如何使用 Java 语法糖的同时，了解这些语法糖背后的原理。 什么是语法糖？ 语法糖（Syntactic Sugar） 也称糖衣语法，是英国计算机学家 Peter.J.Landin 发明的一个术语，指在计算机语言中添加的某种语法，这种语法对语言的功能并没有影响，但是更方便程序员使用。简而言之，语法糖让程序更加简洁，有更高的可读性。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -2241,9 +2596,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java 魔法类 Unsafe 详解</title>
-      <link>https://javaguide.cn/java/basis/unsafe.html</link>
-      <guid>https://javaguide.cn/java/basis/unsafe.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 魔法类 Unsafe 详解</source>
+      <link>https://javayong.cn/java/basis/unsafe.html</link>
+      <guid>https://javayong.cn/java/basis/unsafe.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 魔法类 Unsafe 详解</source>
       <description>本文整理完善自下面这两篇优秀的文章： Java 魔法类：Unsafe 应用解析 - 美团技术团队 -2019 Java 双刃剑之 Unsafe 类详解 - 码农参上 - 2021</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -2409,9 +2764,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java 值传递详解</title>
-      <link>https://javaguide.cn/java/basis/why-there-only-value-passing-in-java.html</link>
-      <guid>https://javaguide.cn/java/basis/why-there-only-value-passing-in-java.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 值传递详解</source>
+      <link>https://javayong.cn/java/basis/why-there-only-value-passing-in-java.html</link>
+      <guid>https://javayong.cn/java/basis/why-there-only-value-passing-in-java.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 值传递详解</source>
       <description>开始之前，我们先来搞懂下面这两个概念： 形参&amp;amp;实参 值传递&amp;amp;引用传递 形参&amp;amp;实参 方法的定义可能会用到 参数（有参的方法），参数在程序语言中分为： 实参（实际参数，Arguments）：用于传递给函数/方法的参数，必须有确定的值。 形参（形式参数，Parameters）：用于定义函数/方法，接收实参，不需要有确定的值。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -2487,9 +2842,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>ArrayBlockingQueue 源码分析</title>
-      <link>https://javaguide.cn/java/collection/arrayblockingqueue-source-code.html</link>
-      <guid>https://javaguide.cn/java/collection/arrayblockingqueue-source-code.html</guid>
-      <source url="https://javaguide.cn/rss.xml">ArrayBlockingQueue 源码分析</source>
+      <link>https://javayong.cn/java/collection/arrayblockingqueue-source-code.html</link>
+      <guid>https://javayong.cn/java/collection/arrayblockingqueue-source-code.html</guid>
+      <source url="https://javayong.cn/rss.xml">ArrayBlockingQueue 源码分析</source>
       <description>阻塞队列简介 阻塞队列的历史 Java 阻塞队列的历史可以追溯到 JDK1.5 版本，当时 Java 平台增加了 java.util.concurrent，即我们常说的 JUC 包，其中包含了各种并发流程控制工具、并发容器、原子类等。这其中自然也包含了我们这篇文章所讨论的阻塞队列。 为了解决高并发场景下多线程之间数据共享的问题，JDK1.5 版本中出现了 ArrayBlockingQueue 和 LinkedBlockingQueue，它们是带有生产者-消费者模式实现的并发容器。其中，ArrayBlockingQueue 是有界队列，即添加的元素达到上限之后，再次添加就会被阻塞或者抛出异常。而 LinkedBlockingQueue 则由链表构成的队列，正是因为链表的特性，所以 LinkedBlockingQueue 在添加元素上并不会向 ArrayBlockingQueue 那样有着较多的约束，所以 LinkedBlockingQueue 设置队列是否有界是可选的(注意这里的无界并不是指可以添加任务数量的元素，而是说队列的大小默认为 Integer.MAX_VALUE，近乎于无限大)。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -2721,9 +3076,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>ArrayList 源码分析</title>
-      <link>https://javaguide.cn/java/collection/arraylist-source-code.html</link>
-      <guid>https://javaguide.cn/java/collection/arraylist-source-code.html</guid>
-      <source url="https://javaguide.cn/rss.xml">ArrayList 源码分析</source>
+      <link>https://javayong.cn/java/collection/arraylist-source-code.html</link>
+      <guid>https://javayong.cn/java/collection/arraylist-source-code.html</guid>
+      <source url="https://javayong.cn/rss.xml">ArrayList 源码分析</source>
       <description>ArrayList 简介 ArrayList 的底层是数组队列，相当于动态数组。与 Java 中的数组相比，它的容量能动态增长。在添加大量元素前，应用程序可以使用ensureCapacity操作来增加 ArrayList 实例的容量。这可以减少递增式再分配的数量。 ArrayList 继承于 AbstractList ，实现了 List, RandomAccess, Cloneable, java.io.Serializable 这些接口。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -2837,9 +3192,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>ConcurrentHashMap 源码分析</title>
-      <link>https://javaguide.cn/java/collection/concurrent-hash-map-source-code.html</link>
-      <guid>https://javaguide.cn/java/collection/concurrent-hash-map-source-code.html</guid>
-      <source url="https://javaguide.cn/rss.xml">ConcurrentHashMap 源码分析</source>
+      <link>https://javayong.cn/java/collection/concurrent-hash-map-source-code.html</link>
+      <guid>https://javayong.cn/java/collection/concurrent-hash-map-source-code.html</guid>
+      <source url="https://javayong.cn/rss.xml">ConcurrentHashMap 源码分析</source>
       <description>本文来自公众号：末读代码的投稿，原文地址：https://mp.weixin.qq.com/s/AHWzboztt53ZfFZmsSnMSw 。 上一篇文章介绍了 HashMap 源码，反响不错，也有很多同学发表了自己的观点，这次又来了，这次是 ConcurrentHashMap 了，作为线程安全的 HashMap ，它的使用频率也是很高。那么它的存储结构和实现原理是怎么样的呢？ 1. ConcurrentHashMap 1.7 1. 存储结构</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -2981,9 +3336,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>CopyOnWriteArrayList 源码分析</title>
-      <link>https://javaguide.cn/java/collection/copyonwritearraylist-source-code.html</link>
-      <guid>https://javaguide.cn/java/collection/copyonwritearraylist-source-code.html</guid>
-      <source url="https://javaguide.cn/rss.xml">CopyOnWriteArrayList 源码分析</source>
+      <link>https://javayong.cn/java/collection/copyonwritearraylist-source-code.html</link>
+      <guid>https://javayong.cn/java/collection/copyonwritearraylist-source-code.html</guid>
+      <source url="https://javayong.cn/rss.xml">CopyOnWriteArrayList 源码分析</source>
       <description>CopyOnWriteArrayList 简介 在 JDK1.5 之前，如果想要使用并发安全的 List 只能选择 Vector。而 Vector 是一种老旧的集合，已经被淘汰。Vector 对于增删改查等方法基本都加了 synchronized，这种方式虽然能够保证同步，但这相当于对整个 Vector 加上了一把大锁，使得每个方法执行的时候都要去获得锁，导致性能非常低下。 JDK1.5 引入了 Java.util.concurrent（JUC）包，其中提供了很多线程安全且并发性能良好的容器，其中唯一的线程安全 List 实现就是 CopyOnWriteArrayList 。关于java.util.concurrent 包下常见并发容器的总结，可以看我写的这篇文章：Java 常见并发容器总结 。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -3079,9 +3434,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>HashMap 源码分析</title>
-      <link>https://javaguide.cn/java/collection/hashmap-source-code.html</link>
-      <guid>https://javaguide.cn/java/collection/hashmap-source-code.html</guid>
-      <source url="https://javaguide.cn/rss.xml">HashMap 源码分析</source>
+      <link>https://javayong.cn/java/collection/hashmap-source-code.html</link>
+      <guid>https://javayong.cn/java/collection/hashmap-source-code.html</guid>
+      <source url="https://javayong.cn/rss.xml">HashMap 源码分析</source>
       <description>感谢 changfubai 对本文的改进做出的贡献！ HashMap 简介 HashMap 主要用来存放键值对，它基于哈希表的 Map 接口实现，是常用的 Java 集合之一，是非线程安全的。 HashMap 可以存储 null 的 key 和 value，但 null 作为键只能有一个，null 作为值可以有多个</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -3158,9 +3513,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java集合使用注意事项总结</title>
-      <link>https://javaguide.cn/java/collection/java-collection-precautions-for-use.html</link>
-      <guid>https://javaguide.cn/java/collection/java-collection-precautions-for-use.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java集合使用注意事项总结</source>
+      <link>https://javayong.cn/java/collection/java-collection-precautions-for-use.html</link>
+      <guid>https://javayong.cn/java/collection/java-collection-precautions-for-use.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java集合使用注意事项总结</source>
       <description>这篇文章我根据《阿里巴巴 Java 开发手册》总结了关于集合使用常见的注意事项以及其具体原理。 强烈建议小伙伴们多多阅读几遍，避免自己写代码的时候出现这些低级的问题。 集合判空 《阿里巴巴 Java 开发手册》的描述如下： 判断所有集合内部的元素是否为空，使用 isEmpty() 方法，而不是 size()==0 的方式。 这是因为 isEmpty() 方法的可读性更好，并且时间复杂度为 O(1)。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -3251,9 +3606,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java集合常见面试题总结(上)</title>
-      <link>https://javaguide.cn/java/collection/java-collection-questions-01.html</link>
-      <guid>https://javaguide.cn/java/collection/java-collection-questions-01.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java集合常见面试题总结(上)</source>
+      <link>https://javayong.cn/java/collection/java-collection-questions-01.html</link>
+      <guid>https://javayong.cn/java/collection/java-collection-questions-01.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java集合常见面试题总结(上)</source>
       <description>集合概述 Java 集合概览 Java 集合， 也叫作容器，主要是由两大接口派生而来：一个是 Collection接口，主要用于存放单一元素；另一个是 Map 接口，主要用于存放键值对。对于Collection 接口，下面又有三个主要的子接口：List、Set 和 Queue。 Java 集合框架如下图所示： Java 集合框架概览</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -3537,9 +3892,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java集合常见面试题总结(下)</title>
-      <link>https://javaguide.cn/java/collection/java-collection-questions-02.html</link>
-      <guid>https://javaguide.cn/java/collection/java-collection-questions-02.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java集合常见面试题总结(下)</source>
+      <link>https://javayong.cn/java/collection/java-collection-questions-02.html</link>
+      <guid>https://javayong.cn/java/collection/java-collection-questions-02.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java集合常见面试题总结(下)</source>
       <description>Map（重要） HashMap 和 Hashtable 的区别 线程是否安全： HashMap 是非线程安全的，Hashtable 是线程安全的,因为 Hashtable 内部的方法基本都经过synchronized 修饰。（如果你要保证线程安全的话就使用 ConcurrentHashMap 吧！）； 效率： 因为线程安全的问题，HashMap 要比 Hashtable 效率高一点。另外，Hashtable 基本被淘汰，不要在代码中使用它； 对 Null key 和 Null value 的支持： HashMap 可以存储 null 的 key 和 value，但 null 作为键只能有一个，null 作为值可以有多个；Hashtable 不允许有 null 键和 null 值，否则会抛出 NullPointerException。 初始容量大小和每次扩充容量大小的不同： ① 创建时如果不指定容量初始值，Hashtable 默认的初始大小为 11，之后每次扩充，容量变为原来的 2n+1。HashMap 默认的初始化大小为 16。之后每次扩充，容量变为原来的 2 倍。② 创建时如果给定了容量初始值，那么 Hashtable 会直接使用你给定的大小，而 HashMap 会将其扩充为 2 的幂次方大小（HashMap 中的tableSizeFor()方法保证，下面给出了源代码）。也就是说 HashMap 总是使用 2 的幂作为哈希表的大小,后面会介绍到为什么是 2 的幂次方。 底层数据结构： JDK1.8 以后的 HashMap 在解决哈希冲突时有了较大的变化，当链表长度大于阈值（默认为 8）时，将链表转化为红黑树（将链表转换成红黑树前会判断，如果当前数组的长度小于 64，那么会选择先进行数组扩容，而不是转换为红黑树），以减少搜索时间（后文中我会结合源码对这一过程进行分析）。Hashtable 没有这样的机制。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -3713,9 +4068,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>LinkedList 源码分析</title>
-      <link>https://javaguide.cn/java/collection/linkedlist-source-code.html</link>
-      <guid>https://javaguide.cn/java/collection/linkedlist-source-code.html</guid>
-      <source url="https://javaguide.cn/rss.xml">LinkedList 源码分析</source>
+      <link>https://javayong.cn/java/collection/linkedlist-source-code.html</link>
+      <guid>https://javayong.cn/java/collection/linkedlist-source-code.html</guid>
+      <source url="https://javayong.cn/rss.xml">LinkedList 源码分析</source>
       <description>LinkedList 简介 LinkedList 是一个基于双向链表实现的集合类，经常被拿来和 ArrayList 做比较。关于 LinkedList 和ArrayList的详细对比，我们 Java集合常见面试题总结(上)有详细介绍到。 双向链表</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -3809,9 +4164,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>AQS 详解</title>
-      <link>https://javaguide.cn/java/concurrent/aqs.html</link>
-      <guid>https://javaguide.cn/java/concurrent/aqs.html</guid>
-      <source url="https://javaguide.cn/rss.xml">AQS 详解</source>
+      <link>https://javayong.cn/java/concurrent/aqs.html</link>
+      <guid>https://javayong.cn/java/concurrent/aqs.html</guid>
+      <source url="https://javayong.cn/rss.xml">AQS 详解</source>
       <description>AQS 介绍 AQS 的全称为 AbstractQueuedSynchronizer ，翻译过来的意思就是抽象队列同步器。这个类在 java.util.concurrent.locks 包下面。 AQS 就是一个抽象类，主要用来构建锁和同步器。 public abstract class AbstractQueuedSynchronizer extends AbstractOwnableSynchronizer implements java.io.Serializable { }</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -3922,9 +4277,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Atomic 原子类总结</title>
-      <link>https://javaguide.cn/java/concurrent/atomic-classes.html</link>
-      <guid>https://javaguide.cn/java/concurrent/atomic-classes.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Atomic 原子类总结</source>
+      <link>https://javayong.cn/java/concurrent/atomic-classes.html</link>
+      <guid>https://javayong.cn/java/concurrent/atomic-classes.html</guid>
+      <source url="https://javayong.cn/rss.xml">Atomic 原子类总结</source>
       <description>Atomic 原子类介绍 Atomic 翻译成中文是原子的意思。在化学上，我们知道原子是构成一般物质的最小单位，在化学反应中是不可分割的。在我们这里 Atomic 是指一个操作是不可中断的。即使是在多个线程一起执行的时候，一个操作一旦开始，就不会被其他线程干扰。 所以，所谓原子类说简单点就是具有原子/原子操作特征的类。 并发包 java.util.concurrent 的原子类都存放在java.util.concurrent.atomic下,如下图所示。 JUC原子类概览</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -4023,9 +4378,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>CompletableFuture 详解</title>
-      <link>https://javaguide.cn/java/concurrent/completablefuture-intro.html</link>
-      <guid>https://javaguide.cn/java/concurrent/completablefuture-intro.html</guid>
-      <source url="https://javaguide.cn/rss.xml">CompletableFuture 详解</source>
+      <link>https://javayong.cn/java/concurrent/completablefuture-intro.html</link>
+      <guid>https://javayong.cn/java/concurrent/completablefuture-intro.html</guid>
+      <source url="https://javayong.cn/rss.xml">CompletableFuture 详解</source>
       <description>自己在项目中使用 CompletableFuture 比较多，看到很多开源框架中也大量使用到了 CompletableFuture 。 因此，专门写一篇文章来介绍这个 Java 8 才被引入的一个非常有用的用于异步编程的类。 简单介绍 CompletableFuture 同时实现了 Future 和 CompletionStage 接口。 public class CompletableFuture&amp;lt;T&amp;gt; implements Future&amp;lt;T&amp;gt;, CompletionStage&amp;lt;T&amp;gt; { }</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -4125,9 +4480,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java 常见并发容器总结</title>
-      <link>https://javaguide.cn/java/concurrent/java-concurrent-collections.html</link>
-      <guid>https://javaguide.cn/java/concurrent/java-concurrent-collections.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 常见并发容器总结</source>
+      <link>https://javayong.cn/java/concurrent/java-concurrent-collections.html</link>
+      <guid>https://javayong.cn/java/concurrent/java-concurrent-collections.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 常见并发容器总结</source>
       <description>JDK 提供的这些容器大部分在 java.util.concurrent 包中。 ConcurrentHashMap : 线程安全的 HashMap CopyOnWriteArrayList : 线程安全的 List，在读多写少的场合性能非常好，远远好于 Vector。 ConcurrentLinkedQueue : 高效的并发队列，使用链表实现。可以看做一个线程安全的 LinkedList，这是一个非阻塞队列。 BlockingQueue : 这是一个接口，JDK 内部通过链表、数组等方式实现了这个接口。表示阻塞队列，非常适合用于作为数据共享的通道。 ConcurrentSkipListMap : 跳表的实现。这是一个 Map，使用跳表的数据结构进行快速查找。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -4201,9 +4556,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java并发常见面试题总结（上）</title>
-      <link>https://javaguide.cn/java/concurrent/java-concurrent-questions-01.html</link>
-      <guid>https://javaguide.cn/java/concurrent/java-concurrent-questions-01.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java并发常见面试题总结（上）</source>
+      <link>https://javayong.cn/java/concurrent/java-concurrent-questions-01.html</link>
+      <guid>https://javayong.cn/java/concurrent/java-concurrent-questions-01.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java并发常见面试题总结（上）</source>
       <description>这是一则或许对你有用的小广告 面试专版：准备 Java 面试的小伙伴可以考虑面试专版：《Java 面试指北 》 (质量很高，专为面试打造，配合 JavaGuide 食用)。 知识星球：专属面试小册/一对一交流/简历修改/专属求职指南，欢迎加入 JavaGuide 知识星球（点击链接即可查看星球的详细介绍，一定一定一定确定自己真的需要再加入，一定一定要看完详细介绍之后再加我）。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -4369,9 +4724,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java并发常见面试题总结（中）</title>
-      <link>https://javaguide.cn/java/concurrent/java-concurrent-questions-02.html</link>
-      <guid>https://javaguide.cn/java/concurrent/java-concurrent-questions-02.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java并发常见面试题总结（中）</source>
+      <link>https://javayong.cn/java/concurrent/java-concurrent-questions-02.html</link>
+      <guid>https://javayong.cn/java/concurrent/java-concurrent-questions-02.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java并发常见面试题总结（中）</source>
       <description>JMM(Java 内存模型) JMM（Java 内存模型）相关的问题比较多，也比较重要，于是我单独抽了一篇文章来总结 JMM 相关的知识点和问题：JMM（Java 内存模型）详解 。 volatile 关键字 如何保证变量的可见性？ 在 Java 中，volatile 关键字可以保证变量的可见性，如果我们将变量声明为 volatile ，这就指示 JVM，这个变量是共享且不稳定的，每次使用它都到主存中进行读取。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -4666,9 +5021,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java并发常见面试题总结（下）</title>
-      <link>https://javaguide.cn/java/concurrent/java-concurrent-questions-03.html</link>
-      <guid>https://javaguide.cn/java/concurrent/java-concurrent-questions-03.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java并发常见面试题总结（下）</source>
+      <link>https://javayong.cn/java/concurrent/java-concurrent-questions-03.html</link>
+      <guid>https://javayong.cn/java/concurrent/java-concurrent-questions-03.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java并发常见面试题总结（下）</source>
       <description>ThreadLocal ThreadLocal 有什么用？ 通常情况下，我们创建的变量是可以被任何一个线程访问并修改的。如果想实现每一个线程都有自己的专属本地变量该如何解决呢？ JDK 中自带的ThreadLocal类正是为了解决这样的问题。 ThreadLocal类主要解决的就是让每个线程绑定自己的值，可以将ThreadLocal类形象的比喻成存放数据的盒子，盒子中可以存储每个线程的私有数据。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -4941,9 +5296,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java 线程池最佳实践</title>
-      <link>https://javaguide.cn/java/concurrent/java-thread-pool-best-practices.html</link>
-      <guid>https://javaguide.cn/java/concurrent/java-thread-pool-best-practices.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 线程池最佳实践</source>
+      <link>https://javayong.cn/java/concurrent/java-thread-pool-best-practices.html</link>
+      <guid>https://javayong.cn/java/concurrent/java-thread-pool-best-practices.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 线程池最佳实践</source>
       <description>简单总结一下我了解的使用线程池的时候应该注意的东西，网上似乎还没有专门写这方面的文章。 1、正确声明线程池 线程池必须手动通过 ThreadPoolExecutor 的构造函数来声明，避免使用Executors 类创建线程池，会有 OOM 风险。 Executors 返回线程池对象的弊端如下(后文会详细介绍到)： FixedThreadPool 和 SingleThreadExecutor：使用的是无界的 LinkedBlockingQueue，任务队列最大长度为 Integer.MAX_VALUE,可能堆积大量的请求，从而导致 OOM。 CachedThreadPool：使用的是同步队列 SynchronousQueue, 允许创建的线程数量为 Integer.MAX_VALUE ，可能会创建大量线程，从而导致 OOM。 ScheduledThreadPool 和 SingleThreadScheduledExecutor : 使用的无界的延迟阻塞队列DelayedWorkQueue，任务队列最大长度为 Integer.MAX_VALUE,可能堆积大量的请求，从而导致 OOM。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -5064,9 +5419,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java 线程池详解</title>
-      <link>https://javaguide.cn/java/concurrent/java-thread-pool-summary.html</link>
-      <guid>https://javaguide.cn/java/concurrent/java-thread-pool-summary.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 线程池详解</source>
+      <link>https://javayong.cn/java/concurrent/java-thread-pool-summary.html</link>
+      <guid>https://javayong.cn/java/concurrent/java-thread-pool-summary.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 线程池详解</source>
       <description>池化技术想必大家已经屡见不鲜了，线程池、数据库连接池、HTTP 连接池等等都是对这个思想的应用。池化技术的思想主要是为了减少每次获取资源的消耗，提高对资源的利用率。 这篇文章我会详细介绍一下线程池的基本概念以及核心原理。 线程池介绍 顾名思义，线程池就是管理一系列线程的资源池，其提供了一种限制和管理线程资源的方式。每个线程池还维护一些基本统计信息，例如已完成任务的数量。 这里借用《Java 并发编程的艺术》书中的部分内容来总结一下使用线程池的好处： 降低资源消耗。通过重复利用已创建的线程降低线程创建和销毁造成的消耗。 提高响应速度。当任务到达时，任务可以不需要等到线程创建就能立即执行。 提高线程的可管理性。线程是稀缺资源，如果无限制的创建，不仅会消耗系统资源，还会降低系统的稳定性，使用线程池可以进行统一的分配，调优和监控。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -5309,9 +5664,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>JMM（Java 内存模型）详解</title>
-      <link>https://javaguide.cn/java/concurrent/jmm.html</link>
-      <guid>https://javaguide.cn/java/concurrent/jmm.html</guid>
-      <source url="https://javaguide.cn/rss.xml">JMM（Java 内存模型）详解</source>
+      <link>https://javayong.cn/java/concurrent/jmm.html</link>
+      <guid>https://javayong.cn/java/concurrent/jmm.html</guid>
+      <source url="https://javayong.cn/rss.xml">JMM（Java 内存模型）详解</source>
       <description>JMM(Java 内存模型)主要定义了对于一个共享变量，当另一个线程对这个共享变量执行写操作后，这个线程对这个共享变量的可见性。 要想理解透彻 JMM（Java 内存模型），我们先要从 CPU 缓存模型和指令重排序 说起！ 从 CPU 缓存模型说起 为什么要弄一个 CPU 高速缓存呢？ 类比我们开发网站后台系统使用的缓存（比如 Redis）是为了解决程序处理速度和访问常规关系型数据库速度不对等的问题。 CPU 缓存则是为了解决 CPU 处理速度和内存处理速度不对等的问题。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -5478,9 +5833,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>乐观锁和悲观锁详解</title>
-      <link>https://javaguide.cn/java/concurrent/optimistic-lock-and-pessimistic-lock.html</link>
-      <guid>https://javaguide.cn/java/concurrent/optimistic-lock-and-pessimistic-lock.html</guid>
-      <source url="https://javaguide.cn/rss.xml">乐观锁和悲观锁详解</source>
+      <link>https://javayong.cn/java/concurrent/optimistic-lock-and-pessimistic-lock.html</link>
+      <guid>https://javayong.cn/java/concurrent/optimistic-lock-and-pessimistic-lock.html</guid>
+      <source url="https://javayong.cn/rss.xml">乐观锁和悲观锁详解</source>
       <description>如果将悲观锁（Pessimistic Lock）和乐观锁（PessimisticLock 或 OptimisticLock）对应到现实生活中来。悲观锁有点像是一位比较悲观（也可以说是未雨绸缪）的人，总是会假设最坏的情况，避免出现问题。乐观锁有点像是一位比较乐观的人，总是会假设最好的情况，在要出现问题之前快速解决问题。 在程序世界中，乐观锁和悲观锁的最终目的都是为了保证线程安全，避免在并发场景下的资源竞争问题。但是，相比于乐观锁，悲观锁对性能的影响更大！ 什么是悲观锁？ 悲观锁总是假设最坏的情况，认为共享资源每次被访问的时候就会出现问题(比如共享数据被修改)，所以每次在获取资源操作的时候都会上锁，这样其他线程想拿到这个资源就会阻塞直到锁被上一个持有者释放。也就是说，共享资源每次只给一个线程使用，其它线程阻塞，用完后再把资源转让给其它线程。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -5567,9 +5922,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>从ReentrantLock的实现看AQS的原理及应用</title>
-      <link>https://javaguide.cn/java/concurrent/reentrantlock.html</link>
-      <guid>https://javaguide.cn/java/concurrent/reentrantlock.html</guid>
-      <source url="https://javaguide.cn/rss.xml">从ReentrantLock的实现看AQS的原理及应用</source>
+      <link>https://javayong.cn/java/concurrent/reentrantlock.html</link>
+      <guid>https://javayong.cn/java/concurrent/reentrantlock.html</guid>
+      <source url="https://javayong.cn/rss.xml">从ReentrantLock的实现看AQS的原理及应用</source>
       <description>本文转载自：https://tech.meituan.com/2019/12/05/aqs-theory-and-apply.html 作者：美团技术团队 Java 中的大部分同步类（Semaphore、ReentrantLock 等）都是基于 AbstractQueuedSynchronizer（简称为 AQS）实现的。AQS 是一种提供了原子式管理同步状态、阻塞和唤醒线程功能以及队列模型的简单框架。 本文会从应用层逐渐深入到原理层，并通过 ReentrantLock 的基本特性和 ReentrantLock 与 AQS 的关联，来深入解读 AQS 相关独占锁的知识点，同时采取问答的模式来帮助大家理解 AQS。由于篇幅原因，本篇文章主要阐述 AQS 中独占锁的逻辑和 Sync Queue，不讲述包含共享锁和 Condition Queue 的部分（本篇文章核心为 AQS 原理剖析，只是简单介绍了 ReentrantLock，感兴趣同学可以阅读一下 ReentrantLock 的源码）。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -5970,9 +6325,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>ThreadLocal 详解</title>
-      <link>https://javaguide.cn/java/concurrent/threadlocal.html</link>
-      <guid>https://javaguide.cn/java/concurrent/threadlocal.html</guid>
-      <source url="https://javaguide.cn/rss.xml">ThreadLocal 详解</source>
+      <link>https://javayong.cn/java/concurrent/threadlocal.html</link>
+      <guid>https://javayong.cn/java/concurrent/threadlocal.html</guid>
+      <source url="https://javayong.cn/rss.xml">ThreadLocal 详解</source>
       <description>本文来自一枝花算不算浪漫投稿， 原文地址：https://juejin.cn/post/6844904151567040519。 前言 全文共 10000+字，31 张图，这篇文章同样耗费了不少的时间和精力才创作完成，原创不易，请大家点点关注+在看，感谢。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -6195,499 +6550,10 @@ debug 中没有发现 Logger 服务提供者</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>Java IO 基础知识总结</title>
-      <link>https://javaguide.cn/java/io/io-basis.html</link>
-      <guid>https://javaguide.cn/java/io/io-basis.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java IO 基础知识总结</source>
-      <description>IO 流简介 IO 即 Input/Output，输入和输出。数据输入到计算机内存的过程即输入，反之输出到外部存储（比如数据库，文件，远程主机）的过程即输出。数据传输过程类似于水流，因此称为 IO 流。IO 流在 Java 中分为输入流和输出流，而根据数据的处理方式又分为字节流和字符流。 Java IO 流的 40 多个类都是从如下 4 个抽象类基类中派生出来的。 InputStream/Reader: 所有的输入流的基类，前者是字节输入流，后者是字符输入流。 OutputStream/Writer: 所有输出流的基类，前者是字节输出流，后者是字符输出流。</description>
-      <category>Java</category>
-      <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> IO 流简介</h2>
-<p>IO 即 <code>Input/Output</code>，输入和输出。数据输入到计算机内存的过程即输入，反之输出到外部存储（比如数据库，文件，远程主机）的过程即输出。数据传输过程类似于水流，因此称为 IO 流。IO 流在 Java 中分为输入流和输出流，而根据数据的处理方式又分为字节流和字符流。</p>
-<p>Java IO 流的 40 多个类都是从如下 4 个抽象类基类中派生出来的。</p>
-<ul>
-<li><code>InputStream</code>/<code>Reader</code>: 所有的输入流的基类，前者是字节输入流，后者是字符输入流。</li>
-<li><code>OutputStream</code>/<code>Writer</code>: 所有输出流的基类，前者是字节输出流，后者是字符输出流。</li>
-</ul>
-<h2> 字节流</h2>
-<h3> InputStream（字节输入流）</h3>
-<p><code>InputStream</code>用于从源头（通常是文件）读取数据（字节信息）到内存中，<code>java.io.InputStream</code>抽象类是所有字节输入流的父类。</p>
-<p><code>InputStream</code> 常用方法：</p>
-<ul>
-<li><code>read()</code>：返回输入流中下一个字节的数据。返回的值介于 0 到 255 之间。如果未读取任何字节，则代码返回 <code>-1</code> ，表示文件结束。</li>
-<li><code>read(byte b[ ])</code> : 从输入流中读取一些字节存储到数组 <code>b</code> 中。如果数组 <code>b</code> 的长度为零，则不读取。如果没有可用字节读取，返回 <code>-1</code>。如果有可用字节读取，则最多读取的字节数最多等于 <code>b.length</code> ， 返回读取的字节数。这个方法等价于 <code>read(b, 0, b.length)</code>。</li>
-<li><code>read(byte b[], int off, int len)</code>：在<code>read(byte b[ ])</code> 方法的基础上增加了 <code>off</code> 参数（偏移量）和 <code>len</code> 参数（要读取的最大字节数）。</li>
-<li><code>skip(long n)</code>：忽略输入流中的 n 个字节 ,返回实际忽略的字节数。</li>
-<li><code>available()</code>：返回输入流中可以读取的字节数。</li>
-<li><code>close()</code>：关闭输入流释放相关的系统资源。</li>
-</ul>
-<p>从 Java 9 开始，<code>InputStream</code> 新增加了多个实用的方法：</p>
-<ul>
-<li><code>readAllBytes()</code>：读取输入流中的所有字节，返回字节数组。</li>
-<li><code>readNBytes(byte[] b, int off, int len)</code>：阻塞直到读取 <code>len</code> 个字节。</li>
-<li><code>transferTo(OutputStream out)</code>：将所有字节从一个输入流传递到一个输出流。</li>
-</ul>
-<p><code>FileInputStream</code> 是一个比较常用的字节输入流对象，可直接指定文件路径，可以直接读取单字节数据，也可以读取至字节数组中。</p>
-<p><code>FileInputStream</code> 代码示例：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>input.txt</code> 文件内容：</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/image-20220419155214614.png" alt="" tabindex="0"><figcaption></figcaption></figure>
-<p>输出：</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>不过，一般我们是不会直接单独使用 <code>FileInputStream</code> ，通常会配合 <code>BufferedInputStream</code>（字节缓冲输入流，后文会讲到）来使用。</p>
-<p>像下面这段代码在我们的项目中就比较常见，我们通过 <code>readAllBytes()</code> 读取输入流所有字节并将其直接赋值给一个 <code>String</code> 对象。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>DataInputStream</code> 用于读取指定类型数据，不能单独使用，必须结合其它流，比如 <code>FileInputStream</code> 。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>ObjectInputStream</code> 用于从输入流中读取 Java 对象（反序列化），<code>ObjectOutputStream</code> 用于将对象写入到输出流(序列化)。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>另外，用于序列化和反序列化的类必须实现 <code>Serializable</code> 接口，对象中如果有属性不想被序列化，使用 <code>transient</code> 修饰。</p>
-<h3> OutputStream（字节输出流）</h3>
-<p><code>OutputStream</code>用于将数据（字节信息）写入到目的地（通常是文件），<code>java.io.OutputStream</code>抽象类是所有字节输出流的父类。</p>
-<p><code>OutputStream</code> 常用方法：</p>
-<ul>
-<li><code>write(int b)</code>：将特定字节写入输出流。</li>
-<li><code>write(byte b[ ])</code> : 将数组<code>b</code> 写入到输出流，等价于 <code>write(b, 0, b.length)</code> 。</li>
-<li><code>write(byte[] b, int off, int len)</code> : 在<code>write(byte b[ ])</code> 方法的基础上增加了 <code>off</code> 参数（偏移量）和 <code>len</code> 参数（要读取的最大字节数）。</li>
-<li><code>flush()</code>：刷新此输出流并强制写出所有缓冲的输出字节。</li>
-<li><code>close()</code>：关闭输出流释放相关的系统资源。</li>
-</ul>
-<p><code>FileOutputStream</code> 是最常用的字节输出流对象，可直接指定文件路径，可以直接输出单字节数据，也可以输出指定的字节数组。</p>
-<p><code>FileOutputStream</code> 代码示例：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>运行结果：</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/image-20220419155514392.png" alt="" tabindex="0"><figcaption></figcaption></figure>
-<p>类似于 <code>FileInputStream</code>，<code>FileOutputStream</code> 通常也会配合 <code>BufferedOutputStream</code>（字节缓冲输出流，后文会讲到）来使用。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><strong><code>DataOutputStream</code></strong> 用于写入指定类型数据，不能单独使用，必须结合其它流，比如 <code>FileOutputStream</code> 。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>ObjectInputStream</code> 用于从输入流中读取 Java 对象（<code>ObjectInputStream</code>,反序列化），<code>ObjectOutputStream</code>将对象写入到输出流(<code>ObjectOutputStream</code>，序列化)。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 字符流</h2>
-<p>不管是文件读写还是网络发送接收，信息的最小存储单元都是字节。 <strong>那为什么 I/O 流操作要分为字节流操作和字符流操作呢？</strong></p>
-<p>个人认为主要有两点原因：</p>
-<ul>
-<li>字符流是由 Java 虚拟机将字节转换得到的，这个过程还算是比较耗时。</li>
-<li>如果我们不知道编码类型就很容易出现乱码问题。</li>
-</ul>
-<p>乱码问题这个很容易就可以复现，我们只需要将上面提到的 <code>FileInputStream</code> 代码示例中的 <code>input.txt</code> 文件内容改为中文即可，原代码不需要改动。</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/image-20220419154632551.png" alt="" tabindex="0"><figcaption></figcaption></figure>
-<p>输出：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>可以很明显地看到读取出来的内容已经变成了乱码。</p>
-<p>因此，I/O 流就干脆提供了一个直接操作字符的接口，方便我们平时对字符进行流操作。如果音频文件、图片等媒体文件用字节流比较好，如果涉及到字符的话使用字符流比较好。</p>
-<p>字符流默认采用的是 <code>Unicode</code> 编码，我们可以通过构造方法自定义编码。顺便分享一下之前遇到的笔试题：常用字符编码所占字节数？<code>utf8</code> :英文占 1 字节，中文占 3 字节，<code>unicode</code>：任何字符都占 2 个字节，<code>gbk</code>：英文占 1 字节，中文占 2 字节。</p>
-<h3> Reader（字符输入流）</h3>
-<p><code>Reader</code>用于从源头（通常是文件）读取数据（字符信息）到内存中，<code>java.io.Reader</code>抽象类是所有字符输入流的父类。</p>
-<p><code>Reader</code> 用于读取文本， <code>InputStream</code> 用于读取原始字节。</p>
-<p><code>Reader</code> 常用方法：</p>
-<ul>
-<li><code>read()</code> : 从输入流读取一个字符。</li>
-<li><code>read(char[] cbuf)</code> : 从输入流中读取一些字符，并将它们存储到字符数组 <code>cbuf</code>中，等价于 <code>read(cbuf, 0, cbuf.length)</code> 。</li>
-<li><code>read(char[] cbuf, int off, int len)</code>：在<code>read(char[] cbuf)</code> 方法的基础上增加了 <code>off</code> 参数（偏移量）和 <code>len</code> 参数（要读取的最大字符数）。</li>
-<li><code>skip(long n)</code>：忽略输入流中的 n 个字符 ,返回实际忽略的字符数。</li>
-<li><code>close()</code> : 关闭输入流并释放相关的系统资源。</li>
-</ul>
-<p><code>InputStreamReader</code> 是字节流转换为字符流的桥梁，其子类 <code>FileReader</code> 是基于该基础上的封装，可以直接操作字符文件。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>FileReader</code> 代码示例：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>input.txt</code> 文件内容：</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/image-20220419154632551.png" alt="" tabindex="0"><figcaption></figcaption></figure>
-<p>输出：</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3> Writer（字符输出流）</h3>
-<p><code>Writer</code>用于将数据（字符信息）写入到目的地（通常是文件），<code>java.io.Writer</code>抽象类是所有字符输出流的父类。</p>
-<p><code>Writer</code> 常用方法：</p>
-<ul>
-<li><code>write(int c)</code> : 写入单个字符。</li>
-<li><code>write(char[] cbuf)</code>：写入字符数组 <code>cbuf</code>，等价于<code>write(cbuf, 0, cbuf.length)</code>。</li>
-<li><code>write(char[] cbuf, int off, int len)</code>：在<code>write(char[] cbuf)</code> 方法的基础上增加了 <code>off</code> 参数（偏移量）和 <code>len</code> 参数（要读取的最大字符数）。</li>
-<li><code>write(String str)</code>：写入字符串，等价于 <code>write(str, 0, str.length())</code> 。</li>
-<li><code>write(String str, int off, int len)</code>：在<code>write(String str)</code> 方法的基础上增加了 <code>off</code> 参数（偏移量）和 <code>len</code> 参数（要读取的最大字符数）。</li>
-<li><code>append(CharSequence csq)</code>：将指定的字符序列附加到指定的 <code>Writer</code> 对象并返回该 <code>Writer</code> 对象。</li>
-<li><code>append(char c)</code>：将指定的字符附加到指定的 <code>Writer</code> 对象并返回该 <code>Writer</code> 对象。</li>
-<li><code>flush()</code>：刷新此输出流并强制写出所有缓冲的输出字符。</li>
-<li><code>close()</code>:关闭输出流释放相关的系统资源。</li>
-</ul>
-<p><code>OutputStreamWriter</code> 是字符流转换为字节流的桥梁，其子类 <code>FileWriter</code> 是基于该基础上的封装，可以直接将字符写入到文件。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>FileWriter</code> 代码示例：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>输出结果：</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/image-20220419155802288.png" alt="" tabindex="0"><figcaption></figcaption></figure>
-<h2> 字节缓冲流</h2>
-<p>IO 操作是很消耗性能的，缓冲流将数据加载至缓冲区，一次性读取/写入多个字节，从而避免频繁的 IO 操作，提高流的传输效率。</p>
-<p>字节缓冲流这里采用了装饰器模式来增强 <code>InputStream</code> 和<code>OutputStream</code>子类对象的功能。</p>
-<p>举个例子，我们可以通过 <code>BufferedInputStream</code>（字节缓冲输入流）来增强 <code>FileInputStream</code> 的功能。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>字节流和字节缓冲流的性能差别主要体现在我们使用两者的时候都是调用 <code>write(int b)</code> 和 <code>read()</code> 这两个一次只读取一个字节的方法的时候。由于字节缓冲流内部有缓冲区（字节数组），因此，字节缓冲流会先将读取到的字节存放在缓存区，大幅减少 IO 次数，提高读取效率。</p>
-<p>我使用 <code>write(int b)</code> 和 <code>read()</code> 方法，分别通过字节流和字节缓冲流复制一个 <code>524.9 mb</code> 的 PDF 文件耗时对比如下：</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>两者耗时差别非常大，缓冲流耗费的时间是字节流的 1/165。</p>
-<p>测试代码如下:</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>如果是调用 <code>read(byte b[])</code> 和 <code>write(byte b[], int off, int len)</code> 这两个写入一个字节数组的方法的话，只要字节数组的大小合适，两者的性能差距其实不大，基本可以忽略。</p>
-<p>这次我们使用 <code>read(byte b[])</code> 和 <code>write(byte b[], int off, int len)</code> 方法，分别通过字节流和字节缓冲流复制一个 524.9 mb 的 PDF 文件耗时对比如下：</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>两者耗时差别不是很大，缓冲流的性能要略微好一点点。</p>
-<p>测试代码如下：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> BufferedInputStream（字节缓冲输入流）</h3>
-<p><code>BufferedInputStream</code> 从源头（通常是文件）读取数据（字节信息）到内存的过程中不会一个字节一个字节的读取，而是会先将读取到的字节存放在缓存区，并从内部缓冲区中单独读取字节。这样大幅减少了 IO 次数，提高了读取效率。</p>
-<p><code>BufferedInputStream</code> 内部维护了一个缓冲区，这个缓冲区实际就是一个字节数组，通过阅读 <code>BufferedInputStream</code> 源码即可得到这个结论。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>缓冲区的大小默认为 <strong>8192</strong> 字节，当然了，你也可以通过 <code>BufferedInputStream(InputStream in, int size)</code> 这个构造方法来指定缓冲区的大小。</p>
-<h3> BufferedOutputStream（字节缓冲输出流）</h3>
-<p><code>BufferedOutputStream</code> 将数据（字节信息）写入到目的地（通常是文件）的过程中不会一个字节一个字节的写入，而是会先将要写入的字节存放在缓存区，并从内部缓冲区中单独写入字节。这样大幅减少了 IO 次数，提高了读取效率</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>类似于 <code>BufferedInputStream</code> ，<code>BufferedOutputStream</code> 内部也维护了一个缓冲区，并且，这个缓存区的大小也是 <strong>8192</strong> 字节。</p>
-<h2> 字符缓冲流</h2>
-<p><code>BufferedReader</code> （字符缓冲输入流）和 <code>BufferedWriter</code>（字符缓冲输出流）类似于 <code>BufferedInputStream</code>（字节缓冲输入流）和<code>BufferedOutputStream</code>（字节缓冲输入流），内部都维护了一个字节数组作为缓冲区。不过，前者主要是用来操作字符信息。</p>
-<h2> 打印流</h2>
-<p>下面这段代码大家经常使用吧？</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><code>System.out</code> 实际是用于获取一个 <code>PrintStream</code> 对象，<code>print</code>方法实际调用的是 <code>PrintStream</code> 对象的 <code>write</code> 方法。</p>
-<p><code>PrintStream</code> 属于字节打印流，与之对应的是 <code>PrintWriter</code> （字符打印流）。<code>PrintStream</code> 是 <code>OutputStream</code> 的子类，<code>PrintWriter</code> 是 <code>Writer</code> 的子类。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 随机访问流</h2>
-<p>这里要介绍的随机访问流指的是支持随意跳转到文件的任意位置进行读写的 <code>RandomAccessFile</code> 。</p>
-<p><code>RandomAccessFile</code> 的构造方法如下，我们可以指定 <code>mode</code>（读写模式）。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>读写模式主要有下面四种：</p>
-<ul>
-<li><code>r</code> : 只读模式。</li>
-<li><code>rw</code>: 读写模式</li>
-<li><code>rws</code>: 相对于 <code>rw</code>，<code>rws</code> 同步更新对“文件的内容”或“元数据”的修改到外部存储设备。</li>
-<li><code>rwd</code> : 相对于 <code>rw</code>，<code>rwd</code> 同步更新对“文件的内容”的修改到外部存储设备。</li>
-</ul>
-<p>文件内容指的是文件中实际保存的数据，元数据则是用来描述文件属性比如文件的大小信息、创建和修改时间。</p>
-<p><code>RandomAccessFile</code> 中有一个文件指针用来表示下一个将要被写入或者读取的字节所处的位置。我们可以通过 <code>RandomAccessFile</code> 的 <code>seek(long pos)</code> 方法来设置文件指针的偏移量（距文件开头 <code>pos</code> 个字节处）。如果想要获取文件指针当前的位置的话，可以使用 <code>getFilePointer()</code> 方法。</p>
-<p><code>RandomAccessFile</code> 代码示例：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>input.txt</code> 文件内容：</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/image-20220421162050158.png" alt="" tabindex="0"><figcaption></figcaption></figure>
-<p>输出：</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>input.txt</code> 文件内容变为 <code>ABCDEFGHIJK</code> 。</p>
-<p><code>RandomAccessFile</code> 的 <code>write</code> 方法在写入对象的时候如果对应的位置已经有数据的话，会将其覆盖掉。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>假设运行上面这段程序之前 <code>input.txt</code> 文件内容变为 <code>ABCD</code> ，运行之后则变为 <code>HIJK</code> 。</p>
-<p><code>RandomAccessFile</code> 比较常见的一个应用就是实现大文件的 <strong>断点续传</strong> 。何谓断点续传？简单来说就是上传文件中途暂停或失败（比如遇到网络问题）之后，不需要重新上传，只需要上传那些未成功上传的文件分片即可。分片（先将文件切分成多个文件分片）上传是断点续传的基础。</p>
-<p><code>RandomAccessFile</code> 可以帮助我们合并文件分片，示例代码如下：</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/io/20210609164749122.png" alt="" tabindex="0"><figcaption></figcaption></figure>
-<p>我在<a href="https://javaguide.cn/zhuanlan/java-mian-shi-zhi-bei.html" target="_blank" rel="noopener noreferrer">《Java 面试指北》</a>中详细介绍了大文件的上传问题。</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/image-20220428104115362.png" alt="" tabindex="0"><figcaption></figcaption></figure>
-<p><code>RandomAccessFile</code> 的实现依赖于 <code>FileDescriptor</code> (文件描述符) 和 <code>FileChannel</code> （内存映射文件）。</p>
-]]></content:encoded>
-      <enclosure url="https://oss.javaguide.cn/github/javaguide/java/image-20220419155214614.png" type="image/png"/>
-    </item>
-    <item>
-      <title>Java IO 设计模式总结</title>
-      <link>https://javaguide.cn/java/io/io-design-patterns.html</link>
-      <guid>https://javaguide.cn/java/io/io-design-patterns.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java IO 设计模式总结</source>
-      <description>这篇文章我们简单来看看我们从 IO 中能够学习到哪些设计模式的应用。 装饰器模式 装饰器（Decorator）模式 可以在不改变原有对象的情况下拓展其功能。 装饰器模式通过组合替代继承来扩展原始类的功能，在一些继承关系比较复杂的场景（IO 这一场景各种类的继承关系就比较复杂）更加实用。 对于字节流来说， FilterInputStream （对应输入流）和FilterOutputStream（对应输出流）是装饰器模式的核心，分别用于增强 InputStream 和OutputStream子类对象的功能。</description>
-      <category>Java</category>
-      <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
-      <content:encoded><![CDATA[<p>这篇文章我们简单来看看我们从 IO 中能够学习到哪些设计模式的应用。</p>
-<h2> 装饰器模式</h2>
-<p><strong>装饰器（Decorator）模式</strong> 可以在不改变原有对象的情况下拓展其功能。</p>
-<p>装饰器模式通过组合替代继承来扩展原始类的功能，在一些继承关系比较复杂的场景（IO 这一场景各种类的继承关系就比较复杂）更加实用。</p>
-<p>对于字节流来说， <code>FilterInputStream</code> （对应输入流）和<code>FilterOutputStream</code>（对应输出流）是装饰器模式的核心，分别用于增强 <code>InputStream</code> 和<code>OutputStream</code>子类对象的功能。</p>
-<p>我们常见的<code>BufferedInputStream</code>(字节缓冲输入流)、<code>DataInputStream</code> 等等都是<code>FilterInputStream</code> 的子类，<code>BufferedOutputStream</code>（字节缓冲输出流）、<code>DataOutputStream</code>等等都是<code>FilterOutputStream</code>的子类。</p>
-<p>举个例子，我们可以通过 <code>BufferedInputStream</code>（字节缓冲输入流）来增强 <code>FileInputStream</code> 的功能。</p>
-<p><code>BufferedInputStream</code> 构造函数如下：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>可以看出，<code>BufferedInputStream</code> 的构造函数其中的一个参数就是 <code>InputStream</code> 。</p>
-<p><code>BufferedInputStream</code> 代码示例：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这个时候，你可以会想了：<strong>为啥我们直接不弄一个<code>BufferedFileInputStream</code>（字符缓冲文件输入流）呢？</strong></p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>如果 <code>InputStream</code>的子类比较少的话，这样做是没问题的。不过， <code>InputStream</code>的子类实在太多，继承关系也太复杂了。如果我们为每一个子类都定制一个对应的缓冲输入流，那岂不是太麻烦了。</p>
-<p>如果你对 IO 流比较熟悉的话，你会发现<code>ZipInputStream</code> 和<code>ZipOutputStream</code> 还可以分别增强 <code>BufferedInputStream</code> 和 <code>BufferedOutputStream</code> 的能力。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>ZipInputStream</code> 和<code>ZipOutputStream</code> 分别继承自<code>InflaterInputStream</code> 和<code>DeflaterOutputStream</code>。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这也是装饰器模式很重要的一个特征，那就是可以对原始类嵌套使用多个装饰器。</p>
-<p>为了实现这一效果，装饰器类需要跟原始类继承相同的抽象类或者实现相同的接口。上面介绍到的这些 IO 相关的装饰类和原始类共同的父类是 <code>InputStream</code> 和<code>OutputStream</code>。</p>
-<p>对于字符流来说，<code>BufferedReader</code> 可以用来增加 <code>Reader</code> （字符输入流）子类的功能，<code>BufferedWriter</code> 可以用来增加 <code>Writer</code> （字符输出流）子类的功能。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>IO 流中的装饰器模式应用的例子实在是太多了，不需要特意记忆，完全没必要哈！搞清了装饰器模式的核心之后，你在使用的时候自然就会知道哪些地方运用到了装饰器模式。</p>
-<h2> 适配器模式</h2>
-<p><strong>适配器（Adapter Pattern）模式</strong> 主要用于接口互不兼容的类的协调工作，你可以将其联想到我们日常经常使用的电源适配器。</p>
-<p>适配器模式中存在被适配的对象或者类称为 <strong>适配者(Adapter)</strong> ，作用于适配者的对象或者类称为<strong>适配器(Adapter)</strong> 。适配器分为对象适配器和类适配器。类适配器使用继承关系来实现，对象适配器使用组合关系来实现。</p>
-<p>IO 流中的字符流和字节流的接口不同，它们之间可以协调工作就是基于适配器模式来做的，更准确点来说是对象适配器。通过适配器，我们可以将字节流对象适配成一个字符流对象，这样我们可以直接通过字节流对象来读取或者写入字符数据。</p>
-<p><code>InputStreamReader</code> 和 <code>OutputStreamWriter</code> 就是两个适配器(Adapter)， 同时，它们两个也是字节流和字符流之间的桥梁。<code>InputStreamReader</code> 使用 <code>StreamDecoder</code> （流解码器）对字节进行解码，<strong>实现字节流到字符流的转换，</strong> <code>OutputStreamWriter</code> 使用<code>StreamEncoder</code>（流编码器）对字符进行编码，实现字符流到字节流的转换。</p>
-<p><code>InputStream</code> 和 <code>OutputStream</code> 的子类是被适配者， <code>InputStreamReader</code> 和 <code>OutputStreamWriter</code>是适配器。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>java.io.InputStreamReader</code> 部分源码：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>java.io.OutputStreamWriter</code> 部分源码：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>适配器模式和装饰器模式有什么区别呢？</strong></p>
-<p><strong>装饰器模式</strong> 更侧重于动态地增强原始类的功能，装饰器类需要跟原始类继承相同的抽象类或者实现相同的接口。并且，装饰器模式支持对原始类嵌套使用多个装饰器。</p>
-<p><strong>适配器模式</strong> 更侧重于让接口不兼容而不能交互的类可以一起工作，当我们调用适配器对应的方法时，适配器内部会调用适配者类或者和适配类相关的类的方法，这个过程透明的。就比如说 <code>StreamDecoder</code> （流解码器）和<code>StreamEncoder</code>（流编码器）就是分别基于 <code>InputStream</code> 和 <code>OutputStream</code> 来获取 <code>FileChannel</code>对象并调用对应的 <code>read</code> 方法和 <code>write</code> 方法进行字节数据的读取和写入。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>适配器和适配者两者不需要继承相同的抽象类或者实现相同的接口。</p>
-<p>另外，<code>FutureTask</code> 类使用了适配器模式，<code>Executors</code> 的内部类 <code>RunnableAdapter</code> 实现属于适配器，用于将 <code>Runnable</code> 适配成 <code>Callable</code>。</p>
-<p><code>FutureTask</code>参数包含 <code>Runnable</code> 的一个构造方法：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>Executors</code>中对应的方法和适配器：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 工厂模式</h2>
-<p>工厂模式用于创建对象，NIO 中大量用到了工厂模式，比如 <code>Files</code> 类的 <code>newInputStream</code> 方法用于创建 <code>InputStream</code> 对象（静态工厂）、 <code>Paths</code> 类的 <code>get</code> 方法创建 <code>Path</code> 对象（静态工厂）、<code>ZipFileSystem</code> 类（<code>sun.nio</code>包下的类，属于 <code>java.nio</code> 相关的一些内部实现）的 <code>getPath</code> 的方法创建 <code>Path</code> 对象（简单工厂）。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> 观察者模式</h2>
-<p>NIO 中的文件目录监听服务使用到了观察者模式。</p>
-<p>NIO 中的文件目录监听服务基于 <code>WatchService</code> 接口和 <code>Watchable</code> 接口。<code>WatchService</code> 属于观察者，<code>Watchable</code> 属于被观察者。</p>
-<p><code>Watchable</code> 接口定义了一个用于将对象注册到 <code>WatchService</code>（监控服务） 并绑定监听事件的方法 <code>register</code> 。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>WatchService</code> 用于监听文件目录的变化，同一个 <code>WatchService</code> 对象能够监听多个文件目录。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>Path</code> 类 <code>register</code> 方法的第二个参数 <code>events</code> （需要监听的事件）为可变长参数，也就是说我们可以同时监听多种事件。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>常用的监听事件有 3 种：</p>
-<ul>
-<li><code>StandardWatchEventKinds.ENTRY_CREATE</code>：文件创建。</li>
-<li><code>StandardWatchEventKinds.ENTRY_DELETE</code> : 文件删除。</li>
-<li><code>StandardWatchEventKinds.ENTRY_MODIFY</code> : 文件修改。</li>
-</ul>
-<p><code>register</code> 方法返回 <code>WatchKey</code> 对象，通过<code>WatchKey</code> 对象可以获取事件的具体信息比如文件目录下是创建、删除还是修改了文件、创建、删除或者修改的文件的具体名称是什么。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>WatchService</code> 内部是通过一个 daemon thread（守护线程）采用定期轮询的方式来检测文件的变化，简化后的源码如下所示。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 参考</h2>
-<ul>
-<li>Patterns in Java APIs：http://cecs.wright.edu/~tkprasad/courses/ceg860/paper/node26.html</li>
-<li>装饰器模式：通过剖析 Java IO 类库源码学习装饰器模式：https://time.geekbang.org/column/article/204845</li>
-<li>sun.nio 包是什么，是 java 代码么？ - RednaxelaFX https://www.zhihu.com/question/29237781/answer/43653953</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Java IO 模型详解</title>
-      <link>https://javaguide.cn/java/io/io-model.html</link>
-      <guid>https://javaguide.cn/java/io/io-model.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java IO 模型详解</source>
-      <description>IO 模型这块确实挺难理解的，需要太多计算机底层知识。写这篇文章用了挺久，就非常希望能把我所知道的讲出来吧!希望朋友们能有收获！为了写这篇文章，还翻看了一下《UNIX 网络编程》这本书，太难了，我滴乖乖！心痛~ 个人能力有限。如果文章有任何需要补充/完善/修改的地方，欢迎在评论区指出，共同进步！ 前言 I/O 一直是很多小伙伴难以理解的一个知识点，这篇文章我会将我所理解的 I/O 讲给你听，希望可以对你有所帮助。 I/O 何为 I/O? I/O（Input/Outpu） 即输入／输出 。</description>
-      <category>Java</category>
-      <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
-      <content:encoded><![CDATA[<p>IO 模型这块确实挺难理解的，需要太多计算机底层知识。写这篇文章用了挺久，就非常希望能把我所知道的讲出来吧!希望朋友们能有收获！为了写这篇文章，还翻看了一下《UNIX 网络编程》这本书，太难了，我滴乖乖！心痛~</p>
-<p><em>个人能力有限。如果文章有任何需要补充/完善/修改的地方，欢迎在评论区指出，共同进步！</em></p>
-<h2> 前言</h2>
-<p>I/O 一直是很多小伙伴难以理解的一个知识点，这篇文章我会将我所理解的 I/O 讲给你听，希望可以对你有所帮助。</p>
-<h2> I/O</h2>
-<h3> 何为 I/O?</h3>
-<p>I/O（<strong>I</strong>nput/<strong>O</strong>utpu） 即<strong>输入／输出</strong> 。</p>
-<p><strong>我们先从计算机结构的角度来解读一下 I/O。</strong></p>
-<p>根据冯.诺依曼结构，计算机结构分为 5 大部分：运算器、控制器、存储器、输入设备、输出设备。</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/io/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9pcy1jbG91ZC5ibG9nLmNzZG4ubmV0,size_16,color_FFFFFF,t_70.jpeg" alt="冯诺依曼体系结构" tabindex="0"><figcaption>冯诺依曼体系结构</figcaption></figure>
-<p>输入设备（比如键盘）和输出设备（比如显示器）都属于外部设备。网卡、硬盘这种既可以属于输入设备，也可以属于输出设备。</p>
-<p>输入设备向计算机输入数据，输出设备接收计算机输出的数据。</p>
-<p><strong>从计算机结构的视角来看的话， I/O 描述了计算机系统与外部设备之间通信的过程。</strong></p>
-<p><strong>我们再先从应用程序的角度来解读一下 I/O。</strong></p>
-<p>根据大学里学到的操作系统相关的知识：为了保证操作系统的稳定性和安全性，一个进程的地址空间划分为 <strong>用户空间（User space）</strong> 和 <strong>内核空间（Kernel space ）</strong> 。</p>
-<p>像我们平常运行的应用程序都是运行在用户空间，只有内核空间才能进行系统态级别的资源有关的操作，比如文件管理、进程通信、内存管理等等。也就是说，我们想要进行 IO 操作，一定是要依赖内核空间的能力。</p>
-<p>并且，用户空间的程序不能直接访问内核空间。</p>
-<p>当想要执行 IO 操作时，由于没有执行这些操作的权限，只能发起系统调用请求操作系统帮忙完成。</p>
-<p>因此，用户进程想要执行 IO 操作的话，必须通过 <strong>系统调用</strong> 来间接访问内核空间</p>
-<p>我们在平常开发过程中接触最多的就是 <strong>磁盘 IO（读写文件）</strong> 和 <strong>网络 IO（网络请求和响应）</strong>。</p>
-<p><strong>从应用程序的视角来看的话，我们的应用程序对操作系统的内核发起 IO 调用（系统调用），操作系统负责的内核执行具体的 IO 操作。也就是说，我们的应用程序实际上只是发起了 IO 操作的调用而已，具体 IO 的执行是由操作系统的内核来完成的。</strong></p>
-<p>当应用程序发起 I/O 调用后，会经历两个步骤：</p>
-<ol>
-<li>内核等待 I/O 设备准备好数据</li>
-<li>内核将数据从内核空间拷贝到用户空间。</li>
-</ol>
-<h3> 有哪些常见的 IO 模型?</h3>
-<p>UNIX 系统下， IO 模型一共有 5 种：<strong>同步阻塞 I/O</strong>、<strong>同步非阻塞 I/O</strong>、<strong>I/O 多路复用</strong>、<strong>信号驱动 I/O</strong> 和<strong>异步 I/O</strong>。</p>
-<p>这也是我们经常提到的 5 种 IO 模型。</p>
-<h2> Java 中 3 种常见 IO 模型</h2>
-<h3> BIO (Blocking I/O)</h3>
-<p><strong>BIO 属于同步阻塞 IO 模型</strong> 。</p>
-<p>同步阻塞 IO 模型中，应用程序发起 read 调用后，会一直阻塞，直到内核把数据拷贝到用户空间。</p>
-<figure><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6a9e704af49b4380bb686f0c96d33b81~tplv-k3u1fbpfcp-watermark.image" alt="图源：《深入拆解Tomcat &amp; Jetty》" tabindex="0"><figcaption>图源：《深入拆解Tomcat &amp; Jetty》</figcaption></figure>
-<p>在客户端连接数量不高的情况下，是没问题的。但是，当面对十万甚至百万级连接的时候，传统的 BIO 模型是无能为力的。因此，我们需要一种更高效的 I/O 处理模型来应对更高的并发量。</p>
-<h3> NIO (Non-blocking/New I/O)</h3>
-<p>Java 中的 NIO 于 Java 1.4 中引入，对应 <code>java.nio</code> 包，提供了 <code>Channel</code> , <code>Selector</code>，<code>Buffer</code> 等抽象。NIO 中的 N 可以理解为 Non-blocking，不单纯是 New。它是支持面向缓冲的，基于通道的 I/O 操作方法。 对于高负载、高并发的（网络）应用，应使用 NIO 。</p>
-<p>Java 中的 NIO 可以看作是 <strong>I/O 多路复用模型</strong>。也有很多人认为，Java 中的 NIO 属于同步非阻塞 IO 模型。</p>
-<p>跟着我的思路往下看看，相信你会得到答案！</p>
-<p>我们先来看看 <strong>同步非阻塞 IO 模型</strong>。</p>
-<figure><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bb174e22dbe04bb79fe3fc126aed0c61~tplv-k3u1fbpfcp-watermark.image" alt="图源：《深入拆解Tomcat &amp; Jetty》" tabindex="0"><figcaption>图源：《深入拆解Tomcat &amp; Jetty》</figcaption></figure>
-<p>同步非阻塞 IO 模型中，应用程序会一直发起 read 调用，等待数据从内核空间拷贝到用户空间的这段时间里，线程依然是阻塞的，直到在内核把数据拷贝到用户空间。</p>
-<p>相比于同步阻塞 IO 模型，同步非阻塞 IO 模型确实有了很大改进。通过轮询操作，避免了一直阻塞。</p>
-<p>但是，这种 IO 模型同样存在问题：<strong>应用程序不断进行 I/O 系统调用轮询数据是否已经准备好的过程是十分消耗 CPU 资源的。</strong></p>
-<p>这个时候，<strong>I/O 多路复用模型</strong> 就上场了。</p>
-<figure><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/88ff862764024c3b8567367df11df6ab~tplv-k3u1fbpfcp-watermark.image" alt="" tabindex="0"><figcaption></figcaption></figure>
-<p>IO 多路复用模型中，线程首先发起 select 调用，询问内核数据是否准备就绪，等内核把数据准备好了，用户线程再发起 read 调用。read 调用的过程（数据从内核空间 -&gt; 用户空间）还是阻塞的。</p>
-<blockquote>
-<p>目前支持 IO 多路复用的系统调用，有 select，epoll 等等。select 系统调用，目前几乎在所有的操作系统上都有支持。</p>
-<ul>
-<li><strong>select 调用</strong>：内核提供的系统调用，它支持一次查询多个系统调用的可用状态。几乎所有的操作系统都支持。</li>
-<li><strong>epoll 调用</strong>：linux 2.6 内核，属于 select 调用的增强版本，优化了 IO 的执行效率。</li>
-</ul>
-</blockquote>
-<p><strong>IO 多路复用模型，通过减少无效的系统调用，减少了对 CPU 资源的消耗。</strong></p>
-<p>Java 中的 NIO ，有一个非常重要的<strong>选择器 ( Selector )</strong> 的概念，也可以被称为 <strong>多路复用器</strong>。通过它，只需要一个线程便可以管理多个客户端连接。当客户端数据到了之后，才会为其服务。</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/channel-buffer-selector.png" alt="Buffer、Channel和Selector三者之间的关系" tabindex="0"><figcaption>Buffer、Channel和Selector三者之间的关系</figcaption></figure>
-<h3> AIO (Asynchronous I/O)</h3>
-<p>AIO 也就是 NIO 2。Java 7 中引入了 NIO 的改进版 NIO 2,它是异步 IO 模型。</p>
-<p>异步 IO 是基于事件和回调机制实现的，也就是应用操作之后会直接返回，不会堵塞在那里，当后台处理完成，操作系统会通知相应的线程进行后续的操作。</p>
-<figure><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3077e72a1af049559e81d18205b56fd7~tplv-k3u1fbpfcp-watermark.image" alt="" tabindex="0"><figcaption></figcaption></figure>
-<p>目前来说 AIO 的应用还不是很广泛。Netty 之前也尝试使用过 AIO，不过又放弃了。这是因为，Netty 使用了 AIO 之后，在 Linux 系统上的性能并没有多少提升。</p>
-<p>最后，来一张图，简单总结一下 Java 中的 BIO、NIO、AIO。</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/bio-aio-nio.png" alt="BIO、NIO 和 AIO 对比" tabindex="0"><figcaption>BIO、NIO 和 AIO 对比</figcaption></figure>
-<h2> 参考</h2>
-<ul>
-<li>《深入拆解 Tomcat &amp; Jetty》</li>
-<li>如何完成一次 IO：https://llc687.top/126.html</li>
-<li>程序员应该这样理解 IO：<a href="https://www.jianshu.com/p/fa7bdc4f3de7" target="_blank" rel="noopener noreferrer">https://www.jianshu.com/p/fa7bdc4f3de7</a></li>
-<li>10 分钟看懂， Java NIO 底层原理：https://www.cnblogs.com/crazymakercircle/p/10225159.html</li>
-<li>IO 模型知多少 | 理论篇：https://www.cnblogs.com/sheng-jie/p/how-much-you-know-about-io-models.html</li>
-<li>《UNIX 网络编程 卷 1；套接字联网 API 》6.2 节 IO 模型</li>
-</ul>
-]]></content:encoded>
-      <enclosure url="https://oss.javaguide.cn/github/javaguide/java/io/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9pcy1jbG91ZC5ibG9nLmNzZG4ubmV0,size_16,color_FFFFFF,t_70.jpeg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Java NIO 核心知识总结</title>
-      <link>https://javaguide.cn/java/io/nio-basis.html</link>
-      <guid>https://javaguide.cn/java/io/nio-basis.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java NIO 核心知识总结</source>
-      <description>在学习 NIO 之前，需要先了解一下计算机 I/O模型的基础理论知识。还不了解的话，可以参考我写的这篇文章：Java IO 模型详解。 NIO 简介 在传统的 Java I/O 模型（BIO）中，I/O 操作是以阻塞的方式进行的。也就是说，当一个线程执行一个 I/O 操作时，它会被阻塞直到操作完成。这种阻塞模型在处理多个并发连接时可能会导致性能瓶颈，因为需要为每个连接创建一个线程，而线程的创建和切换都是有开销的。</description>
-      <category>Java</category>
-      <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
-      <content:encoded><![CDATA[<p>在学习  NIO 之前，需要先了解一下计算机 I/O模型的基础理论知识。还不了解的话，可以参考我写的这篇文章：<a href="https://javaguide.cn/java/io/io-model.html" target="_blank" rel="noopener noreferrer">Java IO 模型详解</a>。</p>
-<h2> NIO 简介</h2>
-<p>在传统的 Java I/O 模型（BIO）中，I/O 操作是以阻塞的方式进行的。也就是说，当一个线程执行一个 I/O 操作时，它会被阻塞直到操作完成。这种阻塞模型在处理多个并发连接时可能会导致性能瓶颈，因为需要为每个连接创建一个线程，而线程的创建和切换都是有开销的。</p>
-<p>为了解决这个问题，在Java1.4 版本引入了一种新的 I/O 模型 — <strong>NIO</strong> （New IO，也称为 Non-blocking IO） 。NIO 弥补了同步阻塞I/O的不足，它在标准 Java 代码中提供了非阻塞、面向缓冲、基于通道的 I/O，可以使用少量的线程来处理多个连接，大大提高了 I/O 效率和并发。</p>
-<p>下图是 BIO、NIO 和 AIO 处理客户端请求的简单对比图（关于 AIO 的介绍，可以看我写的这篇文章：<a href="https://javaguide.cn/java/io/io-model.html" target="_blank" rel="noopener noreferrer">Java IO 模型详解</a>，不是重点，了解即可）。</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/bio-aio-nio.png" alt="BIO、NIO 和 AIO 对比" tabindex="0"><figcaption>BIO、NIO 和 AIO 对比</figcaption></figure>
-<p>⚠️需要注意：使用 NIO 并不一定意味着高性能，它的性能优势主要体现在高并发和高延迟的网络环境下。当连接数较少、并发程度较低或者网络传输速度较快时，NIO 的性能并不一定优于传统的 BIO 。</p>
-<h2> NIO 核心组件</h2>
-<p>NIO 主要包括以下三个核心组件：</p>
-<ul>
-<li><strong>Buffer（缓冲区）</strong>：NIO 读写数据都是通过缓冲区进行操作的。读操作的时候将 Channel 中的数据填充到 Buffer中，而写操作时将 Buffer中的数据写入到 Channel 中。</li>
-<li><strong>Channel（通道）</strong>：Channel 是一个双向的、可读可写的数据传输通道，NIO 通过Channel来实现数据的输入输出。通道是一个抽象的概念，它可以代表文件、套接字或者其他数据源之间的连接。</li>
-<li><strong>Selector（选择器）</strong>：允许一个线程处理多个 Channel，基于事件驱动的 I/O 多路复用模型。所有的 Channel 都可以注册到Selector上，由Selector来分配线程来处理事件。</li>
-</ul>
-<p>三者的关系如下图所示（暂时不理解没关系，后文会详细介绍）：</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/channel-buffer-selector.png" alt="Buffer、Channel和Selector三者之间的关系" tabindex="0"><figcaption>Buffer、Channel和Selector三者之间的关系</figcaption></figure>
-<p>下面详细介绍一下这三个组件。</p>
-<h3> Buffer（缓冲区）</h3>
-<p>在传统的 BIO 中，数据的读写是面向流的， 分为字节流和字符流。</p>
-<p>在Java 1.4 的 NIO库中，所有数据都是用缓冲区处理的，这是新库和之前的 BIO 的一个重要区别，有点类似于 BIO 中的缓冲流。NIO 在读取数据时，它是直接读到缓冲区中的。在写入数据时，写入到缓冲区中。 使用 NIO在读写数据时，都是通过缓冲区进行操作。</p>
-<p><code>Buffer</code> 的子类如下图所示。其中，最常用的是 <code>ByteBuffer</code>，它可以用来存储和操作字节数据。</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/buffer-subclasses.png" alt="Buffer 的子类" tabindex="0"><figcaption>Buffer 的子类</figcaption></figure>
-<p>你可以将 Buffer 理解为一个数组，<code>IntBuffer</code>、<code>FloatBuffer</code>、<code>CharBuffer</code> 等分别对应 <code>int[]</code>、<code>float[]</code>、<code>char[]</code> 等。</p>
-<p>为了更清晰地认识缓冲区，我们来简单看看<code>Buffer</code> 类中定义的四个成员变量：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这四个成员变量的具体含义如下：</p>
-<ol>
-<li>容量（<code>capacity</code>）：<code>Buffer</code>可以存储的最大数据量，<code>Buffer</code>创建时设置且不可改变；</li>
-<li>界限（<code>limit</code>）：<code>Buffer</code> 中可以读/写数据的边界。写模式下，<code>limit</code> 代表最多能写入的数据，一般等于 <code>capacity</code>（可以通过<code>limit(int newLimit) </code>方法设置）；读模式下，<code>limit</code> 等于 Buffer 中实际写入的数据大小。</li>
-<li>位置（<code>position</code>）：下一个可以被读写的数据的位置（索引）。从写操作模式到读操作模式切换的时候（flip），<code>position</code> 都会归零，这样就可以从头开始读写了。</li>
-<li>标记（<code>mark</code>）：<code>Buffer</code>允许将位置直接定位到该标记处，这是一个可选属性；</li>
-</ol>
-<p>并且，上述变量满足如下的关系：<strong>0 &lt;= mark &lt;= position &lt;= limit &lt;= capacity</strong> 。</p>
-<p>另外，Buffer 有读模式和写模式这两种模式，分别用于从 Buffer 中读取数据或者向 Buffer 中写入数据。Buffer 被创建之后默认是写模式，调用 <code>flip()</code> 可以切换到读模式。如果要再次切换回写模式，可以调用 <code>clear()</code> 或者 <code>compact()</code> 方法。</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/JavaNIOBuffer.png" alt="position 、limit 和 capacity 之前的关系" tabindex="0"><figcaption>position 、limit 和 capacity 之前的关系</figcaption></figure>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/NIOBufferClassAttributes.png" alt="position 、limit 和 capacity 之前的关系" tabindex="0"><figcaption>position 、limit 和 capacity 之前的关系</figcaption></figure>
-<p><code>Buffer</code> 对象不能通过 <code>new</code> 调用构造方法创建对象 ，只能通过静态方法实例化 <code>Buffer</code>。</p>
-<p>这里以 <code>ByteBuffer </code>为例进行介绍：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Buffer 最核心的两个方法：</p>
-<ol>
-<li><code>get</code> : 读取缓冲区的数据</li>
-<li><code>put</code> ：向缓冲区写入数据</li>
-</ol>
-<p>除上述两个方法之外，其他的重要方法：</p>
-<ul>
-<li><code>flip</code> ：将缓冲区从写模式切换到读模式，它会将 <code>limit</code> 的值设置为当前 <code>position</code> 的值，将 <code>position</code> 的值设置为 0。</li>
-<li><code>clear</code>:  清空缓冲区，将缓冲区从读模式切换到写模式，并将 <code>position</code> 的值设置为 0，将 <code>limit</code> 的值设置为 <code>capacity</code> 的值。</li>
-<li>......</li>
-</ul>
-<p>Buffer 中数据变化的过程：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>输出:</p>
-<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>为了帮助理解，我绘制了一张图片展示 <code>capacity</code>、<code>limit</code>和<code>position</code>每一阶段的变化。</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/NIOBufferClassAttributesDataChanges.png" alt="capacity、limit和position每一阶段的变化" tabindex="0"><figcaption>capacity、limit和position每一阶段的变化</figcaption></figure>
-<h3> Channel（通道）</h3>
-<p>Channel 是一个通道，它建立了与数据源（如文件、网络套接字等）之间的连接。我们可以利用它来读取和写入数据，就像打开了一条自来水管，让数据在 Channel 中自由流动。</p>
-<p>BIO 中的流是单向的，分为各种 <code>InputStream</code>（输入流）和 <code>OutputStream</code>（输出流），数据只是在一个方向上传输。通道与流的不同之处在于通道是双向的，它可以用于读、写或者同时用于读写。</p>
-<p>Channel 与前面介绍的 Buffer 打交道，读操作的时候将 Channel 中的数据填充到 Buffer中，而写操作时将 Buffer中的数据写入到 Channel 中。</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/channel-buffer.png" alt="Channel 和 Buffer之间的关系" tabindex="0"><figcaption>Channel 和 Buffer之间的关系</figcaption></figure>
-<p>另外，因为 Channel 是全双工的，所以它可以比流更好地映射底层操作系统的 API。特别是在 UNIX 网络编程模型中，底层操作系统的通道都是全双工的，同时支持读写操作。</p>
-<p><code>Channel</code> 的子类如下图所示。</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/channel-subclasses.png" alt="Channel 的子类" tabindex="0"><figcaption>Channel 的子类</figcaption></figure>
-<p>其中，最常用的是以下几种类型的通道：</p>
-<ul>
-<li><code>FileChannel</code>：文件访问通道；</li>
-<li><code>SocketChannel</code>、<code>ServerSocketChannel</code>：TCP通信通道；</li>
-<li><code>DatagramChannel</code>：UDP 通信通道；</li>
-</ul>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/channel-inheritance-relationship.png" alt="Channel继承关系图" tabindex="0"><figcaption>Channel继承关系图</figcaption></figure>
-<p>Channel 最核心的两个方法：</p>
-<ol>
-<li><code>read</code> ：用于从 Buffer 中读取数据；</li>
-<li><code>write</code> ：向 Buffer 中写入数据。</li>
-</ol>
-<p>这里我们以 <code>FileChannel</code> 为例演示一下是读取文件数据的。</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> Selector（选择器）</h3>
-<p>Selector（选择器） 是 NIO中的一个关键组件，它允许一个线程处理多个 Channel。Selector 是基于事件驱动的 I/O 多路复用模型，主要运作原理是：通过 Selector 注册通道的事件，Selector 会不断地轮询注册在其上的 Channel。当事件发生时，比如：某个 Channel上面有新的 TCP 连接接入、读和写事件，这个 Channel就处于就绪状态，会被 Selector 轮询出来。Selector 会将相关的 Channel加入到就绪集合中。通过 SelectionKey可以获取就绪 Channel的集合，然后对这些就绪的 Channel进行响应的 I/O 操作。</p>
-<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/selector-channel-selectionkey.png" alt="Selector 选择器工作示意图" tabindex="0"><figcaption>Selector 选择器工作示意图</figcaption></figure>
-<p>一个多路复用器 Selector 可以同时轮询多个 Channel，由于 JDK使用了 <code>epoll()</code> 代替传统的 <code>select</code> 实现，所以它并没有最大连接句柄 <code>1024/2048</code> 的限制。这也就意味着只需要一个线程负责 Selector 的轮询，就可以接入成千上万的客户端。</p>
-<p>Selector 可以监听以下四种事件类型：</p>
-<ol>
-<li><code>SelectionKey.OP_ACCEPT</code>：表示通道接受连接的事件，这通常用于 <code>ServerSocketChannel</code>。</li>
-<li><code>SelectionKey.OP_CONNECT</code>：表示通道完成连接的事件，这通常用于 <code>SocketChannel</code>。</li>
-<li><code>SelectionKey.OP_READ</code>：表示通道准备好进行读取的事件，即有数据可读。</li>
-<li><code>SelectionKey.OP_WRITE</code>：表示通道准备好进行写入的事件，即可以写入数据。</li>
-</ol>
-<p><code>Selector </code>是抽象类，可以通过调用此类的 <code>open()</code> 静态方法来创建 Selector 实例。Selector 可以同时监控多个 <code>SelectableChannel</code> 的 <code>IO</code> 状况，是非阻塞 <code>IO</code> 的核心。</p>
-<p>一个Selector 实例有三个 <code>SelectionKey</code> 集合：</p>
-<ol>
-<li>所有的 <code>SelectionKey</code> 集合：代表了注册在该 Selector 上的 <code>Channel</code>，这个集合可以通过 <code>keys()</code> 方法返回。</li>
-<li>被选择的 <code>SelectionKey</code> 集合：代表了所有可通过 <code>select()</code> 方法获取的、需要进行 <code>IO</code> 处理的 Channel，这个集合可以通过 <code>selectedKeys()</code> 返回。</li>
-<li>被取消的 <code>SelectionKey</code> 集合：代表了所有被取消注册关系的 <code>Channel</code>，在下一次执行 <code>select()</code> 方法时，这些 <code>Channel</code> 对应的 <code>SelectionKey</code> 会被彻底删除，程序通常无须直接访问该集合，也没有暴露访问的方法。</li>
-</ol>
-<p>简单演示一下如何遍历被选择的 <code>SelectionKey</code> 集合并进行处理：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Selector 还提供了一系列和 <code>select()</code> 相关的方法：</p>
-<ul>
-<li><code>int select()</code>：监控所有注册的 <code>Channel</code>，当它们中间有需要处理的 <code>IO</code> 操作时，该方法返回，并将对应的 <code>SelectionKey</code> 加入被选择的 <code>SelectionKey</code> 集合中，该方法返回这些 <code>Channel</code> 的数量。</li>
-<li><code>int select(long timeout)</code>：可以设置超时时长的 <code>select()</code> 操作。</li>
-<li><code>int selectNow()</code>：执行一个立即返回的 <code>select()</code>  操作，相对于无参数的 <code>select()</code> 方法而言，该方法不会阻塞线程。</li>
-<li><code>Selector wakeup()</code>：使一个还未返回的 <code>select()</code> 方法立刻返回。</li>
-<li>......</li>
-</ul>
-<p>使用 Selector 实现网络读写的简单示例：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在示例中，我们创建了一个简单的服务器，监听8080端口，使用 Selector 处理连接、读取和写入事件。当接收到客户端的数据时，服务器将读取数据并将其打印到控制台，然后向客户端回复 "Hello, Client!"。</p>
-<h2> NIO 零拷贝</h2>
-<p>零拷贝是提升 IO 操作性能的一个常用手段，像 ActiveMQ、Kafka 、RocketMQ、QMQ、Netty 等顶级开源项目都用到了零拷贝。</p>
-<p>零拷贝是指计算机执行 IO 操作时，CPU 不需要将数据从一个存储区域复制到另一个存储区域，从而可以减少上下文切换以及 CPU 的拷贝时间。也就是说，零拷贝主主要解决操作系统在处理 I/O 操作时频繁复制数据的问题。零拷贝的常见实现技术有： <code>mmap+write</code>、<code>sendfile</code>和 <code>sendfile + DMA gather copy</code> 。</p>
-<p>下图展示了各种零拷贝技术的对比图：</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>CPU 拷贝</th>
-<th>DMA 拷贝</th>
-<th>系统调用</th>
-<th>上下文切换</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>传统方法</td>
-<td>2</td>
-<td>2</td>
-<td>read+write</td>
-<td>4</td>
-</tr>
-<tr>
-<td>mmap+write</td>
-<td>1</td>
-<td>2</td>
-<td>mmap+write</td>
-<td>4</td>
-</tr>
-<tr>
-<td>sendfile</td>
-<td>1</td>
-<td>2</td>
-<td>sendfile</td>
-<td>2</td>
-</tr>
-<tr>
-<td>sendfile + DMA gather copy</td>
-<td>0</td>
-<td>2</td>
-<td>sendfile</td>
-<td>2</td>
-</tr>
-</tbody>
-</table>
-<p>可以看出，无论是传统的 I/O 方式，还是引入了零拷贝之后，2 次 DMA(Direct Memory Access) 拷贝是都少不了的。因为两次 DMA 都是依赖硬件完成的。零拷贝主要是减少了 CPU 拷贝及上下文的切换。</p>
-<p>Java 对零拷贝的支持：</p>
-<ul>
-<li><code>MappedByteBuffer</code> 是 NIO 基于内存映射（<code>mmap</code>）这种零拷⻉⽅式的提供的⼀种实现，底层实际是调用了 Linux 内核的 <code>mmap</code> 系统调用。它可以将一个文件或者文件的一部分映射到内存中，形成一个虚拟内存文件，这样就可以直接操作内存中的数据，而不需要通过系统调用来读写文件。</li>
-<li><code>FileChannel</code> 的<code>transferTo()/transferFrom()</code>是 NIO 基于发送文件（<code>sendfile</code>）这种零拷贝方式的提供的一种实现，底层实际是调用了 Linux 内核的 <code>sendfile</code>系统调用。它可以直接将文件数据从磁盘发送到网络，而不需要经过用户空间的缓冲区。关于<code>FileChannel</code>的用法可以看看这篇文章：<a href="https://www.cnblogs.com/robothy/p/14235598.html" target="_blank" rel="noopener noreferrer">Java NIO 文件通道 FileChannel 用法</a>。</li>
-</ul>
-<p>代码示例：</p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 总结</h2>
-<p>这篇文章我们主要介绍了 NIO 的核心知识点，包括 NIO 的核心组件和零拷贝。</p>
-<p>如果我们需要使用 NIO 构建网络程序的话，不建议直接使用原生 NIO，编程复杂且功能性太弱，推荐使用一些成熟的基于 NIO 的网络编程框架比如 Netty。Netty 在 NIO 的基础上进行了一些优化和扩展比如支持多种协议、支持 SSL/TLS 等等。</p>
-<h2> 参考</h2>
-<ul>
-<li>
-<p>Java NIO浅析：<a href="https://tech.meituan.com/2016/11/04/nio.html" target="_blank" rel="noopener noreferrer">https://tech.meituan.com/2016/11/04/nio.html</a></p>
-</li>
-<li>
-<p>面试官：Java NIO 了解？https://mp.weixin.qq.com/s/mZobf-U8OSYQfHfYBEB6KA</p>
-</li>
-<li>
-<p>Java NIO：Buffer、Channel 和 Selector：https://www.javadoop.com/post/java-nio</p>
-</li>
-</ul>
-]]></content:encoded>
-      <enclosure url="https://oss.javaguide.cn/github/javaguide/java/nio/bio-aio-nio.png" type="image/png"/>
-    </item>
-    <item>
       <title>类文件结构详解</title>
-      <link>https://javaguide.cn/java/jvm/class-file-structure.html</link>
-      <guid>https://javaguide.cn/java/jvm/class-file-structure.html</guid>
-      <source url="https://javaguide.cn/rss.xml">类文件结构详解</source>
+      <link>https://javayong.cn/java/jvm/class-file-structure.html</link>
+      <guid>https://javayong.cn/java/jvm/class-file-structure.html</guid>
+      <source url="https://javayong.cn/rss.xml">类文件结构详解</source>
       <description>回顾一下字节码 在 Java 中，JVM 可以理解的代码就叫做字节码（即扩展名为 .class 的文件），它不面向任何特定的处理器，只面向虚拟机。Java 语言通过字节码的方式，在一定程度上解决了传统解释型语言执行效率低的问题，同时又保留了解释型语言可移植的特点。所以 Java 程序运行时比较高效，而且，由于字节码并不针对一种特定的机器，因此，Java 程序无须重新编译便可在多种不同操作系统的计算机上运行。 Clojure（Lisp 语言的一种方言）、Groovy、Scala、JRuby、Kotlin 等语言都是运行在 Java 虚拟机之上。下图展示了不同的语言被不同的编译器编译成.class文件最终运行在 Java 虚拟机之上。.class文件的二进制格式可以使用 WinHex 查看。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -6850,9 +6716,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>类加载过程详解</title>
-      <link>https://javaguide.cn/java/jvm/class-loading-process.html</link>
-      <guid>https://javaguide.cn/java/jvm/class-loading-process.html</guid>
-      <source url="https://javaguide.cn/rss.xml">类加载过程详解</source>
+      <link>https://javayong.cn/java/jvm/class-loading-process.html</link>
+      <guid>https://javayong.cn/java/jvm/class-loading-process.html</guid>
+      <source url="https://javayong.cn/rss.xml">类加载过程详解</source>
       <description>类的生命周期 类从被加载到虚拟机内存中开始到卸载出内存为止，它的整个生命周期可以简单概括为 7 个阶段：：加载（Loading）、验证（Verification）、准备（Preparation）、解析（Resolution）、初始化（Initialization）、使用（Using）和卸载（Unloading）。其中，验证、准备和解析这三个阶段可以统称为连接（Linking）。 这 7 个阶段的顺序如下图所示： 一个类的完整生命周期</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -6967,9 +6833,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>类加载器详解（重点）</title>
-      <link>https://javaguide.cn/java/jvm/classloader.html</link>
-      <guid>https://javaguide.cn/java/jvm/classloader.html</guid>
-      <source url="https://javaguide.cn/rss.xml">类加载器详解（重点）</source>
+      <link>https://javayong.cn/java/jvm/classloader.html</link>
+      <guid>https://javayong.cn/java/jvm/classloader.html</guid>
+      <source url="https://javayong.cn/rss.xml">类加载器详解（重点）</source>
       <description>回顾一下类加载过程 开始介绍类加载器和双亲委派模型之前，简单回顾一下类加载过程。 类加载过程：加载-&amp;gt;连接-&amp;gt;初始化。 连接过程又可分为三步：验证-&amp;gt;准备-&amp;gt;解析。 类加载过程</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -7114,9 +6980,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>JDK监控和故障处理工具总结</title>
-      <link>https://javaguide.cn/java/jvm/jdk-monitoring-and-troubleshooting-tools.html</link>
-      <guid>https://javaguide.cn/java/jvm/jdk-monitoring-and-troubleshooting-tools.html</guid>
-      <source url="https://javaguide.cn/rss.xml">JDK监控和故障处理工具总结</source>
+      <link>https://javayong.cn/java/jvm/jdk-monitoring-and-troubleshooting-tools.html</link>
+      <guid>https://javayong.cn/java/jvm/jdk-monitoring-and-troubleshooting-tools.html</guid>
+      <source url="https://javayong.cn/rss.xml">JDK监控和故障处理工具总结</source>
       <description>JDK 命令行工具 这些命令在 JDK 安装目录下的 bin 目录下： jps (JVM Process Status）: 类似 UNIX 的 ps 命令。用于查看所有 Java 进程的启动类、传入参数和 Java 虚拟机参数等信息； jstat（JVM Statistics Monitoring Tool）: 用于收集 HotSpot 虚拟机各方面的运行数据; jinfo (Configuration Info for Java) : Configuration Info for Java,显示虚拟机配置信息; jmap (Memory Map for Java) : 生成堆转储快照; jhat (JVM Heap Dump Browser) : 用于分析 heapdump 文件，它会建立一个 HTTP/HTML 服务器，让用户可以在浏览器上查看分析结果; jstack (Stack Trace for Java) : 生成虚拟机当前时刻的线程快照，线程快照就是当前虚拟机内每一条线程正在执行的方法堆栈的集合。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -7222,9 +7088,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>JVM垃圾回收详解（重点）</title>
-      <link>https://javaguide.cn/java/jvm/jvm-garbage-collection.html</link>
-      <guid>https://javaguide.cn/java/jvm/jvm-garbage-collection.html</guid>
-      <source url="https://javaguide.cn/rss.xml">JVM垃圾回收详解（重点）</source>
+      <link>https://javayong.cn/java/jvm/jvm-garbage-collection.html</link>
+      <guid>https://javayong.cn/java/jvm/jvm-garbage-collection.html</guid>
+      <source url="https://javayong.cn/rss.xml">JVM垃圾回收详解（重点）</source>
       <description>如果没有特殊说明，都是针对的是 HotSpot 虚拟机。 本文基于《深入理解 Java 虚拟机：JVM 高级特性与最佳实践》进行总结补充。 常见面试题： 如何判断对象是否死亡（两种方法）。 简单的介绍一下强引用、软引用、弱引用、虚引用（虚引用与软引用和弱引用的区别、使用软引用能带来的好处）。 如何判断一个常量是废弃常量 如何判断一个类是无用的类 垃圾收集有哪些算法，各自的特点？ HotSpot 为什么要分为新生代和老年代？ 常见的垃圾回收器有哪些？ 介绍一下 CMS,G1 收集器。 Minor Gc 和 Full GC 有什么不同呢？</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -7516,9 +7382,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>JVM线上问题排查和性能调优案例</title>
-      <link>https://javaguide.cn/java/jvm/jvm-in-action.html</link>
-      <guid>https://javaguide.cn/java/jvm/jvm-in-action.html</guid>
-      <source url="https://javaguide.cn/rss.xml">JVM线上问题排查和性能调优案例</source>
+      <link>https://javayong.cn/java/jvm/jvm-in-action.html</link>
+      <guid>https://javayong.cn/java/jvm/jvm-in-action.html</guid>
+      <source url="https://javayong.cn/rss.xml">JVM线上问题排查和性能调优案例</source>
       <description>JVM 线上问题排查和性能调优也是面试常问的一个问题，尤其是社招中大厂的面试。 这篇文章，我会分享一些我看到的相关的案例。 下面是正文。 一次线上 OOM 问题分析 - 艾小仙 - 2023 现象：线上某个服务有接口非常慢，通过监控链路查看发现，中间的 GAP 时间非常大，实际接口并没有消耗很多时间，并且在那段时间里有很多这样的请求。 分析：使用 JDK 自带的jvisualvm分析 dump 文件(MAT 也能分析)。 建议：对于 SQL 语句，如果监测到没有where条件的全表查询应该默认增加一个合适的limit作为限制，防止这种问题拖垮整个系统 资料：实战案例：记一次 dump 文件分析历程转载 - HeapDump - 2022。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -7566,9 +7432,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>大白话带你认识 JVM</title>
-      <link>https://javaguide.cn/java/jvm/jvm-intro.html</link>
-      <guid>https://javaguide.cn/java/jvm/jvm-intro.html</guid>
-      <source url="https://javaguide.cn/rss.xml">大白话带你认识 JVM</source>
+      <link>https://javayong.cn/java/jvm/jvm-intro.html</link>
+      <guid>https://javayong.cn/java/jvm/jvm-intro.html</guid>
+      <source url="https://javayong.cn/rss.xml">大白话带你认识 JVM</source>
       <description>来自说出你的愿望吧丷投稿，原文地址：https://juejin.im/post/5e1505d0f265da5d5d744050 。 前言 如果在文中用词或者理解方面出现问题，欢迎指出。此文旨在提及而不深究，但会尽量效率地把知识点都抛出来 一、JVM 的基本介绍 JVM 是 Java Virtual Machine 的缩写，它是一个虚构出来的计算机，一种规范。通过在实际的计算机上仿真模拟各类计算机功能实现···</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -7927,9 +7793,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>最重要的JVM参数总结</title>
-      <link>https://javaguide.cn/java/jvm/jvm-parameters-intro.html</link>
-      <guid>https://javaguide.cn/java/jvm/jvm-parameters-intro.html</guid>
-      <source url="https://javaguide.cn/rss.xml">最重要的JVM参数总结</source>
+      <link>https://javayong.cn/java/jvm/jvm-parameters-intro.html</link>
+      <guid>https://javayong.cn/java/jvm/jvm-parameters-intro.html</guid>
+      <source url="https://javayong.cn/rss.xml">最重要的JVM参数总结</source>
       <description>本文由 JavaGuide 翻译自 https://www.baeldung.com/jvm-parameters，并对文章进行了大量的完善补充。 JDK 版本：1.8 1.概述 在本篇文章中，你将掌握最常用的 JVM 参数配置。 2.堆内存相关 Java 虚拟机所管理的内存中最大的一块，Java 堆是所有线程共享的一块内存区域，在虚拟机启动时创建。此内存区域的唯一目的就是存放对象实例，几乎所有的对象实例以及数组都在这里分配内存。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -8036,9 +7902,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java内存区域详解（重点）</title>
-      <link>https://javaguide.cn/java/jvm/memory-area.html</link>
-      <guid>https://javaguide.cn/java/jvm/memory-area.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java内存区域详解（重点）</source>
+      <link>https://javayong.cn/java/jvm/memory-area.html</link>
+      <guid>https://javayong.cn/java/jvm/memory-area.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java内存区域详解（重点）</source>
       <description>这是一则或许对你有用的小广告 面试专版：准备 Java 面试的小伙伴可以考虑面试专版：《Java 面试指北 》 (质量很高，专为面试打造，配合 JavaGuide 食用)。 知识星球：专属面试小册/一对一交流/简历修改/专属求职指南，欢迎加入 JavaGuide 知识星球（点击链接即可查看星球的详细介绍，一定一定一定确定自己真的需要再加入，一定一定要看完详细介绍之后再加我）。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -8256,10 +8122,499 @@ debug 中没有发现 Logger 服务提供者</p>
       <enclosure url="https://oss.javaguide.cn/github/javaguide/java/jvm/java-runtime-data-areas-jdk1.7.png" type="image/png"/>
     </item>
     <item>
+      <title>Java IO 基础知识总结</title>
+      <link>https://javayong.cn/java/io/io-basis.html</link>
+      <guid>https://javayong.cn/java/io/io-basis.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java IO 基础知识总结</source>
+      <description>IO 流简介 IO 即 Input/Output，输入和输出。数据输入到计算机内存的过程即输入，反之输出到外部存储（比如数据库，文件，远程主机）的过程即输出。数据传输过程类似于水流，因此称为 IO 流。IO 流在 Java 中分为输入流和输出流，而根据数据的处理方式又分为字节流和字符流。 Java IO 流的 40 多个类都是从如下 4 个抽象类基类中派生出来的。 InputStream/Reader: 所有的输入流的基类，前者是字节输入流，后者是字符输入流。 OutputStream/Writer: 所有输出流的基类，前者是字节输出流，后者是字符输出流。</description>
+      <category>Java</category>
+      <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
+      <content:encoded><![CDATA[<h2> IO 流简介</h2>
+<p>IO 即 <code>Input/Output</code>，输入和输出。数据输入到计算机内存的过程即输入，反之输出到外部存储（比如数据库，文件，远程主机）的过程即输出。数据传输过程类似于水流，因此称为 IO 流。IO 流在 Java 中分为输入流和输出流，而根据数据的处理方式又分为字节流和字符流。</p>
+<p>Java IO 流的 40 多个类都是从如下 4 个抽象类基类中派生出来的。</p>
+<ul>
+<li><code>InputStream</code>/<code>Reader</code>: 所有的输入流的基类，前者是字节输入流，后者是字符输入流。</li>
+<li><code>OutputStream</code>/<code>Writer</code>: 所有输出流的基类，前者是字节输出流，后者是字符输出流。</li>
+</ul>
+<h2> 字节流</h2>
+<h3> InputStream（字节输入流）</h3>
+<p><code>InputStream</code>用于从源头（通常是文件）读取数据（字节信息）到内存中，<code>java.io.InputStream</code>抽象类是所有字节输入流的父类。</p>
+<p><code>InputStream</code> 常用方法：</p>
+<ul>
+<li><code>read()</code>：返回输入流中下一个字节的数据。返回的值介于 0 到 255 之间。如果未读取任何字节，则代码返回 <code>-1</code> ，表示文件结束。</li>
+<li><code>read(byte b[ ])</code> : 从输入流中读取一些字节存储到数组 <code>b</code> 中。如果数组 <code>b</code> 的长度为零，则不读取。如果没有可用字节读取，返回 <code>-1</code>。如果有可用字节读取，则最多读取的字节数最多等于 <code>b.length</code> ， 返回读取的字节数。这个方法等价于 <code>read(b, 0, b.length)</code>。</li>
+<li><code>read(byte b[], int off, int len)</code>：在<code>read(byte b[ ])</code> 方法的基础上增加了 <code>off</code> 参数（偏移量）和 <code>len</code> 参数（要读取的最大字节数）。</li>
+<li><code>skip(long n)</code>：忽略输入流中的 n 个字节 ,返回实际忽略的字节数。</li>
+<li><code>available()</code>：返回输入流中可以读取的字节数。</li>
+<li><code>close()</code>：关闭输入流释放相关的系统资源。</li>
+</ul>
+<p>从 Java 9 开始，<code>InputStream</code> 新增加了多个实用的方法：</p>
+<ul>
+<li><code>readAllBytes()</code>：读取输入流中的所有字节，返回字节数组。</li>
+<li><code>readNBytes(byte[] b, int off, int len)</code>：阻塞直到读取 <code>len</code> 个字节。</li>
+<li><code>transferTo(OutputStream out)</code>：将所有字节从一个输入流传递到一个输出流。</li>
+</ul>
+<p><code>FileInputStream</code> 是一个比较常用的字节输入流对象，可直接指定文件路径，可以直接读取单字节数据，也可以读取至字节数组中。</p>
+<p><code>FileInputStream</code> 代码示例：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>input.txt</code> 文件内容：</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/image-20220419155214614.png" alt="" tabindex="0"><figcaption></figcaption></figure>
+<p>输出：</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>不过，一般我们是不会直接单独使用 <code>FileInputStream</code> ，通常会配合 <code>BufferedInputStream</code>（字节缓冲输入流，后文会讲到）来使用。</p>
+<p>像下面这段代码在我们的项目中就比较常见，我们通过 <code>readAllBytes()</code> 读取输入流所有字节并将其直接赋值给一个 <code>String</code> 对象。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>DataInputStream</code> 用于读取指定类型数据，不能单独使用，必须结合其它流，比如 <code>FileInputStream</code> 。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>ObjectInputStream</code> 用于从输入流中读取 Java 对象（反序列化），<code>ObjectOutputStream</code> 用于将对象写入到输出流(序列化)。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>另外，用于序列化和反序列化的类必须实现 <code>Serializable</code> 接口，对象中如果有属性不想被序列化，使用 <code>transient</code> 修饰。</p>
+<h3> OutputStream（字节输出流）</h3>
+<p><code>OutputStream</code>用于将数据（字节信息）写入到目的地（通常是文件），<code>java.io.OutputStream</code>抽象类是所有字节输出流的父类。</p>
+<p><code>OutputStream</code> 常用方法：</p>
+<ul>
+<li><code>write(int b)</code>：将特定字节写入输出流。</li>
+<li><code>write(byte b[ ])</code> : 将数组<code>b</code> 写入到输出流，等价于 <code>write(b, 0, b.length)</code> 。</li>
+<li><code>write(byte[] b, int off, int len)</code> : 在<code>write(byte b[ ])</code> 方法的基础上增加了 <code>off</code> 参数（偏移量）和 <code>len</code> 参数（要读取的最大字节数）。</li>
+<li><code>flush()</code>：刷新此输出流并强制写出所有缓冲的输出字节。</li>
+<li><code>close()</code>：关闭输出流释放相关的系统资源。</li>
+</ul>
+<p><code>FileOutputStream</code> 是最常用的字节输出流对象，可直接指定文件路径，可以直接输出单字节数据，也可以输出指定的字节数组。</p>
+<p><code>FileOutputStream</code> 代码示例：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>运行结果：</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/image-20220419155514392.png" alt="" tabindex="0"><figcaption></figcaption></figure>
+<p>类似于 <code>FileInputStream</code>，<code>FileOutputStream</code> 通常也会配合 <code>BufferedOutputStream</code>（字节缓冲输出流，后文会讲到）来使用。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><strong><code>DataOutputStream</code></strong> 用于写入指定类型数据，不能单独使用，必须结合其它流，比如 <code>FileOutputStream</code> 。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>ObjectInputStream</code> 用于从输入流中读取 Java 对象（<code>ObjectInputStream</code>,反序列化），<code>ObjectOutputStream</code>将对象写入到输出流(<code>ObjectOutputStream</code>，序列化)。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 字符流</h2>
+<p>不管是文件读写还是网络发送接收，信息的最小存储单元都是字节。 <strong>那为什么 I/O 流操作要分为字节流操作和字符流操作呢？</strong></p>
+<p>个人认为主要有两点原因：</p>
+<ul>
+<li>字符流是由 Java 虚拟机将字节转换得到的，这个过程还算是比较耗时。</li>
+<li>如果我们不知道编码类型就很容易出现乱码问题。</li>
+</ul>
+<p>乱码问题这个很容易就可以复现，我们只需要将上面提到的 <code>FileInputStream</code> 代码示例中的 <code>input.txt</code> 文件内容改为中文即可，原代码不需要改动。</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/image-20220419154632551.png" alt="" tabindex="0"><figcaption></figcaption></figure>
+<p>输出：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>可以很明显地看到读取出来的内容已经变成了乱码。</p>
+<p>因此，I/O 流就干脆提供了一个直接操作字符的接口，方便我们平时对字符进行流操作。如果音频文件、图片等媒体文件用字节流比较好，如果涉及到字符的话使用字符流比较好。</p>
+<p>字符流默认采用的是 <code>Unicode</code> 编码，我们可以通过构造方法自定义编码。顺便分享一下之前遇到的笔试题：常用字符编码所占字节数？<code>utf8</code> :英文占 1 字节，中文占 3 字节，<code>unicode</code>：任何字符都占 2 个字节，<code>gbk</code>：英文占 1 字节，中文占 2 字节。</p>
+<h3> Reader（字符输入流）</h3>
+<p><code>Reader</code>用于从源头（通常是文件）读取数据（字符信息）到内存中，<code>java.io.Reader</code>抽象类是所有字符输入流的父类。</p>
+<p><code>Reader</code> 用于读取文本， <code>InputStream</code> 用于读取原始字节。</p>
+<p><code>Reader</code> 常用方法：</p>
+<ul>
+<li><code>read()</code> : 从输入流读取一个字符。</li>
+<li><code>read(char[] cbuf)</code> : 从输入流中读取一些字符，并将它们存储到字符数组 <code>cbuf</code>中，等价于 <code>read(cbuf, 0, cbuf.length)</code> 。</li>
+<li><code>read(char[] cbuf, int off, int len)</code>：在<code>read(char[] cbuf)</code> 方法的基础上增加了 <code>off</code> 参数（偏移量）和 <code>len</code> 参数（要读取的最大字符数）。</li>
+<li><code>skip(long n)</code>：忽略输入流中的 n 个字符 ,返回实际忽略的字符数。</li>
+<li><code>close()</code> : 关闭输入流并释放相关的系统资源。</li>
+</ul>
+<p><code>InputStreamReader</code> 是字节流转换为字符流的桥梁，其子类 <code>FileReader</code> 是基于该基础上的封装，可以直接操作字符文件。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>FileReader</code> 代码示例：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>input.txt</code> 文件内容：</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/image-20220419154632551.png" alt="" tabindex="0"><figcaption></figcaption></figure>
+<p>输出：</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3> Writer（字符输出流）</h3>
+<p><code>Writer</code>用于将数据（字符信息）写入到目的地（通常是文件），<code>java.io.Writer</code>抽象类是所有字符输出流的父类。</p>
+<p><code>Writer</code> 常用方法：</p>
+<ul>
+<li><code>write(int c)</code> : 写入单个字符。</li>
+<li><code>write(char[] cbuf)</code>：写入字符数组 <code>cbuf</code>，等价于<code>write(cbuf, 0, cbuf.length)</code>。</li>
+<li><code>write(char[] cbuf, int off, int len)</code>：在<code>write(char[] cbuf)</code> 方法的基础上增加了 <code>off</code> 参数（偏移量）和 <code>len</code> 参数（要读取的最大字符数）。</li>
+<li><code>write(String str)</code>：写入字符串，等价于 <code>write(str, 0, str.length())</code> 。</li>
+<li><code>write(String str, int off, int len)</code>：在<code>write(String str)</code> 方法的基础上增加了 <code>off</code> 参数（偏移量）和 <code>len</code> 参数（要读取的最大字符数）。</li>
+<li><code>append(CharSequence csq)</code>：将指定的字符序列附加到指定的 <code>Writer</code> 对象并返回该 <code>Writer</code> 对象。</li>
+<li><code>append(char c)</code>：将指定的字符附加到指定的 <code>Writer</code> 对象并返回该 <code>Writer</code> 对象。</li>
+<li><code>flush()</code>：刷新此输出流并强制写出所有缓冲的输出字符。</li>
+<li><code>close()</code>:关闭输出流释放相关的系统资源。</li>
+</ul>
+<p><code>OutputStreamWriter</code> 是字符流转换为字节流的桥梁，其子类 <code>FileWriter</code> 是基于该基础上的封装，可以直接将字符写入到文件。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>FileWriter</code> 代码示例：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>输出结果：</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/image-20220419155802288.png" alt="" tabindex="0"><figcaption></figcaption></figure>
+<h2> 字节缓冲流</h2>
+<p>IO 操作是很消耗性能的，缓冲流将数据加载至缓冲区，一次性读取/写入多个字节，从而避免频繁的 IO 操作，提高流的传输效率。</p>
+<p>字节缓冲流这里采用了装饰器模式来增强 <code>InputStream</code> 和<code>OutputStream</code>子类对象的功能。</p>
+<p>举个例子，我们可以通过 <code>BufferedInputStream</code>（字节缓冲输入流）来增强 <code>FileInputStream</code> 的功能。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>字节流和字节缓冲流的性能差别主要体现在我们使用两者的时候都是调用 <code>write(int b)</code> 和 <code>read()</code> 这两个一次只读取一个字节的方法的时候。由于字节缓冲流内部有缓冲区（字节数组），因此，字节缓冲流会先将读取到的字节存放在缓存区，大幅减少 IO 次数，提高读取效率。</p>
+<p>我使用 <code>write(int b)</code> 和 <code>read()</code> 方法，分别通过字节流和字节缓冲流复制一个 <code>524.9 mb</code> 的 PDF 文件耗时对比如下：</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>两者耗时差别非常大，缓冲流耗费的时间是字节流的 1/165。</p>
+<p>测试代码如下:</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>如果是调用 <code>read(byte b[])</code> 和 <code>write(byte b[], int off, int len)</code> 这两个写入一个字节数组的方法的话，只要字节数组的大小合适，两者的性能差距其实不大，基本可以忽略。</p>
+<p>这次我们使用 <code>read(byte b[])</code> 和 <code>write(byte b[], int off, int len)</code> 方法，分别通过字节流和字节缓冲流复制一个 524.9 mb 的 PDF 文件耗时对比如下：</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>两者耗时差别不是很大，缓冲流的性能要略微好一点点。</p>
+<p>测试代码如下：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> BufferedInputStream（字节缓冲输入流）</h3>
+<p><code>BufferedInputStream</code> 从源头（通常是文件）读取数据（字节信息）到内存的过程中不会一个字节一个字节的读取，而是会先将读取到的字节存放在缓存区，并从内部缓冲区中单独读取字节。这样大幅减少了 IO 次数，提高了读取效率。</p>
+<p><code>BufferedInputStream</code> 内部维护了一个缓冲区，这个缓冲区实际就是一个字节数组，通过阅读 <code>BufferedInputStream</code> 源码即可得到这个结论。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>缓冲区的大小默认为 <strong>8192</strong> 字节，当然了，你也可以通过 <code>BufferedInputStream(InputStream in, int size)</code> 这个构造方法来指定缓冲区的大小。</p>
+<h3> BufferedOutputStream（字节缓冲输出流）</h3>
+<p><code>BufferedOutputStream</code> 将数据（字节信息）写入到目的地（通常是文件）的过程中不会一个字节一个字节的写入，而是会先将要写入的字节存放在缓存区，并从内部缓冲区中单独写入字节。这样大幅减少了 IO 次数，提高了读取效率</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>类似于 <code>BufferedInputStream</code> ，<code>BufferedOutputStream</code> 内部也维护了一个缓冲区，并且，这个缓存区的大小也是 <strong>8192</strong> 字节。</p>
+<h2> 字符缓冲流</h2>
+<p><code>BufferedReader</code> （字符缓冲输入流）和 <code>BufferedWriter</code>（字符缓冲输出流）类似于 <code>BufferedInputStream</code>（字节缓冲输入流）和<code>BufferedOutputStream</code>（字节缓冲输入流），内部都维护了一个字节数组作为缓冲区。不过，前者主要是用来操作字符信息。</p>
+<h2> 打印流</h2>
+<p>下面这段代码大家经常使用吧？</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><code>System.out</code> 实际是用于获取一个 <code>PrintStream</code> 对象，<code>print</code>方法实际调用的是 <code>PrintStream</code> 对象的 <code>write</code> 方法。</p>
+<p><code>PrintStream</code> 属于字节打印流，与之对应的是 <code>PrintWriter</code> （字符打印流）。<code>PrintStream</code> 是 <code>OutputStream</code> 的子类，<code>PrintWriter</code> 是 <code>Writer</code> 的子类。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 随机访问流</h2>
+<p>这里要介绍的随机访问流指的是支持随意跳转到文件的任意位置进行读写的 <code>RandomAccessFile</code> 。</p>
+<p><code>RandomAccessFile</code> 的构造方法如下，我们可以指定 <code>mode</code>（读写模式）。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>读写模式主要有下面四种：</p>
+<ul>
+<li><code>r</code> : 只读模式。</li>
+<li><code>rw</code>: 读写模式</li>
+<li><code>rws</code>: 相对于 <code>rw</code>，<code>rws</code> 同步更新对“文件的内容”或“元数据”的修改到外部存储设备。</li>
+<li><code>rwd</code> : 相对于 <code>rw</code>，<code>rwd</code> 同步更新对“文件的内容”的修改到外部存储设备。</li>
+</ul>
+<p>文件内容指的是文件中实际保存的数据，元数据则是用来描述文件属性比如文件的大小信息、创建和修改时间。</p>
+<p><code>RandomAccessFile</code> 中有一个文件指针用来表示下一个将要被写入或者读取的字节所处的位置。我们可以通过 <code>RandomAccessFile</code> 的 <code>seek(long pos)</code> 方法来设置文件指针的偏移量（距文件开头 <code>pos</code> 个字节处）。如果想要获取文件指针当前的位置的话，可以使用 <code>getFilePointer()</code> 方法。</p>
+<p><code>RandomAccessFile</code> 代码示例：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>input.txt</code> 文件内容：</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/image-20220421162050158.png" alt="" tabindex="0"><figcaption></figcaption></figure>
+<p>输出：</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>input.txt</code> 文件内容变为 <code>ABCDEFGHIJK</code> 。</p>
+<p><code>RandomAccessFile</code> 的 <code>write</code> 方法在写入对象的时候如果对应的位置已经有数据的话，会将其覆盖掉。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>假设运行上面这段程序之前 <code>input.txt</code> 文件内容变为 <code>ABCD</code> ，运行之后则变为 <code>HIJK</code> 。</p>
+<p><code>RandomAccessFile</code> 比较常见的一个应用就是实现大文件的 <strong>断点续传</strong> 。何谓断点续传？简单来说就是上传文件中途暂停或失败（比如遇到网络问题）之后，不需要重新上传，只需要上传那些未成功上传的文件分片即可。分片（先将文件切分成多个文件分片）上传是断点续传的基础。</p>
+<p><code>RandomAccessFile</code> 可以帮助我们合并文件分片，示例代码如下：</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/io/20210609164749122.png" alt="" tabindex="0"><figcaption></figcaption></figure>
+<p>我在<a href="https://javaguide.cn/zhuanlan/java-mian-shi-zhi-bei.html" target="_blank" rel="noopener noreferrer">《Java 面试指北》</a>中详细介绍了大文件的上传问题。</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/image-20220428104115362.png" alt="" tabindex="0"><figcaption></figcaption></figure>
+<p><code>RandomAccessFile</code> 的实现依赖于 <code>FileDescriptor</code> (文件描述符) 和 <code>FileChannel</code> （内存映射文件）。</p>
+]]></content:encoded>
+      <enclosure url="https://oss.javaguide.cn/github/javaguide/java/image-20220419155214614.png" type="image/png"/>
+    </item>
+    <item>
+      <title>Java IO 设计模式总结</title>
+      <link>https://javayong.cn/java/io/io-design-patterns.html</link>
+      <guid>https://javayong.cn/java/io/io-design-patterns.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java IO 设计模式总结</source>
+      <description>这篇文章我们简单来看看我们从 IO 中能够学习到哪些设计模式的应用。 装饰器模式 装饰器（Decorator）模式 可以在不改变原有对象的情况下拓展其功能。 装饰器模式通过组合替代继承来扩展原始类的功能，在一些继承关系比较复杂的场景（IO 这一场景各种类的继承关系就比较复杂）更加实用。 对于字节流来说， FilterInputStream （对应输入流）和FilterOutputStream（对应输出流）是装饰器模式的核心，分别用于增强 InputStream 和OutputStream子类对象的功能。</description>
+      <category>Java</category>
+      <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
+      <content:encoded><![CDATA[<p>这篇文章我们简单来看看我们从 IO 中能够学习到哪些设计模式的应用。</p>
+<h2> 装饰器模式</h2>
+<p><strong>装饰器（Decorator）模式</strong> 可以在不改变原有对象的情况下拓展其功能。</p>
+<p>装饰器模式通过组合替代继承来扩展原始类的功能，在一些继承关系比较复杂的场景（IO 这一场景各种类的继承关系就比较复杂）更加实用。</p>
+<p>对于字节流来说， <code>FilterInputStream</code> （对应输入流）和<code>FilterOutputStream</code>（对应输出流）是装饰器模式的核心，分别用于增强 <code>InputStream</code> 和<code>OutputStream</code>子类对象的功能。</p>
+<p>我们常见的<code>BufferedInputStream</code>(字节缓冲输入流)、<code>DataInputStream</code> 等等都是<code>FilterInputStream</code> 的子类，<code>BufferedOutputStream</code>（字节缓冲输出流）、<code>DataOutputStream</code>等等都是<code>FilterOutputStream</code>的子类。</p>
+<p>举个例子，我们可以通过 <code>BufferedInputStream</code>（字节缓冲输入流）来增强 <code>FileInputStream</code> 的功能。</p>
+<p><code>BufferedInputStream</code> 构造函数如下：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>可以看出，<code>BufferedInputStream</code> 的构造函数其中的一个参数就是 <code>InputStream</code> 。</p>
+<p><code>BufferedInputStream</code> 代码示例：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这个时候，你可以会想了：<strong>为啥我们直接不弄一个<code>BufferedFileInputStream</code>（字符缓冲文件输入流）呢？</strong></p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>如果 <code>InputStream</code>的子类比较少的话，这样做是没问题的。不过， <code>InputStream</code>的子类实在太多，继承关系也太复杂了。如果我们为每一个子类都定制一个对应的缓冲输入流，那岂不是太麻烦了。</p>
+<p>如果你对 IO 流比较熟悉的话，你会发现<code>ZipInputStream</code> 和<code>ZipOutputStream</code> 还可以分别增强 <code>BufferedInputStream</code> 和 <code>BufferedOutputStream</code> 的能力。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>ZipInputStream</code> 和<code>ZipOutputStream</code> 分别继承自<code>InflaterInputStream</code> 和<code>DeflaterOutputStream</code>。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这也是装饰器模式很重要的一个特征，那就是可以对原始类嵌套使用多个装饰器。</p>
+<p>为了实现这一效果，装饰器类需要跟原始类继承相同的抽象类或者实现相同的接口。上面介绍到的这些 IO 相关的装饰类和原始类共同的父类是 <code>InputStream</code> 和<code>OutputStream</code>。</p>
+<p>对于字符流来说，<code>BufferedReader</code> 可以用来增加 <code>Reader</code> （字符输入流）子类的功能，<code>BufferedWriter</code> 可以用来增加 <code>Writer</code> （字符输出流）子类的功能。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>IO 流中的装饰器模式应用的例子实在是太多了，不需要特意记忆，完全没必要哈！搞清了装饰器模式的核心之后，你在使用的时候自然就会知道哪些地方运用到了装饰器模式。</p>
+<h2> 适配器模式</h2>
+<p><strong>适配器（Adapter Pattern）模式</strong> 主要用于接口互不兼容的类的协调工作，你可以将其联想到我们日常经常使用的电源适配器。</p>
+<p>适配器模式中存在被适配的对象或者类称为 <strong>适配者(Adapter)</strong> ，作用于适配者的对象或者类称为<strong>适配器(Adapter)</strong> 。适配器分为对象适配器和类适配器。类适配器使用继承关系来实现，对象适配器使用组合关系来实现。</p>
+<p>IO 流中的字符流和字节流的接口不同，它们之间可以协调工作就是基于适配器模式来做的，更准确点来说是对象适配器。通过适配器，我们可以将字节流对象适配成一个字符流对象，这样我们可以直接通过字节流对象来读取或者写入字符数据。</p>
+<p><code>InputStreamReader</code> 和 <code>OutputStreamWriter</code> 就是两个适配器(Adapter)， 同时，它们两个也是字节流和字符流之间的桥梁。<code>InputStreamReader</code> 使用 <code>StreamDecoder</code> （流解码器）对字节进行解码，<strong>实现字节流到字符流的转换，</strong> <code>OutputStreamWriter</code> 使用<code>StreamEncoder</code>（流编码器）对字符进行编码，实现字符流到字节流的转换。</p>
+<p><code>InputStream</code> 和 <code>OutputStream</code> 的子类是被适配者， <code>InputStreamReader</code> 和 <code>OutputStreamWriter</code>是适配器。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>java.io.InputStreamReader</code> 部分源码：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>java.io.OutputStreamWriter</code> 部分源码：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>适配器模式和装饰器模式有什么区别呢？</strong></p>
+<p><strong>装饰器模式</strong> 更侧重于动态地增强原始类的功能，装饰器类需要跟原始类继承相同的抽象类或者实现相同的接口。并且，装饰器模式支持对原始类嵌套使用多个装饰器。</p>
+<p><strong>适配器模式</strong> 更侧重于让接口不兼容而不能交互的类可以一起工作，当我们调用适配器对应的方法时，适配器内部会调用适配者类或者和适配类相关的类的方法，这个过程透明的。就比如说 <code>StreamDecoder</code> （流解码器）和<code>StreamEncoder</code>（流编码器）就是分别基于 <code>InputStream</code> 和 <code>OutputStream</code> 来获取 <code>FileChannel</code>对象并调用对应的 <code>read</code> 方法和 <code>write</code> 方法进行字节数据的读取和写入。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>适配器和适配者两者不需要继承相同的抽象类或者实现相同的接口。</p>
+<p>另外，<code>FutureTask</code> 类使用了适配器模式，<code>Executors</code> 的内部类 <code>RunnableAdapter</code> 实现属于适配器，用于将 <code>Runnable</code> 适配成 <code>Callable</code>。</p>
+<p><code>FutureTask</code>参数包含 <code>Runnable</code> 的一个构造方法：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>Executors</code>中对应的方法和适配器：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 工厂模式</h2>
+<p>工厂模式用于创建对象，NIO 中大量用到了工厂模式，比如 <code>Files</code> 类的 <code>newInputStream</code> 方法用于创建 <code>InputStream</code> 对象（静态工厂）、 <code>Paths</code> 类的 <code>get</code> 方法创建 <code>Path</code> 对象（静态工厂）、<code>ZipFileSystem</code> 类（<code>sun.nio</code>包下的类，属于 <code>java.nio</code> 相关的一些内部实现）的 <code>getPath</code> 的方法创建 <code>Path</code> 对象（简单工厂）。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> 观察者模式</h2>
+<p>NIO 中的文件目录监听服务使用到了观察者模式。</p>
+<p>NIO 中的文件目录监听服务基于 <code>WatchService</code> 接口和 <code>Watchable</code> 接口。<code>WatchService</code> 属于观察者，<code>Watchable</code> 属于被观察者。</p>
+<p><code>Watchable</code> 接口定义了一个用于将对象注册到 <code>WatchService</code>（监控服务） 并绑定监听事件的方法 <code>register</code> 。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>WatchService</code> 用于监听文件目录的变化，同一个 <code>WatchService</code> 对象能够监听多个文件目录。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>Path</code> 类 <code>register</code> 方法的第二个参数 <code>events</code> （需要监听的事件）为可变长参数，也就是说我们可以同时监听多种事件。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>常用的监听事件有 3 种：</p>
+<ul>
+<li><code>StandardWatchEventKinds.ENTRY_CREATE</code>：文件创建。</li>
+<li><code>StandardWatchEventKinds.ENTRY_DELETE</code> : 文件删除。</li>
+<li><code>StandardWatchEventKinds.ENTRY_MODIFY</code> : 文件修改。</li>
+</ul>
+<p><code>register</code> 方法返回 <code>WatchKey</code> 对象，通过<code>WatchKey</code> 对象可以获取事件的具体信息比如文件目录下是创建、删除还是修改了文件、创建、删除或者修改的文件的具体名称是什么。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>WatchService</code> 内部是通过一个 daemon thread（守护线程）采用定期轮询的方式来检测文件的变化，简化后的源码如下所示。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 参考</h2>
+<ul>
+<li>Patterns in Java APIs：http://cecs.wright.edu/~tkprasad/courses/ceg860/paper/node26.html</li>
+<li>装饰器模式：通过剖析 Java IO 类库源码学习装饰器模式：https://time.geekbang.org/column/article/204845</li>
+<li>sun.nio 包是什么，是 java 代码么？ - RednaxelaFX https://www.zhihu.com/question/29237781/answer/43653953</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Java IO 模型详解</title>
+      <link>https://javayong.cn/java/io/io-model.html</link>
+      <guid>https://javayong.cn/java/io/io-model.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java IO 模型详解</source>
+      <description>IO 模型这块确实挺难理解的，需要太多计算机底层知识。写这篇文章用了挺久，就非常希望能把我所知道的讲出来吧!希望朋友们能有收获！为了写这篇文章，还翻看了一下《UNIX 网络编程》这本书，太难了，我滴乖乖！心痛~ 个人能力有限。如果文章有任何需要补充/完善/修改的地方，欢迎在评论区指出，共同进步！ 前言 I/O 一直是很多小伙伴难以理解的一个知识点，这篇文章我会将我所理解的 I/O 讲给你听，希望可以对你有所帮助。 I/O 何为 I/O? I/O（Input/Outpu） 即输入／输出 。</description>
+      <category>Java</category>
+      <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
+      <content:encoded><![CDATA[<p>IO 模型这块确实挺难理解的，需要太多计算机底层知识。写这篇文章用了挺久，就非常希望能把我所知道的讲出来吧!希望朋友们能有收获！为了写这篇文章，还翻看了一下《UNIX 网络编程》这本书，太难了，我滴乖乖！心痛~</p>
+<p><em>个人能力有限。如果文章有任何需要补充/完善/修改的地方，欢迎在评论区指出，共同进步！</em></p>
+<h2> 前言</h2>
+<p>I/O 一直是很多小伙伴难以理解的一个知识点，这篇文章我会将我所理解的 I/O 讲给你听，希望可以对你有所帮助。</p>
+<h2> I/O</h2>
+<h3> 何为 I/O?</h3>
+<p>I/O（<strong>I</strong>nput/<strong>O</strong>utpu） 即<strong>输入／输出</strong> 。</p>
+<p><strong>我们先从计算机结构的角度来解读一下 I/O。</strong></p>
+<p>根据冯.诺依曼结构，计算机结构分为 5 大部分：运算器、控制器、存储器、输入设备、输出设备。</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/io/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9pcy1jbG91ZC5ibG9nLmNzZG4ubmV0,size_16,color_FFFFFF,t_70.jpeg" alt="冯诺依曼体系结构" tabindex="0"><figcaption>冯诺依曼体系结构</figcaption></figure>
+<p>输入设备（比如键盘）和输出设备（比如显示器）都属于外部设备。网卡、硬盘这种既可以属于输入设备，也可以属于输出设备。</p>
+<p>输入设备向计算机输入数据，输出设备接收计算机输出的数据。</p>
+<p><strong>从计算机结构的视角来看的话， I/O 描述了计算机系统与外部设备之间通信的过程。</strong></p>
+<p><strong>我们再先从应用程序的角度来解读一下 I/O。</strong></p>
+<p>根据大学里学到的操作系统相关的知识：为了保证操作系统的稳定性和安全性，一个进程的地址空间划分为 <strong>用户空间（User space）</strong> 和 <strong>内核空间（Kernel space ）</strong> 。</p>
+<p>像我们平常运行的应用程序都是运行在用户空间，只有内核空间才能进行系统态级别的资源有关的操作，比如文件管理、进程通信、内存管理等等。也就是说，我们想要进行 IO 操作，一定是要依赖内核空间的能力。</p>
+<p>并且，用户空间的程序不能直接访问内核空间。</p>
+<p>当想要执行 IO 操作时，由于没有执行这些操作的权限，只能发起系统调用请求操作系统帮忙完成。</p>
+<p>因此，用户进程想要执行 IO 操作的话，必须通过 <strong>系统调用</strong> 来间接访问内核空间</p>
+<p>我们在平常开发过程中接触最多的就是 <strong>磁盘 IO（读写文件）</strong> 和 <strong>网络 IO（网络请求和响应）</strong>。</p>
+<p><strong>从应用程序的视角来看的话，我们的应用程序对操作系统的内核发起 IO 调用（系统调用），操作系统负责的内核执行具体的 IO 操作。也就是说，我们的应用程序实际上只是发起了 IO 操作的调用而已，具体 IO 的执行是由操作系统的内核来完成的。</strong></p>
+<p>当应用程序发起 I/O 调用后，会经历两个步骤：</p>
+<ol>
+<li>内核等待 I/O 设备准备好数据</li>
+<li>内核将数据从内核空间拷贝到用户空间。</li>
+</ol>
+<h3> 有哪些常见的 IO 模型?</h3>
+<p>UNIX 系统下， IO 模型一共有 5 种：<strong>同步阻塞 I/O</strong>、<strong>同步非阻塞 I/O</strong>、<strong>I/O 多路复用</strong>、<strong>信号驱动 I/O</strong> 和<strong>异步 I/O</strong>。</p>
+<p>这也是我们经常提到的 5 种 IO 模型。</p>
+<h2> Java 中 3 种常见 IO 模型</h2>
+<h3> BIO (Blocking I/O)</h3>
+<p><strong>BIO 属于同步阻塞 IO 模型</strong> 。</p>
+<p>同步阻塞 IO 模型中，应用程序发起 read 调用后，会一直阻塞，直到内核把数据拷贝到用户空间。</p>
+<figure><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6a9e704af49b4380bb686f0c96d33b81~tplv-k3u1fbpfcp-watermark.image" alt="图源：《深入拆解Tomcat &amp; Jetty》" tabindex="0"><figcaption>图源：《深入拆解Tomcat &amp; Jetty》</figcaption></figure>
+<p>在客户端连接数量不高的情况下，是没问题的。但是，当面对十万甚至百万级连接的时候，传统的 BIO 模型是无能为力的。因此，我们需要一种更高效的 I/O 处理模型来应对更高的并发量。</p>
+<h3> NIO (Non-blocking/New I/O)</h3>
+<p>Java 中的 NIO 于 Java 1.4 中引入，对应 <code>java.nio</code> 包，提供了 <code>Channel</code> , <code>Selector</code>，<code>Buffer</code> 等抽象。NIO 中的 N 可以理解为 Non-blocking，不单纯是 New。它是支持面向缓冲的，基于通道的 I/O 操作方法。 对于高负载、高并发的（网络）应用，应使用 NIO 。</p>
+<p>Java 中的 NIO 可以看作是 <strong>I/O 多路复用模型</strong>。也有很多人认为，Java 中的 NIO 属于同步非阻塞 IO 模型。</p>
+<p>跟着我的思路往下看看，相信你会得到答案！</p>
+<p>我们先来看看 <strong>同步非阻塞 IO 模型</strong>。</p>
+<figure><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bb174e22dbe04bb79fe3fc126aed0c61~tplv-k3u1fbpfcp-watermark.image" alt="图源：《深入拆解Tomcat &amp; Jetty》" tabindex="0"><figcaption>图源：《深入拆解Tomcat &amp; Jetty》</figcaption></figure>
+<p>同步非阻塞 IO 模型中，应用程序会一直发起 read 调用，等待数据从内核空间拷贝到用户空间的这段时间里，线程依然是阻塞的，直到在内核把数据拷贝到用户空间。</p>
+<p>相比于同步阻塞 IO 模型，同步非阻塞 IO 模型确实有了很大改进。通过轮询操作，避免了一直阻塞。</p>
+<p>但是，这种 IO 模型同样存在问题：<strong>应用程序不断进行 I/O 系统调用轮询数据是否已经准备好的过程是十分消耗 CPU 资源的。</strong></p>
+<p>这个时候，<strong>I/O 多路复用模型</strong> 就上场了。</p>
+<figure><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/88ff862764024c3b8567367df11df6ab~tplv-k3u1fbpfcp-watermark.image" alt="" tabindex="0"><figcaption></figcaption></figure>
+<p>IO 多路复用模型中，线程首先发起 select 调用，询问内核数据是否准备就绪，等内核把数据准备好了，用户线程再发起 read 调用。read 调用的过程（数据从内核空间 -&gt; 用户空间）还是阻塞的。</p>
+<blockquote>
+<p>目前支持 IO 多路复用的系统调用，有 select，epoll 等等。select 系统调用，目前几乎在所有的操作系统上都有支持。</p>
+<ul>
+<li><strong>select 调用</strong>：内核提供的系统调用，它支持一次查询多个系统调用的可用状态。几乎所有的操作系统都支持。</li>
+<li><strong>epoll 调用</strong>：linux 2.6 内核，属于 select 调用的增强版本，优化了 IO 的执行效率。</li>
+</ul>
+</blockquote>
+<p><strong>IO 多路复用模型，通过减少无效的系统调用，减少了对 CPU 资源的消耗。</strong></p>
+<p>Java 中的 NIO ，有一个非常重要的<strong>选择器 ( Selector )</strong> 的概念，也可以被称为 <strong>多路复用器</strong>。通过它，只需要一个线程便可以管理多个客户端连接。当客户端数据到了之后，才会为其服务。</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/channel-buffer-selector.png" alt="Buffer、Channel和Selector三者之间的关系" tabindex="0"><figcaption>Buffer、Channel和Selector三者之间的关系</figcaption></figure>
+<h3> AIO (Asynchronous I/O)</h3>
+<p>AIO 也就是 NIO 2。Java 7 中引入了 NIO 的改进版 NIO 2,它是异步 IO 模型。</p>
+<p>异步 IO 是基于事件和回调机制实现的，也就是应用操作之后会直接返回，不会堵塞在那里，当后台处理完成，操作系统会通知相应的线程进行后续的操作。</p>
+<figure><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3077e72a1af049559e81d18205b56fd7~tplv-k3u1fbpfcp-watermark.image" alt="" tabindex="0"><figcaption></figcaption></figure>
+<p>目前来说 AIO 的应用还不是很广泛。Netty 之前也尝试使用过 AIO，不过又放弃了。这是因为，Netty 使用了 AIO 之后，在 Linux 系统上的性能并没有多少提升。</p>
+<p>最后，来一张图，简单总结一下 Java 中的 BIO、NIO、AIO。</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/bio-aio-nio.png" alt="BIO、NIO 和 AIO 对比" tabindex="0"><figcaption>BIO、NIO 和 AIO 对比</figcaption></figure>
+<h2> 参考</h2>
+<ul>
+<li>《深入拆解 Tomcat &amp; Jetty》</li>
+<li>如何完成一次 IO：https://llc687.top/126.html</li>
+<li>程序员应该这样理解 IO：<a href="https://www.jianshu.com/p/fa7bdc4f3de7" target="_blank" rel="noopener noreferrer">https://www.jianshu.com/p/fa7bdc4f3de7</a></li>
+<li>10 分钟看懂， Java NIO 底层原理：https://www.cnblogs.com/crazymakercircle/p/10225159.html</li>
+<li>IO 模型知多少 | 理论篇：https://www.cnblogs.com/sheng-jie/p/how-much-you-know-about-io-models.html</li>
+<li>《UNIX 网络编程 卷 1；套接字联网 API 》6.2 节 IO 模型</li>
+</ul>
+]]></content:encoded>
+      <enclosure url="https://oss.javaguide.cn/github/javaguide/java/io/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9pcy1jbG91ZC5ibG9nLmNzZG4ubmV0,size_16,color_FFFFFF,t_70.jpeg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Java NIO 核心知识总结</title>
+      <link>https://javayong.cn/java/io/nio-basis.html</link>
+      <guid>https://javayong.cn/java/io/nio-basis.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java NIO 核心知识总结</source>
+      <description>在学习 NIO 之前，需要先了解一下计算机 I/O模型的基础理论知识。还不了解的话，可以参考我写的这篇文章：Java IO 模型详解。 NIO 简介 在传统的 Java I/O 模型（BIO）中，I/O 操作是以阻塞的方式进行的。也就是说，当一个线程执行一个 I/O 操作时，它会被阻塞直到操作完成。这种阻塞模型在处理多个并发连接时可能会导致性能瓶颈，因为需要为每个连接创建一个线程，而线程的创建和切换都是有开销的。</description>
+      <category>Java</category>
+      <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
+      <content:encoded><![CDATA[<p>在学习  NIO 之前，需要先了解一下计算机 I/O模型的基础理论知识。还不了解的话，可以参考我写的这篇文章：<a href="https://javaguide.cn/java/io/io-model.html" target="_blank" rel="noopener noreferrer">Java IO 模型详解</a>。</p>
+<h2> NIO 简介</h2>
+<p>在传统的 Java I/O 模型（BIO）中，I/O 操作是以阻塞的方式进行的。也就是说，当一个线程执行一个 I/O 操作时，它会被阻塞直到操作完成。这种阻塞模型在处理多个并发连接时可能会导致性能瓶颈，因为需要为每个连接创建一个线程，而线程的创建和切换都是有开销的。</p>
+<p>为了解决这个问题，在Java1.4 版本引入了一种新的 I/O 模型 — <strong>NIO</strong> （New IO，也称为 Non-blocking IO） 。NIO 弥补了同步阻塞I/O的不足，它在标准 Java 代码中提供了非阻塞、面向缓冲、基于通道的 I/O，可以使用少量的线程来处理多个连接，大大提高了 I/O 效率和并发。</p>
+<p>下图是 BIO、NIO 和 AIO 处理客户端请求的简单对比图（关于 AIO 的介绍，可以看我写的这篇文章：<a href="https://javaguide.cn/java/io/io-model.html" target="_blank" rel="noopener noreferrer">Java IO 模型详解</a>，不是重点，了解即可）。</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/bio-aio-nio.png" alt="BIO、NIO 和 AIO 对比" tabindex="0"><figcaption>BIO、NIO 和 AIO 对比</figcaption></figure>
+<p>⚠️需要注意：使用 NIO 并不一定意味着高性能，它的性能优势主要体现在高并发和高延迟的网络环境下。当连接数较少、并发程度较低或者网络传输速度较快时，NIO 的性能并不一定优于传统的 BIO 。</p>
+<h2> NIO 核心组件</h2>
+<p>NIO 主要包括以下三个核心组件：</p>
+<ul>
+<li><strong>Buffer（缓冲区）</strong>：NIO 读写数据都是通过缓冲区进行操作的。读操作的时候将 Channel 中的数据填充到 Buffer中，而写操作时将 Buffer中的数据写入到 Channel 中。</li>
+<li><strong>Channel（通道）</strong>：Channel 是一个双向的、可读可写的数据传输通道，NIO 通过Channel来实现数据的输入输出。通道是一个抽象的概念，它可以代表文件、套接字或者其他数据源之间的连接。</li>
+<li><strong>Selector（选择器）</strong>：允许一个线程处理多个 Channel，基于事件驱动的 I/O 多路复用模型。所有的 Channel 都可以注册到Selector上，由Selector来分配线程来处理事件。</li>
+</ul>
+<p>三者的关系如下图所示（暂时不理解没关系，后文会详细介绍）：</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/channel-buffer-selector.png" alt="Buffer、Channel和Selector三者之间的关系" tabindex="0"><figcaption>Buffer、Channel和Selector三者之间的关系</figcaption></figure>
+<p>下面详细介绍一下这三个组件。</p>
+<h3> Buffer（缓冲区）</h3>
+<p>在传统的 BIO 中，数据的读写是面向流的， 分为字节流和字符流。</p>
+<p>在Java 1.4 的 NIO库中，所有数据都是用缓冲区处理的，这是新库和之前的 BIO 的一个重要区别，有点类似于 BIO 中的缓冲流。NIO 在读取数据时，它是直接读到缓冲区中的。在写入数据时，写入到缓冲区中。 使用 NIO在读写数据时，都是通过缓冲区进行操作。</p>
+<p><code>Buffer</code> 的子类如下图所示。其中，最常用的是 <code>ByteBuffer</code>，它可以用来存储和操作字节数据。</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/buffer-subclasses.png" alt="Buffer 的子类" tabindex="0"><figcaption>Buffer 的子类</figcaption></figure>
+<p>你可以将 Buffer 理解为一个数组，<code>IntBuffer</code>、<code>FloatBuffer</code>、<code>CharBuffer</code> 等分别对应 <code>int[]</code>、<code>float[]</code>、<code>char[]</code> 等。</p>
+<p>为了更清晰地认识缓冲区，我们来简单看看<code>Buffer</code> 类中定义的四个成员变量：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这四个成员变量的具体含义如下：</p>
+<ol>
+<li>容量（<code>capacity</code>）：<code>Buffer</code>可以存储的最大数据量，<code>Buffer</code>创建时设置且不可改变；</li>
+<li>界限（<code>limit</code>）：<code>Buffer</code> 中可以读/写数据的边界。写模式下，<code>limit</code> 代表最多能写入的数据，一般等于 <code>capacity</code>（可以通过<code>limit(int newLimit) </code>方法设置）；读模式下，<code>limit</code> 等于 Buffer 中实际写入的数据大小。</li>
+<li>位置（<code>position</code>）：下一个可以被读写的数据的位置（索引）。从写操作模式到读操作模式切换的时候（flip），<code>position</code> 都会归零，这样就可以从头开始读写了。</li>
+<li>标记（<code>mark</code>）：<code>Buffer</code>允许将位置直接定位到该标记处，这是一个可选属性；</li>
+</ol>
+<p>并且，上述变量满足如下的关系：<strong>0 &lt;= mark &lt;= position &lt;= limit &lt;= capacity</strong> 。</p>
+<p>另外，Buffer 有读模式和写模式这两种模式，分别用于从 Buffer 中读取数据或者向 Buffer 中写入数据。Buffer 被创建之后默认是写模式，调用 <code>flip()</code> 可以切换到读模式。如果要再次切换回写模式，可以调用 <code>clear()</code> 或者 <code>compact()</code> 方法。</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/JavaNIOBuffer.png" alt="position 、limit 和 capacity 之前的关系" tabindex="0"><figcaption>position 、limit 和 capacity 之前的关系</figcaption></figure>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/NIOBufferClassAttributes.png" alt="position 、limit 和 capacity 之前的关系" tabindex="0"><figcaption>position 、limit 和 capacity 之前的关系</figcaption></figure>
+<p><code>Buffer</code> 对象不能通过 <code>new</code> 调用构造方法创建对象 ，只能通过静态方法实例化 <code>Buffer</code>。</p>
+<p>这里以 <code>ByteBuffer </code>为例进行介绍：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Buffer 最核心的两个方法：</p>
+<ol>
+<li><code>get</code> : 读取缓冲区的数据</li>
+<li><code>put</code> ：向缓冲区写入数据</li>
+</ol>
+<p>除上述两个方法之外，其他的重要方法：</p>
+<ul>
+<li><code>flip</code> ：将缓冲区从写模式切换到读模式，它会将 <code>limit</code> 的值设置为当前 <code>position</code> 的值，将 <code>position</code> 的值设置为 0。</li>
+<li><code>clear</code>:  清空缓冲区，将缓冲区从读模式切换到写模式，并将 <code>position</code> 的值设置为 0，将 <code>limit</code> 的值设置为 <code>capacity</code> 的值。</li>
+<li>......</li>
+</ul>
+<p>Buffer 中数据变化的过程：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>输出:</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>为了帮助理解，我绘制了一张图片展示 <code>capacity</code>、<code>limit</code>和<code>position</code>每一阶段的变化。</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/NIOBufferClassAttributesDataChanges.png" alt="capacity、limit和position每一阶段的变化" tabindex="0"><figcaption>capacity、limit和position每一阶段的变化</figcaption></figure>
+<h3> Channel（通道）</h3>
+<p>Channel 是一个通道，它建立了与数据源（如文件、网络套接字等）之间的连接。我们可以利用它来读取和写入数据，就像打开了一条自来水管，让数据在 Channel 中自由流动。</p>
+<p>BIO 中的流是单向的，分为各种 <code>InputStream</code>（输入流）和 <code>OutputStream</code>（输出流），数据只是在一个方向上传输。通道与流的不同之处在于通道是双向的，它可以用于读、写或者同时用于读写。</p>
+<p>Channel 与前面介绍的 Buffer 打交道，读操作的时候将 Channel 中的数据填充到 Buffer中，而写操作时将 Buffer中的数据写入到 Channel 中。</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/channel-buffer.png" alt="Channel 和 Buffer之间的关系" tabindex="0"><figcaption>Channel 和 Buffer之间的关系</figcaption></figure>
+<p>另外，因为 Channel 是全双工的，所以它可以比流更好地映射底层操作系统的 API。特别是在 UNIX 网络编程模型中，底层操作系统的通道都是全双工的，同时支持读写操作。</p>
+<p><code>Channel</code> 的子类如下图所示。</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/channel-subclasses.png" alt="Channel 的子类" tabindex="0"><figcaption>Channel 的子类</figcaption></figure>
+<p>其中，最常用的是以下几种类型的通道：</p>
+<ul>
+<li><code>FileChannel</code>：文件访问通道；</li>
+<li><code>SocketChannel</code>、<code>ServerSocketChannel</code>：TCP通信通道；</li>
+<li><code>DatagramChannel</code>：UDP 通信通道；</li>
+</ul>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/channel-inheritance-relationship.png" alt="Channel继承关系图" tabindex="0"><figcaption>Channel继承关系图</figcaption></figure>
+<p>Channel 最核心的两个方法：</p>
+<ol>
+<li><code>read</code> ：用于从 Buffer 中读取数据；</li>
+<li><code>write</code> ：向 Buffer 中写入数据。</li>
+</ol>
+<p>这里我们以 <code>FileChannel</code> 为例演示一下是读取文件数据的。</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> Selector（选择器）</h3>
+<p>Selector（选择器） 是 NIO中的一个关键组件，它允许一个线程处理多个 Channel。Selector 是基于事件驱动的 I/O 多路复用模型，主要运作原理是：通过 Selector 注册通道的事件，Selector 会不断地轮询注册在其上的 Channel。当事件发生时，比如：某个 Channel上面有新的 TCP 连接接入、读和写事件，这个 Channel就处于就绪状态，会被 Selector 轮询出来。Selector 会将相关的 Channel加入到就绪集合中。通过 SelectionKey可以获取就绪 Channel的集合，然后对这些就绪的 Channel进行响应的 I/O 操作。</p>
+<figure><img src="https://oss.javaguide.cn/github/javaguide/java/nio/selector-channel-selectionkey.png" alt="Selector 选择器工作示意图" tabindex="0"><figcaption>Selector 选择器工作示意图</figcaption></figure>
+<p>一个多路复用器 Selector 可以同时轮询多个 Channel，由于 JDK使用了 <code>epoll()</code> 代替传统的 <code>select</code> 实现，所以它并没有最大连接句柄 <code>1024/2048</code> 的限制。这也就意味着只需要一个线程负责 Selector 的轮询，就可以接入成千上万的客户端。</p>
+<p>Selector 可以监听以下四种事件类型：</p>
+<ol>
+<li><code>SelectionKey.OP_ACCEPT</code>：表示通道接受连接的事件，这通常用于 <code>ServerSocketChannel</code>。</li>
+<li><code>SelectionKey.OP_CONNECT</code>：表示通道完成连接的事件，这通常用于 <code>SocketChannel</code>。</li>
+<li><code>SelectionKey.OP_READ</code>：表示通道准备好进行读取的事件，即有数据可读。</li>
+<li><code>SelectionKey.OP_WRITE</code>：表示通道准备好进行写入的事件，即可以写入数据。</li>
+</ol>
+<p><code>Selector </code>是抽象类，可以通过调用此类的 <code>open()</code> 静态方法来创建 Selector 实例。Selector 可以同时监控多个 <code>SelectableChannel</code> 的 <code>IO</code> 状况，是非阻塞 <code>IO</code> 的核心。</p>
+<p>一个Selector 实例有三个 <code>SelectionKey</code> 集合：</p>
+<ol>
+<li>所有的 <code>SelectionKey</code> 集合：代表了注册在该 Selector 上的 <code>Channel</code>，这个集合可以通过 <code>keys()</code> 方法返回。</li>
+<li>被选择的 <code>SelectionKey</code> 集合：代表了所有可通过 <code>select()</code> 方法获取的、需要进行 <code>IO</code> 处理的 Channel，这个集合可以通过 <code>selectedKeys()</code> 返回。</li>
+<li>被取消的 <code>SelectionKey</code> 集合：代表了所有被取消注册关系的 <code>Channel</code>，在下一次执行 <code>select()</code> 方法时，这些 <code>Channel</code> 对应的 <code>SelectionKey</code> 会被彻底删除，程序通常无须直接访问该集合，也没有暴露访问的方法。</li>
+</ol>
+<p>简单演示一下如何遍历被选择的 <code>SelectionKey</code> 集合并进行处理：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Selector 还提供了一系列和 <code>select()</code> 相关的方法：</p>
+<ul>
+<li><code>int select()</code>：监控所有注册的 <code>Channel</code>，当它们中间有需要处理的 <code>IO</code> 操作时，该方法返回，并将对应的 <code>SelectionKey</code> 加入被选择的 <code>SelectionKey</code> 集合中，该方法返回这些 <code>Channel</code> 的数量。</li>
+<li><code>int select(long timeout)</code>：可以设置超时时长的 <code>select()</code> 操作。</li>
+<li><code>int selectNow()</code>：执行一个立即返回的 <code>select()</code>  操作，相对于无参数的 <code>select()</code> 方法而言，该方法不会阻塞线程。</li>
+<li><code>Selector wakeup()</code>：使一个还未返回的 <code>select()</code> 方法立刻返回。</li>
+<li>......</li>
+</ul>
+<p>使用 Selector 实现网络读写的简单示例：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在示例中，我们创建了一个简单的服务器，监听8080端口，使用 Selector 处理连接、读取和写入事件。当接收到客户端的数据时，服务器将读取数据并将其打印到控制台，然后向客户端回复 "Hello, Client!"。</p>
+<h2> NIO 零拷贝</h2>
+<p>零拷贝是提升 IO 操作性能的一个常用手段，像 ActiveMQ、Kafka 、RocketMQ、QMQ、Netty 等顶级开源项目都用到了零拷贝。</p>
+<p>零拷贝是指计算机执行 IO 操作时，CPU 不需要将数据从一个存储区域复制到另一个存储区域，从而可以减少上下文切换以及 CPU 的拷贝时间。也就是说，零拷贝主主要解决操作系统在处理 I/O 操作时频繁复制数据的问题。零拷贝的常见实现技术有： <code>mmap+write</code>、<code>sendfile</code>和 <code>sendfile + DMA gather copy</code> 。</p>
+<p>下图展示了各种零拷贝技术的对比图：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>CPU 拷贝</th>
+<th>DMA 拷贝</th>
+<th>系统调用</th>
+<th>上下文切换</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>传统方法</td>
+<td>2</td>
+<td>2</td>
+<td>read+write</td>
+<td>4</td>
+</tr>
+<tr>
+<td>mmap+write</td>
+<td>1</td>
+<td>2</td>
+<td>mmap+write</td>
+<td>4</td>
+</tr>
+<tr>
+<td>sendfile</td>
+<td>1</td>
+<td>2</td>
+<td>sendfile</td>
+<td>2</td>
+</tr>
+<tr>
+<td>sendfile + DMA gather copy</td>
+<td>0</td>
+<td>2</td>
+<td>sendfile</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>可以看出，无论是传统的 I/O 方式，还是引入了零拷贝之后，2 次 DMA(Direct Memory Access) 拷贝是都少不了的。因为两次 DMA 都是依赖硬件完成的。零拷贝主要是减少了 CPU 拷贝及上下文的切换。</p>
+<p>Java 对零拷贝的支持：</p>
+<ul>
+<li><code>MappedByteBuffer</code> 是 NIO 基于内存映射（<code>mmap</code>）这种零拷⻉⽅式的提供的⼀种实现，底层实际是调用了 Linux 内核的 <code>mmap</code> 系统调用。它可以将一个文件或者文件的一部分映射到内存中，形成一个虚拟内存文件，这样就可以直接操作内存中的数据，而不需要通过系统调用来读写文件。</li>
+<li><code>FileChannel</code> 的<code>transferTo()/transferFrom()</code>是 NIO 基于发送文件（<code>sendfile</code>）这种零拷贝方式的提供的一种实现，底层实际是调用了 Linux 内核的 <code>sendfile</code>系统调用。它可以直接将文件数据从磁盘发送到网络，而不需要经过用户空间的缓冲区。关于<code>FileChannel</code>的用法可以看看这篇文章：<a href="https://www.cnblogs.com/robothy/p/14235598.html" target="_blank" rel="noopener noreferrer">Java NIO 文件通道 FileChannel 用法</a>。</li>
+</ul>
+<p>代码示例：</p>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 总结</h2>
+<p>这篇文章我们主要介绍了 NIO 的核心知识点，包括 NIO 的核心组件和零拷贝。</p>
+<p>如果我们需要使用 NIO 构建网络程序的话，不建议直接使用原生 NIO，编程复杂且功能性太弱，推荐使用一些成熟的基于 NIO 的网络编程框架比如 Netty。Netty 在 NIO 的基础上进行了一些优化和扩展比如支持多种协议、支持 SSL/TLS 等等。</p>
+<h2> 参考</h2>
+<ul>
+<li>
+<p>Java NIO浅析：<a href="https://tech.meituan.com/2016/11/04/nio.html" target="_blank" rel="noopener noreferrer">https://tech.meituan.com/2016/11/04/nio.html</a></p>
+</li>
+<li>
+<p>面试官：Java NIO 了解？https://mp.weixin.qq.com/s/mZobf-U8OSYQfHfYBEB6KA</p>
+</li>
+<li>
+<p>Java NIO：Buffer、Channel 和 Selector：https://www.javadoop.com/post/java-nio</p>
+</li>
+</ul>
+]]></content:encoded>
+      <enclosure url="https://oss.javaguide.cn/github/javaguide/java/nio/bio-aio-nio.png" type="image/png"/>
+    </item>
+    <item>
       <title>Java 10 新特性概览</title>
-      <link>https://javaguide.cn/java/new-features/java10.html</link>
-      <guid>https://javaguide.cn/java/new-features/java10.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 10 新特性概览</source>
+      <link>https://javayong.cn/java/new-features/java10.html</link>
+      <guid>https://javayong.cn/java/new-features/java10.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 10 新特性概览</source>
       <description>Java 10 发布于 2018 年 3 月 20 日，最知名的特性应该是 var 关键字（局部变量类型推断）的引入了，其他还有垃圾收集器改善、GC 改进、性能提升、线程管控等一批新特性。 概览（精选了一部分）： JEP 286：局部变量类型推断 JEP 304：垃圾回收器接口 JEP 307：G1 并行 Full GC JEP 310：应用程序类数据共享(扩展 CDS 功能) JEP 317：实验性的基于 Java 的 JIT 编译器</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -8321,9 +8676,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java 11 新特性概览</title>
-      <link>https://javaguide.cn/java/new-features/java11.html</link>
-      <guid>https://javaguide.cn/java/new-features/java11.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 11 新特性概览</source>
+      <link>https://javayong.cn/java/new-features/java11.html</link>
+      <guid>https://javayong.cn/java/new-features/java11.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 11 新特性概览</source>
       <description>Java 11 于 2018 年 9 月 25 日正式发布，这是很重要的一个版本！Java 11 和 2017 年 9 月份发布的 Java 9 以及 2018 年 3 月份发布的 Java 10 相比，其最大的区别就是：在长期支持(Long-Term-Support)方面，Oracle 表示会对 Java 11 提供大力支持，这一支持将会持续至 2026 年 9 月。这是据 Java 8 以后支持的首个长期版本。 下面这张图是 Oracle 官方给出的 Oracle JDK 支持的时间线。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -8389,9 +8744,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java 12  &amp; 13 新特性概览</title>
-      <link>https://javaguide.cn/java/new-features/java12-13.html</link>
-      <guid>https://javaguide.cn/java/new-features/java12-13.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 12  &amp; 13 新特性概览</source>
+      <link>https://javayong.cn/java/new-features/java12-13.html</link>
+      <guid>https://javayong.cn/java/new-features/java12-13.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 12  &amp; 13 新特性概览</source>
       <description>Java12 String 增强 Java 12 增加了两个的字符串处理方法，如以下所示。 indent() 方法可以实现字符串缩进。 String text = &amp;quot;Java&amp;quot;; // 缩进 4 格 text = text.indent(4); System.out.println(text); text = text.indent(-10); System.out.println(text);</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -8487,9 +8842,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java 14  &amp; 15 新特性概览</title>
-      <link>https://javaguide.cn/java/new-features/java14-15.html</link>
-      <guid>https://javaguide.cn/java/new-features/java14-15.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 14  &amp; 15 新特性概览</source>
+      <link>https://javayong.cn/java/new-features/java14-15.html</link>
+      <guid>https://javayong.cn/java/new-features/java14-15.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 14  &amp; 15 新特性概览</source>
       <description>Java14 空指针异常精准提示 通过 JVM 参数中添加-XX:+ShowCodeDetailsInExceptionMessages，可以在空指针异常中获取更为详细的调用信息，更快的定位和解决问题。 a.b.c.i = 99; // 假设这段代码会发生空指针</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -8567,9 +8922,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java 16 新特性概览</title>
-      <link>https://javaguide.cn/java/new-features/java16.html</link>
-      <guid>https://javaguide.cn/java/new-features/java16.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 16 新特性概览</source>
+      <link>https://javayong.cn/java/new-features/java16.html</link>
+      <guid>https://javayong.cn/java/new-features/java16.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 16 新特性概览</source>
       <description>Java 16 在 2021 年 3 月 16 日正式发布，非长期支持（LTS）版本。 相关阅读：OpenJDK Java 16 文档 。 JEP 338:向量 API(第一次孵化) 向量（Vector） API 最初由 JEP 338 提出，并作为孵化 API集成到 Java 16 中。第二轮孵化由 JEP 414 提出并集成到 Java 17 中，第三轮孵化由 JEP 417 提出并集成到 Java 18 中，第四轮由 JEP 426 提出并集成到了 Java 19 中。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -8702,9 +9057,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java 17 新特性概览（重要）</title>
-      <link>https://javaguide.cn/java/new-features/java17.html</link>
-      <guid>https://javaguide.cn/java/new-features/java17.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 17 新特性概览（重要）</source>
+      <link>https://javayong.cn/java/new-features/java17.html</link>
+      <guid>https://javayong.cn/java/new-features/java17.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 17 新特性概览（重要）</source>
       <description>Java 17 在 2021 年 9 月 14 日正式发布，是一个长期支持（LTS）版本。 下面这张图是 Oracle 官方给出的 Oracle JDK 支持的时间线。可以看得到，Java 17 最多可以支持到 2029 年 9 月份。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -8771,9 +9126,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java 18 新特性概览</title>
-      <link>https://javaguide.cn/java/new-features/java18.html</link>
-      <guid>https://javaguide.cn/java/new-features/java18.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 18 新特性概览</source>
+      <link>https://javayong.cn/java/new-features/java18.html</link>
+      <guid>https://javayong.cn/java/new-features/java18.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 18 新特性概览</source>
       <description>Java 18 在 2022 年 3 月 22 日正式发布，非长期支持版本。 Java 18 带来了 9 个新特性： JEP 400:UTF-8 by Default（默认字符集为 UTF-8） JEP 408:Simple Web Server（简易的 Web 服务器） JEP 413:Code Snippets in Java API Documentation（Java API 文档中的代码片段） JEP 416:Reimplement Core Reflection with Method Handles（使用方法句柄重新实现反射核心） JEP 417:Vector（向量） API （第三次孵化） JEP 418:Internet-Address Resolution（互联网地址解析）SPI JEP 419:Foreign Function &amp;amp; Memory API（外部函数和内存 API）（第二次孵化） JEP 420:Pattern Matching for switch（switch 模式匹配）（第二次预览） JEP 421:Deprecate Finalization for Removal</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -8830,9 +9185,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java 19 新特性概览</title>
-      <link>https://javaguide.cn/java/new-features/java19.html</link>
-      <guid>https://javaguide.cn/java/new-features/java19.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 19 新特性概览</source>
+      <link>https://javayong.cn/java/new-features/java19.html</link>
+      <guid>https://javayong.cn/java/new-features/java19.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 19 新特性概览</source>
       <description>JDK 19 定于 9 月 20 日正式发布以供生产使用，非长期支持版本。不过，JDK 19 中有一些比较重要的新特性值得关注。 JDK 19 只有 7 个新特性： JEP 405: Record Patterns（记录模式）（预览） JEP 422: Linux/RISC-V Port JEP 424: Foreign Function &amp;amp; Memory API（外部函数和内存 API）（预览） JEP 425: Virtual Threads（虚拟线程）（预览） JEP 426: Vector（向量）API（第四次孵化） JEP 427: Pattern Matching for switch（switch 模式匹配） JEP 428: Structured Concurrency（结构化并发）（孵化）</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -8889,9 +9244,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java 20 新特性概览</title>
-      <link>https://javaguide.cn/java/new-features/java20.html</link>
-      <guid>https://javaguide.cn/java/new-features/java20.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 20 新特性概览</source>
+      <link>https://javayong.cn/java/new-features/java20.html</link>
+      <guid>https://javayong.cn/java/new-features/java20.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 20 新特性概览</source>
       <description>JDK 20 于 2023 年 3 月 21 日发布，非长期支持版本。 根据开发计划，下一个 LTS 版本就是将于 2023 年 9 月发布的 JDK 21。 JDK 20 只有 7 个新特性： JEP 429：Scoped Values（作用域值）（第一次孵化） JEP 432：Record Patterns（记录模式）（第二次预览） JEP 433：switch 模式匹配（第四次预览） JEP 434: Foreign Function &amp;amp; Memory API（外部函数和内存 API）（第二次预览） JEP 436: Virtual Threads（虚拟线程）（第二次预览） JEP 437: Structured Concurrency（结构化并发）(第二次孵化) JEP 432：向量 API（第五次孵化）</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
@@ -8964,9 +9319,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java8 新特性实战</title>
-      <link>https://javaguide.cn/java/new-features/java8-common-new-features.html</link>
-      <guid>https://javaguide.cn/java/new-features/java8-common-new-features.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java8 新特性实战</source>
+      <link>https://javayong.cn/java/new-features/java8-common-new-features.html</link>
+      <guid>https://javayong.cn/java/new-features/java8-common-new-features.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java8 新特性实战</source>
       <description>Java8 新特性实战 本文来自cowbi的投稿~ Oracle 于 2014 发布了 Java8（jdk1.8），诸多原因使它成为目前市场上使用最多的 jdk 版本。虽然发布距今已将近 7 年，但很多程序员对其新特性还是不够了解，尤其是用惯了 Java8 之前版本的老程序员，比如我。 为了不脱离队伍太远，还是有必要对这些新特性做一些总结梳理。它较 jdk.7 有很多变化或者说是优化，比如 interface 里可以有静态方法，并且可以有方法体，这一点就颠覆了之前的认知；java.util.HashMap 数据结构里增加了红黑树；还有众所周知的 Lambda 表达式等等。本文不能把所有的新特性都给大家一一分享，只列出比较常用的新特性给大家做详细讲解。更多相关内容请看官网关于 Java8 的新特性的介绍。</description>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
       <content:encoded><![CDATA[<h1> Java8 新特性实战</h1>
@@ -9144,9 +9499,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>《Java8 指南》中文翻译</title>
-      <link>https://javaguide.cn/java/new-features/java8-tutorial-translate.html</link>
-      <guid>https://javaguide.cn/java/new-features/java8-tutorial-translate.html</guid>
-      <source url="https://javaguide.cn/rss.xml">《Java8 指南》中文翻译</source>
+      <link>https://javayong.cn/java/new-features/java8-tutorial-translate.html</link>
+      <guid>https://javayong.cn/java/new-features/java8-tutorial-translate.html</guid>
+      <source url="https://javayong.cn/rss.xml">《Java8 指南》中文翻译</source>
       <description>《Java8 指南》中文翻译 随着 Java 8 的普及度越来越高，很多人都提到面试中关于 Java 8 也是非常常问的知识点。应各位要求和需要，我打算对这部分知识做一个总结。本来准备自己总结的，后面看到 GitHub 上有一个相关的仓库，地址： https://github.com/winterbe/java8-tutorial。这个仓库是英文的，我对其进行了翻译并添加和修改了部分内容，下面是正文。</description>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
       <content:encoded><![CDATA[<h1> 《Java8 指南》中文翻译</h1>
@@ -9300,9 +9655,9 @@ debug 中没有发现 Logger 服务提供者</p>
     </item>
     <item>
       <title>Java 9 新特性概览</title>
-      <link>https://javaguide.cn/java/new-features/java9.html</link>
-      <guid>https://javaguide.cn/java/new-features/java9.html</guid>
-      <source url="https://javaguide.cn/rss.xml">Java 9 新特性概览</source>
+      <link>https://javayong.cn/java/new-features/java9.html</link>
+      <guid>https://javayong.cn/java/new-features/java9.html</guid>
+      <source url="https://javayong.cn/rss.xml">Java 9 新特性概览</source>
       <description>Java 9 发布于 2017 年 9 月 21 日 。作为 Java 8 之后 3 年半才发布的新版本，Java 9 带来了很多重大的变化其中最重要的改动是 Java 平台模块系统的引入，其他还有诸如集合、Stream 流......。 你可以在 Archived OpenJDK General-Availability Releases 上下载自己需要的 JDK 版本！官方的新特性说明文档地址：https://openjdk.java.net/projects/jdk/ 。</description>
       <category>Java</category>
       <pubDate>Thu, 29 Jun 2023 07:18:23 GMT</pubDate>
