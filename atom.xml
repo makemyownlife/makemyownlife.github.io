@@ -4,17 +4,657 @@
   <title>勇哥Java实战</title>
   <subtitle>Java 基础、高并发三剑客（缓存、消息队列、分库分表）、实战项目讲解。</subtitle>
   <icon>https://javayong.cn/favicon.ico</icon>
-  <updated>2023-11-18T01:50:40.358Z</updated>
+  <updated>2023-11-20T07:24:06.300Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://javayong.cn/atom.xml"/>
   <link rel="alternate" href="https://javayong.cn/"/>
+  <category term="技术人生"/>
   <category term="cache"/>
   <category term="RocketMQ"/>
+  <entry>
+    <title type="text">聊聊我与流式计算的故事</title>
+    <id>https://javayong.cn/codelife/guotuxuexistorm.html</id>
+    <link href="https://javayong.cn/codelife/guotuxuexistorm.html"/>
+    <updated>2023-11-20T07:14:27.000Z</updated>
+    <summary type="html"><![CDATA[<p>聊聊流式计算吧 , 那一段经历于我而言很精彩，很有趣，想把这段经历分享给大家。</p>
+<h2> <strong>1 背景介绍</strong></h2>
+<p>2014年，我在艺龙旅行网促销团队负责红包系统。</p>
+<p>彼时，促销大战如火如荼，<strong>优惠券计算服务</strong>也成为艺龙促销业务中最重要的服务之一。</p>
+<p>而优惠券计算服务正是采用当时大名鼎鼎的<strong>流式计算框架</strong> <strong>Storm</strong>。</p>
+<blockquote>
+<p>流式计算是利用分布式的思想和方法，对海量“流”式数据进行<strong>实时处理</strong>的系统，它源自对海量数据**“时效”**价值上的挖掘诉求。</p>
+</blockquote>]]></summary>
+    <content type="html"><![CDATA[<p>聊聊流式计算吧 , 那一段经历于我而言很精彩，很有趣，想把这段经历分享给大家。</p>
+<h2> <strong>1 背景介绍</strong></h2>
+<p>2014年，我在艺龙旅行网促销团队负责红包系统。</p>
+<p>彼时，促销大战如火如荼，<strong>优惠券计算服务</strong>也成为艺龙促销业务中最重要的服务之一。</p>
+<p>而优惠券计算服务正是采用当时大名鼎鼎的<strong>流式计算框架</strong> <strong>Storm</strong>。</p>
+<blockquote>
+<p>流式计算是利用分布式的思想和方法，对海量“流”式数据进行<strong>实时处理</strong>的系统，它源自对海量数据**“时效”**价值上的挖掘诉求。</p>
+</blockquote>
+<p>优惠券计算服务的逻辑是：每个城市每个酒店的使用优惠券的规则并不相同，当运营人员修改规则之后，触发优惠券计算服务，计算完成之后，用户下单时在使用优惠券时会呈现最新的规则。</p>
+<p>优惠券计算服务是我们团队的明星项目，很多研发的同学都对 Storm 特别感兴趣 , 因为 Storm 的核心开发语言是 <strong>clojure</strong> ， 比较小众。</p>
+<p>于是，在团队内部，发现一个很有趣的现象：<strong>很多同学的办公桌上放着《clojure in Action 》这本书</strong>。</p>
+<figure><img src="https://pic2.zhimg.com/80/v2-8c80900e0c323c7bce88fb8843aff1a9_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>clojure in Action</p>
+<p>彼时，艺龙开始发力移动互联网，业务量的激增，优惠券计算服务开始遇到了瓶颈。</p>
+<p>比如运营人员修改全量规则时，整个计算流程要耗时一上午，也就谈不上<strong>实时计算</strong>了。</p>
+<p>CTO 几次找团队负责人，并严厉批责成他尽快优化。经过一个半月几次优化，系统的瓶颈依然明显，时不时运营同事会走到我们的工位附近，催促我们：“系统生效了么？ ”</p>
+<p>我并不负责计算服务，每当同事被质疑时，我都感到很疑惑：<strong>“优惠券计算服务真的那么复杂吗？ ”</strong> ， 同时也跃跃欲试：“ <strong>Storm 真有那么难搞吗</strong>？”</p>
+<p>我心中暗暗下定了决心，一定要弄清楚优惠券计算服务的逻辑 。</p>
+<h2> <strong>2 国图学习</strong></h2>
+<p>北京有很多景点都让我流连忘返，比如史铁生小说里的地坛，满山枫叶的香山，如诗如画的颐和园，美仑美奂的天坛 。</p>
+<p>在我心里，有一处很神圣的地方，它是知识和希望的象征，那就是<strong>国家图书馆</strong> 。</p>
+<figure><img src="https://pic3.zhimg.com/80/v2-be9271da30a9dab6f3dc0a739769e1de_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>中国国家图书馆位于北京市中关村南大街33号，与海淀区白石桥高粱河、紫竹院公园相邻。<strong>它是国家总书库，国家书目中心，国家古籍保护中心，同时也是世界最大、最先进的国家图书馆之一</strong> 。</p>
+<p>每到周末，当我想安静下来，专注思考时，我就会背着笔记本电脑来到国家图书馆。</p>
+<p><strong>选择自己喜欢的书，然后将笔记本电脑打开，一边看书，一边在电脑上写点笔记。</strong></p>
+<p><strong>偶尔抬起头，望着那些正在阅读的读者，心里面感觉很阳关，觉得生命充满了希望。</strong></p>
+<p>我并不负责流式计算服务，但想要揭开 Storm 神秘面纱的探索欲，同时探寻优惠券计算服务为什么会这么慢的渴望，让我好几天晚上没睡好。</p>
+<p>于是周六上午9点半， 我来到国家图书馆 ，想让自己安静下来，思考如何解决这个问题。解决问题的快感，是我一直追求的。</p>
+<p>当我把笔记本电脑放平在桌上，我很兴奋，同时灵台一片澄清：优惠券计算服务的核心是 Storm ，那么<strong>我需要先了解 Storm 的整体概念</strong>。</p>
+<p>打开官网，浏览官网的文档，第一次看到 Storm 的逻辑流程图时， <strong>做为程序员，我第一次竟然感受到抽象之美</strong>：从源头流下来的水通过水龙头（ <strong>Spout</strong> ），再经过层层转接头( <strong>Bolt</strong> )过滤，不就是我们想要的纯净水吗？</p>
+<figure><img src="https://pic1.zhimg.com/80/v2-a4977cee51bb48192c724dbdf0f009fc_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>storm逻辑图，已授权</p>
+<p>其实我们原来都是 <strong>CRUD boy</strong> ，机械的使用那些框架，只会做增删改查，并不会思考框架背后的设计思路。 但框架到底是什么？从来没有思考过。 我一直觉得我很笨拙，学什么都很慢，但那一刻我突然恍然大悟：<strong>框架本身是将解决问题的思路抽象化，从而便于研发人员使用</strong>，把复杂的问题抽象成有美感，是需要功底的。</p>
+<p>了解完 Storm 整体概念 ， 下一步也就是大家熟知的<strong>写 Hello World</strong> 阶段了 。</p>
+<figure><img src="https://pic3.zhimg.com/80/v2-c8a1f6d1a328692199d58dd4746c414e_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>我参考教程写了一个简单的 Storm 应用（简称：拓扑），在部署后，程序正常跑了起来。</p>
+<p>我脑海里一直有一个疑问：“是不是优惠券计算服务的 storm 集群的配置没有调优，才导致计算的性能太差 ? ” 所以我必须去<strong>理解 storm 的并发度是如何计算的</strong>。</p>
+<p>整个下午，我一直在查阅相关的资料，并结合下图思考：Nimbus， Supervisor ，Worker ，Task 这些名词到底是什么概念，以及他们之间是如何交互的。</p>
+<figure><img src="https://pic4.zhimg.com/80/v2-5d3c97776c0618f4e1e1721379c86bcf_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>进而思考：<strong>拓扑到底会启动几个进程，每个进程内部线程模型是怎样的</strong>，颇有些<strong>庖丁解牛</strong>的味道。</p>
+<p>这个习惯一直保持到现在，当我看到一个系统，我会下意思的去思考：“这个系统的线程模型如何，每次操作有哪些线程参于，他们之间如何交互”。我知道有更厉害的大牛，运行一行代码就知道 CPU 会运行的哪些指令，我做不到，但我觉得那就更加深刻了。</p>
+<p>不管怎样，这一天，我的思绪经过多次的变化，兴奋，犹疑，放弃，阳光，激动，畏难心理一直存在，很多次想放弃，但好奇心一直鼓励着我。</p>
+<p>等天色已黑，我走出国图的大门，脑子里全部都是 Storm 进程，线程模型，内心里面，有了莫名的自信。感觉自己就像仙剑奇侠传里的<strong>酒剑仙</strong>，伴随着激昂的 BGM ，拔剑四顾，斩妖除魔。</p>
+<blockquote>
+<p>御剑乘风来，除魔天地间，有酒乐逍遥，无酒我亦癫。
+一饮尽江河，再饮吞日月，千杯醉不倒，唯我酒剑仙。</p>
+</blockquote>
+<h2> <strong>3 找到瓶颈</strong></h2>
+<p>当我理解了 Storm 的整体概念，接下来我需要去找到优惠券计算服务的性能瓶颈。这个时候，<strong>梳理计算服务整体流程</strong>非常关键。</p>
+<figure><img src="https://pic4.zhimg.com/80/v2-f0aeb303287cd077b923bdbae1bed8f7_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>优惠券流式计算拓扑</p>
+<p>计算服务整体流程分为三个步骤 ：</p>
+<ol>
+<li>抽取数据：<strong>酒店信息拉取服务</strong>拉取酒店信息，并存储到<strong>水源头</strong>( Redis A/B 集群 ) ;</li>
+<li>计算过程：<strong>Storm 拓扑</strong>从水源头获取酒店数据，通过运营配置的规则对数据进行清洗 ，将计算好的数据存储到<strong>水存放池</strong> ( Redis C 集群) ；</li>
+<li>入库阶段：<strong>入库服务</strong>从<strong>水存放池</strong>获取数据，将计算结果存储到数据库 。</li>
+</ol>
+<p>当我们把整个计算的过程拆分成 <strong>抽取--&gt;计算 --&gt; 存储</strong> 三个阶段的时候，计算服务的架构就变得异常清晰，那到底在哪个阶段最耗时 ，也成为我追查的目标。</p>
+<p>优惠券计算服务当时没有详细的性能监控体系，所以我只能先从<strong>日志</strong>着手。 在运营同事触发全量计算后，分别观察三个阶段对应服务的日志：</p>
+<ul>
+<li>抽取数据：<strong>酒店信息拉取服务</strong></li>
+<li>计算过程: <strong>Storm 拓扑</strong></li>
+<li>入库阶段: <strong>入库服务</strong></li>
+</ul>
+<p>令人惊讶的现象：一次全量计算需要耗时4个多小时，但抽取数据的任务竟然跑了2个多小时，和我预期完全不一样。</p>
+<figure><img src="https://pic1.zhimg.com/80/v2-4e0ece1fbcb6c6a75ad699a0dd46ae0c_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>抽水泵</p>
+<p>假如我把酒店信息拉取服务比作抽水泵，那么<strong>整个系统最大的问题竟然是抽水泵抽水马力不足</strong>。</p>
+<h2> <strong>4 推进重构</strong></h2>
+<p>为什么抽水泵抽水马力不足 ？</p>
+<p>通过阅读源码，我发现因为线程模型不够好，应用在部署多个节点后，每个节点只能有两个线程执行拉取酒店信息。</p>
+<p>怎么处理呢？ 在原有代码上优化可行吗？ 好像也不太容易，因为老代码最初是一个 C# 研发同事写的，他当时也不熟悉 JAVA ，从设计层面来讲，有很多冗余且不合理的代码，而且经过3年左右的维护，代码老化严重，于是我只能想到重构。</p>
+<p>当我把想法和团队负责人沟通后，他有点半信半疑，他认为我的判断没有问题，但不确定我是否可以将系统重构好。 我那时候信心爆棚，主动请缨，打包票不会出问题的。可能是由于 CTO 逼的太紧了，他同意了。</p>
+<p>在重构之间，梳理好系统的整体逻辑。</p>
+<figure><img src="https://pic4.zhimg.com/80/v2-25fa611c23e24b6fb0e5df7070b0f197_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>酒店拉取服务逻辑图</p>
+<p>重构的重点原则有两条：</p>
+<ol>
+<li>拉取服务可水平扩展，若性能不足时，增加服务节点即可提升性能；</li>
+<li>配置文件可配置 worker 线程数量。</li>
+</ol>
+<p>那思想层面，我已经做好准备了，那硬实力层面我有没有做好准备吗？ 非常自信的讲，准备好了，因为<strong>我遇到了 RocketMQ</strong> 。</p>
+<p>我在《我与消息队列的8年情缘》这篇文章写到：</p>
+<blockquote>
+<p>2014年，我搜罗了很多的淘宝的消息队列的资料，我知道MetaQ的版本已经升级MetaQ 3.0，只是开源版本还没有放出来。
+大约秋天的样子，我加入了RocketMQ技术群。誓嘉(RocketMQ创始人)在群里说：“最近要开源了，放出来后，大家赶紧fork呀”。他的这句话发在群里之后，群里都炸开了锅。我更是欢喜雀跃，期待着能早日见到阿里自己内部的消息中间件。</p>
+</blockquote>
+<figure><img src="https://pic3.zhimg.com/80/v2-06dea7880f38c233f95f6d318550c96e_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>终于，RocketMQ终于开源了。我迫不及待想一窥他的风采。
+因为我想学网络编程，而RocketMQ的通讯模块remoting底层也是Netty写的。所以，RocketMQ的通讯层是我学习切入的点。
+我模仿RocketMQ的remoting写了一个玩具的rpc，这更大大提高我的自信心。正好，艺龙举办技术创新活动。我想想，要不尝试一下用Netty改写下Cobar的通讯模块。于是参考Cobar的源码花了两周写了个netty版的proxy，其实非常粗糙，很多功能不完善。后来，这次活动颁给我一个鼓励奖，现在想想都很好玩。</p>
+<p>在重构酒店信息拉取服务时，我将 RocketMQ 如何创建线程的知识点正好也用了上去，并学习如何将模块拆分得更加合理。同时在重构过程中，不断 Review 新老代码的差别，确保核心逻辑正确。</p>
+<p>非常幸运，大概一周时间，我就重构完了。</p>
+<p>重构完成并不意味着结束，怎么验证呢 ？ 我当时采取了两种方式：</p>
+<ul>
+<li>代码评审
+我拉着优惠券计算服务的同事，一起 review 代码 。整个过程，大家也并没有提出异议，并对我创建线程的技巧感到很好奇。我心中窃喜：”那是学习 RocketMQ 的“。</li>
+<li>测试环境数据验证
+我们将新旧两版服务同时触发，比对两个版本的数据的异同，将比对结果输出到日志文件，然后从中找到差异的地方，修复重构版的 BUG 。 然后在测试环境部署重构版，观察一段时间，确保无异常。</li>
+</ul>
+<p>从编写第一行代码，三周时间，重构版终于上线了。 我将原来的老服务替换后，部署了3个节点， 每个节点8个 worker 并行拉取酒店信息 。</p>
+<p>令人开心和激动的是，重构是非常成功的。 因为业务给我们的时间需求也是1个小时左右。一次全量计算从原来4个小时急速缩减到1小时15分钟，整个酒店拉取服务耗时40分钟左右。</p>
+<p>我心里长舒一口气，内心吟诵李白的诗："十步杀一人，千里不留行。<strong>事了拂衣去，深藏身与名。"</strong></p>
+<h2> <strong>5 向前一步</strong></h2>
+<p>前 Facebook COO 谢丽尔·桑德伯格 写了一本书《向前一步》，我特别喜欢这本书的书名 。</p>
+<figure><img src="https://pic2.zhimg.com/80/v2-a0c478c37f423ce6a0b202f1712ef261_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>在优化优惠券计算服务的前期，团队经过一个多月的时间，也没有什么成效。 我自己也犹豫：”我能不能解决这个问题？“ ，但<strong>最终我还是向前一步</strong>，并帮助团队大大提升了服务的性能，负责人也有了信心，他也敢投入资源优化<strong>Storm 拓扑</strong>和<strong>入库流程</strong>。</p>
+<p>在阅读优惠券计算服务的代码中，我发现两个问题：</p>
+<ol>
+<li>流式计算逻辑中有大量网络 IO 请求，主要是查询特定的酒店数据，用于后续计算；</li>
+<li>每次计算时需要查询基础配置数据，它们都是从数据库中获取。</li>
+</ol>
+<p>对于Storm 拓扑优化，我提了两点建议：</p>
+<ol>
+<li>流式计算拓扑和酒店拉取服务各司其职，将流式计算中的网络 IO 请求挪到酒店拉取服务，将数据前置准备好；</li>
+<li>基础配置缓存化，引入读写锁（也是 RocketMQ 名字服务的技巧）。</li>
+</ol>
+<p>对于入库流程，一位研发同学将原来的单条数据入库修改成批量入库。</p>
+<p>经过大家一起努力 ，优惠券计算服务的整体性能大大提升了，全量计算耗时已经变成40分钟了，再也不会有运营同事在我们的工位附近吐槽系统慢了。</p>
+<h2> <strong>6 写到最后</strong></h2>
+<p>2014年，我向前一步推动了公司流式计算服务的优化，并取得了一点点进步。</p>
+<p>时光荏苒，我已中年，生命中遇到越来越多的挫折，有的时候也会让人低落，但每当想起这个故事，我会深深感动于当时的一往无前。</p>
+<p>当再次面临选择时，我希望自己也能够向前一步，想着如何帮助读者成长，或是实现一个产品帮助更多的人。</p>
+]]></content>
+    <category term="技术人生"/>
+    <published>2023-11-20T07:14:27.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">聊聊如何学习开源项目</title>
+    <id>https://javayong.cn/codelife/howtolearnopenproject.html</id>
+    <link href="https://javayong.cn/codelife/howtolearnopenproject.html"/>
+    <updated>2023-11-20T07:14:27.000Z</updated>
+    <summary type="html"><![CDATA[<p>工作几年的程序员同学，有了一定的项目经验，对于编程也有了自己的理解，但他们偶尔也会感到困惑，不知道接下来该如何提升自己。</p>
+<p>在笔者看来："这个阶段的程序员最需要的是提升自身编程能力和视野高度，而学习开源项目是最有效的方法之一"。</p>
+<p>这篇文章，笔者聊聊自己的学习开源项目的心得，希望对你有所帮助。</p>
+<h2> <strong>1 学会使用</strong></h2>
+<p>首先，我们需要学习<strong>如何使用开源项目</strong>。</p>
+<p>Github 是全球最大的在线软件源代码托管服务平台，很多开源项目都托管在他上面。</p>
+<p>在 GIthub 下载源码后，需要重点关注类似 <strong>Quick Start，Getting started ，Example</strong> 之类的文档，这些文档告诉初学者如何使用项目。</p>]]></summary>
+    <content type="html"><![CDATA[<p>工作几年的程序员同学，有了一定的项目经验，对于编程也有了自己的理解，但他们偶尔也会感到困惑，不知道接下来该如何提升自己。</p>
+<p>在笔者看来："这个阶段的程序员最需要的是提升自身编程能力和视野高度，而学习开源项目是最有效的方法之一"。</p>
+<p>这篇文章，笔者聊聊自己的学习开源项目的心得，希望对你有所帮助。</p>
+<h2> <strong>1 学会使用</strong></h2>
+<p>首先，我们需要学习<strong>如何使用开源项目</strong>。</p>
+<p>Github 是全球最大的在线软件源代码托管服务平台，很多开源项目都托管在他上面。</p>
+<p>在 GIthub 下载源码后，需要重点关注类似 <strong>Quick Start，Getting started ，Example</strong> 之类的文档，这些文档告诉初学者如何使用项目。</p>
+<p>假如项目需要部署，参考项目文档，在独立的环境中，尝试从零开始，动手部署该项目。</p>
+<p>某些项目也会提供完善的 example 工程·，里面有现成的例子，可以尝试按照文档介绍运行入门例子。</p>
+<p>如果入门例子运行顺利 ，对于项目初学者来讲是一个很好的开始。若运行中出现异常，也不必慌张，寻找项目中 FAQ 文档，或者搜索出现问题的关键字（比如异常信息），查询相关的解决方案。</p>
+<p>成功运行了项目中第一个基础例子之后，可以尝试运行更复杂的功能例子。</p>
+<p>笔者建议<strong>单独创建一个工程，一个一个功能例子完善整个项目。当这个项目越来越充盈，也就证明你掌握得越多</strong>。在学习过程中，将学习的心得记录在笔记中，便于后续回溯。</p>
+<h2> <strong>2 阅读源码</strong></h2>
+<p><strong>阅读源码是深入理解开源项目最重要的一步</strong>。</p>
+<p>阅读源码之前，尝试从源码构建该项目。通常开源项目都会提供一份构建指南，指导你如何搭建一个用于开发、调试和构建的环境。构建成功后，尝试运行该项目。</p>
+<p>查看该项目的架构设计文档，梳理出整个项目的骨架，可以画流程图或者 UML 图，加深对项目的理解。</p>
+<p>当我们了解到整个项目的骨架后，可以挑选感兴趣的模块来阅读，比如你对网络通讯感兴趣，就阅读网络层的代码，深入到实现细节，如它用了什么库，采用了什么设计模式，为什么这样做等。如果可以，DEBUG 细节代码。</p>
+<p>阅读源码的时候，重视单元测试，尝试去运行单元测试，基本上一个好的单元测试会将该代码的功能和边界描述清楚。</p>
+<p>笔者体系化的阅读源码是在2014年。彼时，RocketMQ 3.0 刚开源不久，笔者对消息队列极其感兴趣，同时也迫切想了解网络编程框架 Netty 到底是如何使用的。</p>
+<p>于是，先从 RocketMQ 网络通讯模块 remoting 开始学习，因为源码中有完善的测试用例，先运行单元测试，学习网络编码模型。</p>
+<p>在学习网络编程的过程中，笔者有两点思维突破：</p>
+<p><strong>▍一、客户端的编程模型</strong></p>
+<p>RocketMQ 客户端网络通讯有如下三种方式：</p>
+<ul>
+<li>oneway : 单向发送</li>
+<li>sync ：同步调用</li>
+<li>callback ：异步回调</li>
+</ul>
+<p>很多技术的思想是相通的，下图是蚂蚁开源的通讯组件 sofa-bolt 支持的调用类型。</p>
+<figure><img src="https://pic4.zhimg.com/80/v2-43eaf9faa7bc9825070114612b87f36b_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>蚂蚁通讯框架Bolt调用类型</p>
+<p><strong>▍二、服务端处理器模式</strong></p>
+<p>RocketMQ 服务端通讯使用经典的 Reactor 模式 ，服务端注册不同的业务处理器，而各个业务处理器可以绑定不同的线程池。</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><figure><img src="https://pic2.zhimg.com/80/v2-50551cf8c23a2a719a999ba7a2c9cf91_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<hr>
+<p>学完网络框架 Remoting 之后，然后结合 Broker 模块，学习 RocketMQ 存储模型，通过这种方式就可以对 RocketMQ 有了一个相对清晰的认识。</p>
+<h2> <strong>3 知行合一</strong></h2>
+<p>笔者大学刚毕业的时候，读李开复老师的书，书中有一句话，我印象深刻： “<strong>I Hear and I Forget, I See and I Remember, I Do and I Understand</strong> ” 。</p>
+<p>中国古代哲学家荀子也说过："<strong>不闻不若闻之，闻之不若见之，见之不若知之，知之不若行之；学至于行之而止矣</strong>"。</p>
+<p>学习源码的过程中，将知识点夯实的关键要诀是<strong>动手实践</strong>，并保证实践之后有<strong>输出产物</strong>，也就是<strong>知行合一</strong>。</p>
+<p>笔者总结了两点经验，供大家参考。</p>
+<p><strong>▍一、源码中的知识点应用到项目中</strong></p>
+<p>开源项目中有非常多的<strong>优秀实践</strong> ，可以将代码中的编码技巧，设计思想，优秀源码引进到业务项目里。</p>
+<p>2014年，艺龙的优惠券计算服务遇到性能瓶颈，笔者负责重构这个系统。 在阅读 RocketMQ 源码后，学习到了线程池使用精髓：<strong>线程池隔离，各司其职</strong> 。</p>
+<p>于是，笔者先梳理出业务场景，根据任务类型，绑定不同的线程池，为了便于扩展同时对外暴露并发度的配置参数。在重构这个系统的过程中，还引入 RocketMQ 创建线程工具类代码 。</p>
+<p>重构之后，不仅系统的性能提升了5倍，而且笔者的自信心也大大提升，对技术的理解也更加深刻。</p>
+<p><strong>▍ 二、造轮子</strong></p>
+<p>当我们学习了一个开源项目，我们可以参考开源源码仿写一个。仿写的过程就是查漏补缺的过程，也能完善自己的知识体系。</p>
+<p>2016年，sharding-jdbc 开源了，下图是当时 sharding-jdbc 的架构设计图：</p>
+<figure><img src="https://pic2.zhimg.com/80/v2-70ec651391c885be8bbfb66b2e2d8235_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>笔者当时对分库分表着迷，同时脑海里有很多疑问，比如如何封装 jdbc 的接口，如何实现 SQL 解析 ，如何将多个分片的结果聚合等。</p>
+<p>于是，笔者参考 sharding-jdbc 的源码，仿写了一个分库分表组件。</p>
+<figure><img src="https://pic2.zhimg.com/80/v2-1414538009d90083904223e66a600625_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>经过这次仿写，笔者深入实践了 client 模式分库分表的原理，并积累了自己的技术储备。</p>
+<h2> <strong>4 参与开源</strong></h2>
+<blockquote>
+<p>“开源理念之一就是非常鼓励不同的人一起合作”。——Linux 之父 <code>Linus Torvalds</code> 2016 年 2 月 TED 演讲《<strong><a href="https://link.zhihu.com/?target=https%3A//www.bilibili.com/video/BV1Cs411z73j" target="_blank" rel="noopener noreferrer">The mind behind Linux (opens new window)</a></strong>》</p>
+</blockquote>
+<p>在《教授鼓励学生参与开源项目的 5 个理由》这篇文章里，提到了如下五点理由：</p>
+<ol>
+<li>无边界的学习</li>
+<li>专业的交流</li>
+<li>外在的机会</li>
+<li>更深入的理解计算机科学</li>
+<li>玩</li>
+</ol>
+<p>那么程序员如何参与开源呢 ？参与开源有很多种方式，最常见的有如下几种：</p>
+<ol>
+<li>直接参与开源项目的开发</li>
+<li>参考开源项目的社区比赛</li>
+<li>修复开源项目中的 Bug</li>
+<li>开源项目文档编写</li>
+<li>参与开源项目的测试和 Demo 编写工作</li>
+<li>参与开源项目推广</li>
+</ol>
+<p>参与一个开源项目，并与许许多多同样聪明的工程师协作，把脑海中的奇思妙想一一实现，那是多么美好的事情。</p>
+<h2> <strong>5 写到最后</strong></h2>
+<p>亲爱的程序员朋友，当你不知道选择哪一个开源项目开始学习时，希望你<strong>立足当下，行动起来</strong>。当前技术团队使用的开源组件，正是你学习的方向。</p>
+<p>行动起来，你会变成更好的自己，加油。</p>
+]]></content>
+    <category term="技术人生"/>
+    <published>2023-11-20T06:53:02.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">我与消息队列的八年情缘</title>
+    <id>https://javayong.cn/codelife/messagequeuecareer.html</id>
+    <link href="https://javayong.cn/codelife/messagequeuecareer.html"/>
+    <updated>2023-11-20T06:53:02.000Z</updated>
+    <summary type="html"><![CDATA[<p>谈起消息队列，内心还是会有些波澜。</p>
+<p><strong>消息队列</strong>，缓存，分库分表是高并发解决方案三剑客，而消息队列是我最喜欢，也是思考最多的技术。</p>
+<p>我想按照下面的四个阶段分享我与消息队列的故事，同时也是对我技术成长经历的回顾。</p>
+<ul>
+<li>初识：ActiveMQ</li>
+<li>进阶：Redis&amp;RabbitMQ</li>
+<li>升华：MetaQ</li>
+<li>钟情：RocketMQ</li>
+</ul>
+<h2> <strong>1 初识ActiveMQ</strong></h2>
+<h3> <strong>1.1 异步&amp;解耦</strong></h3>]]></summary>
+    <content type="html"><![CDATA[<p>谈起消息队列，内心还是会有些波澜。</p>
+<p><strong>消息队列</strong>，缓存，分库分表是高并发解决方案三剑客，而消息队列是我最喜欢，也是思考最多的技术。</p>
+<p>我想按照下面的四个阶段分享我与消息队列的故事，同时也是对我技术成长经历的回顾。</p>
+<ul>
+<li>初识：ActiveMQ</li>
+<li>进阶：Redis&amp;RabbitMQ</li>
+<li>升华：MetaQ</li>
+<li>钟情：RocketMQ</li>
+</ul>
+<h2> <strong>1 初识ActiveMQ</strong></h2>
+<h3> <strong>1.1 异步&amp;解耦</strong></h3>
+<p>2011年初，我在一家互联网彩票公司做研发。</p>
+<p>我负责的是用户中心系统，提供用户注册，查询，修改等基础功能。用户注册成功之后，需要给用户发送短信。</p>
+<p>因为原来都是面向过程编程，我就把新增用户模块和发送短信模块都揉在一起了。</p>
+<figure><img src="https://pic1.zhimg.com/80/v2-684a72a1a19ce37b1b42cd9db76b6604_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>起初都还好，但问题慢慢的显现出来。</p>
+<ul>
+<li>短信渠道不够稳定，发送短信会达到5秒左右，这样用户注册接口耗时很大，影响前端用户体验;</li>
+<li>短信渠道接口发生变化，用户中心代码就必须修改了。但用户中心是核心系统。每次上线都必要谨小慎微。这种感觉很别扭，非核心功能影响到核心系统了。</li>
+</ul>
+<p>第一个问题，我可以采取线程池的方法来做，主要是<strong>异步化</strong>。但第二个问题却让我束手无措。</p>
+<p>于是我向技术经理请教，他告诉我引入消息队列去解决这个问题。</p>
+<ul>
+<li>将发送短信功能单独拆成独立的Job服务;</li>
+<li>用户中心用户注册成功后，发送一条消息到消息队列，Job服务收到消息调用短信服务发送短信即可。</li>
+</ul>
+<figure><img src="https://pic2.zhimg.com/80/v2-1352ec3cb37b34ef1915118e64da2161_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>这时，我才明白: 消息队列最核心的功能就是<strong>异步</strong>和<strong>解耦</strong>。</p>
+<h3> <strong>1.2 调度中心</strong></h3>
+<p>彩票系统的业务是比较复杂的。在彩票订单的生命周期里，经过创建，拆分子订单，出票，算奖等诸多环节。 每一个环节都需要不同的服务处理，每个系统都有自己独立的表，业务功能也相对独立。假如每个应用都去修改订单主表的信息，那就会相当混乱了。</p>
+<p>公司的架构师设计了<strong>调度中心</strong>的服务，调度中心的职责是维护订单核心状态机，订单返奖流程，彩票核心数据生成。</p>
+<figure><img src="https://pic1.zhimg.com/80/v2-31cf1f1abe47c95553a1975008e533cc_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>调度中心通过<strong>消息队列</strong>和出票网关，算奖服务等系统传递和交换信息。</p>
+<p>这种设计在那个时候青涩的我的眼里，简直就是水滴vs人类舰队，降维打击。</p>
+<p>随着我对业务理解的不断深入，我隐约觉得：“好的架构是简洁的，也是应该易于维护的”。</p>
+<p>当彩票业务日均千万交易额的时候，调度中心的研发维护人员也只有两个人。调度中心的源码里业务逻辑，日志，代码规范都是极好的。</p>
+<p>在我日后的程序人生里，我也会下意识模仿调度中心的编码方式，“不玩奇技淫巧，代码是给人阅读的”。</p>
+<h3> <strong>1.3 重启大法</strong></h3>
+<p>随着彩票业务的爆炸增长，每天的消息量从30万激增到150~200万左右，一切看起来似乎很平稳。</p>
+<p>某一天双色球投注截止，调度中心无法从消息队列中消费数据。消息总线处于只能发，不能收的状态下。 整个技术团队都处于极度的焦虑状态，“要是出不了票，那可是几百万的损失呀，要是用户中了两个双色球？那可是千万呀”。大家急得像热锅上的蚂蚁。</p>
+<p>这也是整个技术团队第一次遇到消费堆积的情况，大家都没有经验。</p>
+<p>首先想到的是多部署几台调度中心服务，部署完成之后，调度中心消费了几千条消息后还是Hang住了。 这时，架构师只能采用<strong>重启</strong>的策略。你没有看错，就是重启大法。说起来真的很惭愧，但当时真的只能采用这种方式。</p>
+<p>调度中心重启后，消费了一两万后又Hang住了。只能又重启一次。来来回回持续20多次，像挤牙膏一样。而且随着出票截止时间的临近，这种思想上的紧张和恐惧感更加强烈。终于，通过1小时的手工不断重启，消息终于消费完了。</p>
+<p>我当时正好在读毕玄老师的《分布式java应用基础与实践》，猜想是不是线程阻塞了，于是我用Jstack命令查看堆栈情况。 果然不出所料，线程都阻塞在提交数据的方法上。</p>
+<figure><img src="https://pic1.zhimg.com/80/v2-827a3153474627f273451d4390f540a8_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>我们马上和DBA沟通，发现oracle数据库执行了非常多的大事务，每次大的事务执行都需要30分钟以上，导致调度中心的调度出票线程阻塞了。</p>
+<p>技术部后来采取了如下的方案规避堆积问题：</p>
+<ol>
+<li>生产者发送消息的时候，将超大的消息拆分成多批次的消息，减少调度中心执行大事务的几率;</li>
+<li>数据源配置参数，假如事务执行超过一定时长，自动抛异常，回滚。</li>
+</ol>
+<h3> <strong>1.4 复盘</strong></h3>
+<p>Spring封装的ActiveMQ的API非常简洁易用，使用过程中真的非常舒服。</p>
+<p>受限于当时彩票技术团队的技术水平和视野，我们在使用ActiveMQ中遇到了一些问题。</p>
+<ol>
+<li>高吞吐下，堆积到一定消息量易Hang住；</li>
+</ol>
+<p>技术团队发现在吞吐量特别高的场景下，假如消息堆积越大，ActiveMQ有较小几率会Hang住的。</p>
+<p>出票网关的消息量特别大，有的消息并不需要马上消费，但是为了规避消息队列Hang住的问题，出票网关消费数据的时候，先将消息先持久化到本地磁盘，生成本地XML文件，然后异步定时执行消息。通过这种方式，我们大幅度提升了出票网关的消费速度，基本杜绝了出票网关队列的堆积。</p>
+<p>但这种方式感觉也挺怪的，消费消息的时候，还要本地再存储一份数据，消息存储在本地，假如磁盘坏了，也有丢消息的风险。</p>
+<ol>
+<li>高可用机制待完善</li>
+</ol>
+<p>我们采用的master/slave部署模式，一主一从，服务器配置是4核8G 。</p>
+<p>这种部署方式可以同时运行两个ActiveMQ， 只允许一个slave连接到Master上面，也就是说只能有2台MQ做集群，这两个服务之间有一个数据备份通道，利用这个通道Master向Slave单向地数据备份。 这个方案在实际生产线上不方便， 因为当Master挂了之后， Slave并不能自动地接收Client发来的请来，需要手动干预，且要停止Slave再重启Master才能恢复负载集群。</p>
+<p>还有一些很诡异丢消息的事件，生产者发送消息成功，但master控制台查询不到，但slave控制台竟然能查询到该消息。</p>
+<p>但消费者没有办法消费slave上的消息，还得通过人工介入的方式去处理。</p>
+<h2> <strong>2 进阶Redis&amp;RabbitMQ</strong></h2>
+<p>2014年，我在艺龙网从事红包系统和优惠券系统优化相关工作。</p>
+<h3> <strong>2.1 Redis可以做消息队列吗</strong></h3>
+<p>酒店优惠券计算服务使用的是初代流式计算框架<strong>Storm</strong>。Storm这里就不详细介绍，可以参看下面的逻辑图：</p>
+<figure><img src="https://pic1.zhimg.com/80/v2-a4977cee51bb48192c724dbdf0f009fc_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>这里我们的Storm集群的水源头（数据源）是redis集群，使用<strong>list</strong>数据结构实现了消息队列的push/pop功能。</p>
+<figure><img src="https://pic3.zhimg.com/80/v2-372e57ad3ab16387f5cd7d9cf0d8f752_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>流式计算的整体流程：</p>
+<ol>
+<li>酒店信息服务发送酒店信息到Redis集群A/B;</li>
+<li>Storm的spout组件从Redis集群A/B获取数据, 获取成功后，发送tuple消息给Bolt组件;</li>
+<li>Bolt组件收到消息后，通过运营配置的规则对数据进行清洗;</li>
+<li>最后Storm把处理好的数据发送到Redis集群C;</li>
+<li>入库服务从Redis集群C获取数据,存储数据到数据库;</li>
+<li>搜索团队扫描数据库表，生成索引。</li>
+</ol>
+<figure><img src="https://pic4.zhimg.com/80/v2-f0aeb303287cd077b923bdbae1bed8f7_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>这套流式计算服务每天处理千万条数据，处理得还算顺利。 但方案在团队内部还是有不同声音:</p>
+<ul>
+<li>storm的拓扑升级时候，或者优惠券服务重启的时候，偶尔出现丢消息的情况。但消息的丢失，对业务来讲没有那么敏感，而且我们也提供了手工刷新的功能，也在业务的容忍范围内;</li>
+<li>团队需要经常关注Redis的缓存使用量，担心Redis队列堆积, 导致out of memory;</li>
+<li>架构师认为搜索团队直接扫描数据库不够解耦，建议将Redis集群C替换成Kafka，搜索团队从kafka直接消费消息，生成索引;</li>
+</ul>
+<p>我认为使用Redis做消息队列应该满足如下条件：</p>
+<ol>
+<li>容忍小概率消息丢失，通过定时任务/手工触发达到最终一致的业务场景;</li>
+<li>消息堆积概率低，有相关的报警监控;</li>
+<li>消费者的消费模型要足够简单。</li>
+</ol>
+<h3> <strong>2.2 RabbitMQ是管子不是池子</strong></h3>
+<p>RabbitMQ是用<strong>erlang</strong>语言编写的。RabbitMQ满足了我的两点需求：</p>
+<ol>
+<li>高可用机制。艺龙内部是使用的镜像高可用模式，而且这种模式在艺龙已经使用了较长时间了，稳定性也得到了一定的验证。</li>
+<li>我负责的红包系统里，RabbitMQ每天的吞吐也在百万条消息左右，消息的发送和消费都还挺完美。</li>
+</ol>
+<p>优惠券服务原使用<strong>SqlServer</strong>，由于数据量太大，技术团队决定使用分库分表的策略，使用公司自主研发的分布式数据库DDA。</p>
+<figure><img src="https://pic4.zhimg.com/80/v2-904a47d470e130aff98261183a231c5b_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>因为是第一次使用分布式数据库，为了测试DDA的稳定性，我们模拟发送1000万条消息到RabbitMQ，然后优惠券重构服务消费消息后，按照用户编号hash到不同的mysql库。</p>
+<p>RabbitMQ集群模式是镜像高可用，3台服务器，每台配置是4核8G 。</p>
+<p>我们以每小时300万条消息的速度发送消息，最开始1个小时生产者和消费者表现都很好，但由于消费者的速度跟不上生产者的速度，导致消息队列有积压情况产生。第三个小时，消息队列已堆积了500多万条消息了， 生产者发送消息的速度由最开始的2毫秒激增到500毫秒左右。RabbitMQ的控制台已血溅当场，标红报警。</p>
+<p>这是一次无意中的测试，从测试的情况来看，RabbitMQ很优秀，但<strong>RabbitMQ对消息堆积的支持并不好，当大量消息积压的时候，会导致 RabbitMQ 的性能急剧下降</strong>。</p>
+<p>有的朋友对我讲：“RabbitMQ明明是管子，你非得把他当池子？”</p>
+<p>随着整个互联网数据量的激增, 很多业务场景下是允许适当堆积的，只要保证消费者可以平稳消费，整个业务没有大的波动即可。</p>
+<p>我心里面越来越相信：消息队列既可以做<strong>管子</strong>，也可以当做<strong>池子</strong>。</p>
+<figure><img src="https://pic4.zhimg.com/v2-5c93c94a66b6b3b11f6233aebdf9bd03_b.jpg" alt="动图封面" tabindex="0"><figcaption>动图封面</figcaption></figure>
+<h2> <strong>3 升华MetaQ</strong></h2>
+<blockquote>
+<p>Metamorphosis的起源是我从对linkedin的开源MQ–现在转移到apache的kafka的学习开始的，这是一个设计很独特的MQ系统，它采用pull机制，而 不是一般MQ的push模型，它大量利用了zookeeper做服务发现和offset存储，它的设计理念我非常欣赏并赞同，强烈建议你阅读一下它的设计文档，总体上说metamorphosis的设计跟它是完全一致的。--- MetaQ的作者庄晓丹</p>
+</blockquote>
+<h3> <strong>3.1 惊艳消费者模型</strong></h3>
+<p>2015年，我主要从事神州专车订单研发工作。</p>
+<p>MetaQ满足了我对于消息队列的幻想：“分布式，高吞吐，高堆积”。</p>
+<p>MetaQ支持两种消费模型： <strong>集群消费</strong>和<strong>广播消费</strong> ，因为以前使用过的消费者模型都是用队列模型，当我第一次接触到这种发布订阅模型的时候还是被惊艳到了。</p>
+<p><strong>▍ 集群消费</strong></p>
+<figure><img src="https://pic3.zhimg.com/80/v2-5ec2d8830589b16d67445d7e07838ea2_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>订单创建成功后，发送一条消息给MetaQ。这条消息可以被派单服务消费，也可以被BI服务消费。</p>
+<p><strong>▍ 广播消费</strong></p>
+<p>派单服务在讲订单指派给司机的时候，会给司机发送一个推送消息。推送就是用广播消费的模式实现的。</p>
+<figure><img src="https://pic3.zhimg.com/80/v2-f72389f95a2d01005728fa50334d8ffa_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>大体流程是:</p>
+<ol>
+<li>司机端推送服务是一个TCP服务，启动后，采用的是广播模式消费MetaQ的PushTopic;</li>
+<li>司机端会定时发送TCP请求到推送服务，鉴权成功后，推送服务会保存司机编号和channel的引用；</li>
+<li>派单服务发送推送消息到MetaQ；</li>
+<li>推送服务的每一台机器都会收到该消息，然后判断内存中是否存在该司机的channel引用，若存在，则推送消息。</li>
+</ol>
+<p>这是非常经典的广播消费的案例。我曾经研读京麦TCP网关的设计，它的推送也是采用类似的方式。</p>
+<h3> <strong>3.2 激进的消峰</strong></h3>
+<p>2015年是打车大战硝烟弥漫的一年。</p>
+<p>对神州专车来讲，随着订单量的不断增长，欣喜的同时，性能的压力与日俱增。早晚高峰期，用户打车的时候，经常点击下单经常无响应。 在系统层面来看，专车api网关发现大规模超时，订单服务的性能急剧下降。数据库层面压力更大，高峰期一条记录插入竟然需要8秒的时间。</p>
+<p>整个技术团队需要尽快提升专车系统的性能，此前已经按照模块领域做了数据库的拆分。但系统的瓶颈依然很明显。</p>
+<p>我们设计了现在看来有点激进的方案：</p>
+<ol>
+<li>设计订单缓存。缓存方案大家要有兴趣，我们可以以后再聊，里面有很多可以详聊的点;</li>
+<li>在订单的载客生命周期里，订单的修改操作先修改缓存，然后发送消息到MetaQ，订单落盘服务消费消息，并判断订单信息是否正常（比如有无乱序)，若订单数据无误，则存储到数据库中。</li>
+</ol>
+<figure><img src="https://pic2.zhimg.com/80/v2-916def60b0f03150635e89fce05db839_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>这里有两个细节：</p>
+<ol>
+<li>消费者消费的时候需要顺序消费，实现的方式是按照订单号路由到不同的partition，同一个订单号的消息，每次都发到同一个partition;</li>
+</ol>
+<figure><img src="https://pic3.zhimg.com/80/v2-1b79aa5ad5805e511218563fc7b072ca_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<ol>
+<li>一个守护任务，定时轮询当前正在进行的订单，当缓存与数据不一致时候，修复数据，并发送报警。</li>
+</ol>
+<p>这次优化大大提升订单服务的整体性能，也为后来订单服务库分库分表以及异构打下了坚实的基础，根据我们的统计数据，基本没有发生过缓存和数据库最后不一致的场景。 但这种方案对缓存高可用有较高的要求，还是有点小激进吧。</p>
+<h3> <strong>3.3 消息SDK封装</strong></h3>
+<p>做过基础架构的同学可能都有经验：“三方组件会封装一层”，神州架构团队也是将metaq-client封装了一层。</p>
+<p>在我的思维里面，封装一层可以减少研发人员使用第三方组件的心智投入，统一技术栈，也就如此了。</p>
+<p>直到发生一次意外，我的思维升级了。那是一天下午，整个专车服务崩溃较长时间。技术团队发现："专车使用zookeeper做服务发现。zk集群的leader机器挂掉了，一直在选主。"</p>
+<p>临时解决后，我们发现MetaQ和服务发现都使用同一套zk集群，而且consumer的offset提交，以及负载均衡都会对zk集群进行大量的写操作。</p>
+<p>为了减少MetaQ对zk集群的影响，我们的目标是：“MetaQ使用独立的zk集群”。</p>
+<ol>
+<li>需要部署新的zk集群；</li>
+<li>MetaQ的zk数据需要同步到新的集群；</li>
+<li>保证切换到新的集群，应用服务基本无感知。</li>
+</ol>
+<p>我很好奇向架构部同学请教，他说新的集群已经部署好了，但需要同步zk数据到新的集群。他在客户端里添加了<strong>双写</strong>的操作。也就是说：我们除了会写原有的zk集群一份数据，同时也会在新的zk集群写一份。 过了几周后，MetaQ使用独立的zk集群这个任务已经完成了。</p>
+<figure><img src="https://pic2.zhimg.com/80/v2-3fdf1c91a142672cf1f462859dad0189_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>这一次的经历带给我很大的感慨：“还可以这么玩？” ，也让我思考着：三方组件封装没有想像中那么简单。</p>
+<p>我们可以看下<strong>快手</strong>消息的SDK封装策略：</p>
+<ol>
+<li>对外只提供最基本的 API，所有访问必须经过SDK提供的接口。简洁的 API 就像冰山的一个角，除了对外的简单接口，下面所有的东西都可以升级更换，而不会破坏兼容性 ;</li>
+<li>业务开发起来也很简单，只要需要提供 Topic（全局唯一）和 Group 就可以生产和消费，不用提供环境、NameServer 地址等。SDK 内部会根据 Topic 解析出集群 NameServer 的地址，然后连接相应的集群。生产环境和测试环境环境会解析出不同的地址，从而实现了隔离；</li>
+<li>上图分为 3 层，第二层是通用的，第三层才对应具体的 MQ 实现，因此，理论上可以更换为其它消息中间件，而客户端程序不需要修改；</li>
+<li>SDK 内部集成了热变更机制，可以在不重启 Client 的情况下做动态配置，比如下发路由策略（更换集群 NameServer 的地址，或者连接到别的集群去），Client 的线程数、超时时间等。通过 Maven 强制更新机制，可以保证业务使用的 SDK 基本上是最新的。</li>
+</ol>
+<figure><img src="https://pic4.zhimg.com/80/v2-02d34bc27148a7459795af88850a0ac7_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<h2> <strong>3.4 重构MetaQ , 自成体系</strong></h2>
+<p>我有一个习惯 : "经常找运维，DBA，架构师了解当前系统是否有什么问题，以及他们解决问题的思路。这样，我就有另外一个视角来审视公司的系统运行情况"。</p>
+<p>MetaQ也有他的缺点。</p>
+<ol>
+<li>MetaQ的基层通讯框架是gecko，MetaQ偶尔会出现rpc无响应，应用假死的情况，不太好定位问题；</li>
+<li>MetaQ的运维能力薄弱，只有简单的Dashboard界面，无法实现自动化主题申请，消息追踪等功能。</li>
+</ol>
+<p>有一天，我发现测试环境的一台消费者服务器启动后，不断报链接异常的问题，而且cpu占用很高。我用netstat命令马上查一下，发现已经创建了几百个链接。出于好奇心，我打开了源码，发现网络通讯框架gecko已经被替换成了netty。我们马上和架构部的同学联系。</p>
+<p>我这才明白：他们已经开始重构MetaQ了。我从来没有想过重构一个开源软件，因为距离我太远了。或者那个时候，我觉得自己的能力还达不到。</p>
+<p>后来，神州自研的消息队列自成体系了，已经在生产环境运行的挺好。</p>
+<p>时至今天，我还是很欣赏神州架构团队。他们自研了消息队列，DataLink（数据异构中间件），分库分表中间件等。他们愿意去创新，有勇气去做一个更好的技术产品。</p>
+<p>我从他们身上学到很多。</p>
+<p>也许在看到他们重构MetaQ的那一刻，我的心里埋下了种子。</p>
+<figure><img src="https://pic1.zhimg.com/80/v2-4fd5a72bda57c252694863ccee54b450_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<h2> <strong>4 钟情RocketMQ</strong></h2>
+<h3> <strong>4.1 开源的盛宴</strong></h3>
+<p>2014年，我搜罗了很多的淘宝的消息队列的资料，我知道MetaQ的版本已经升级MetaQ 3.0，只是开源版本还没有放出来。</p>
+<p>大约秋天的样子，我加入了RocketMQ技术群。誓嘉(RocketMQ创始人)在群里说：“最近要开源了，放出来后，大家赶紧fork呀”。他的这句话发在群里之后，群里都炸开了锅。我更是欢喜雀跃，期待着能早日见到阿里自己内部的消息中间件。</p>
+<figure><img src="https://pic2.zhimg.com/80/v2-9b8d0b6bdd93b09091433e0f21a804f1_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>终于，RocketMQ终于开源了。我迫不及待想一窥他的风采。</p>
+<p>因为我想学网络编程，而RocketMQ的通讯模块remoting底层也是Netty写的。所以，RocketMQ的通讯层是我学习切入的点。</p>
+<p>我模仿RocketMQ的remoting写了一个玩具的rpc，这更大大提高我的自信心。正好，艺龙举办技术创新活动。我想想，要不尝试一下用Netty改写下Cobar的通讯模块。于是参考Cobar的源码花了两周写了个netty版的proxy，其实非常粗糙，很多功能不完善。后来，这次活动颁给我一个鼓励奖，现在想想都很好玩。</p>
+<p>因为在神州优车使用MetaQ的关系，我学习RocketMQ也比较得心应手。为了真正去理解源码，我时常会参考RocketMQ的源码，写一些轮子来验证我的学习效果。</p>
+<p>虽然自己做了一些练习，但一直没有在业务环境使用过。2018年是我真正使用RocketMQ的一年，也是有所得的一年。</p>
+<p><strong>▍ 短信服务</strong></p>
+<p>短信服务应用很广泛，比如用户注册登录验证码，营销短信，下单成功短信通知等等。 最开始设计短信服务的时候，我想学习业界是怎么做的。于是把目标锁定在腾讯云的短信服务上。 腾讯云的短信服务有如下特点：</p>
+<ul>
+<li>统一的SDK，后端入口是http/https服务 , 分配appId/appSecret鉴权；</li>
+<li>简洁的API设计：单发，群发，营销单发，营销群发，模板单发，模板群发。</li>
+</ul>
+<p>于是，我参考了这种设计思路。</p>
+<ol>
+<li>模仿腾讯云的SDK设计，提供简单易用的短信接口；</li>
+<li>设计短信服务API端，接收发短信请求，发送短信信息到消息队列；</li>
+<li>worker服务消费消息，按照负载均衡的算法，调用不同渠道商的短信接口；</li>
+<li>Dashboard可以查看短信发送记录，配置渠道商信息。</li>
+</ol>
+<figure><img src="https://pic1.zhimg.com/80/v2-e673dae2710d23989aa30148e6a7864c_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>短信服务是我真正意义第一次生产环境使用RocketMQ，当短信一条条发出来的时候，还是蛮有成就感的。</p>
+<p><strong>▍ MQ控制台</strong></p>
+<figure><img src="https://pic2.zhimg.com/80/v2-33e925a01b0e08634a199e10cc4b5039_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>使用过RocketMQ的朋友，肯定对上图的控制台很熟悉。当时团队有多个RocketMQ集群，每组集群都需要单独部署一套控制台。于是我想着：能不能稍微把控制台改造一番，能满足支持多组集群。</p>
+<p>于是，撸起袖子干了起来。大概花了20天的时间，我们基于开源的版本改造了能支持多组集群的版本。做完之后，虽然能满足我最初的想法，但是做的很粗糙。而且搜狐开源了他们自己的MQCloud ，我看了他们的设计之后， 觉得离一个消息治理平台还很远。</p>
+<p>后来我读了《网易云音乐的消息队列改造之路》，《今日头条在消息服务平台和容灾体系建设方面的实践与思考》这两篇文章，越是心痒难耐，蛮想去做的是一个真正意义上的消息治理平台。一直没有什么场景和机会，还是有点可惜。</p>
+<p>最近看了哈罗单车架构专家梁勇的一篇文章《哈啰在分布式消息治理和微服务治理中的实践》，推荐大家一读。</p>
+<blockquote>
+<p><a href="https://link.zhihu.com/?target=https%3A//mp.weixin.qq.com/s/N-vd6he4nsZp-G3Plc4m6A" target="_blank" rel="noopener noreferrer">https://mp.weixin.qq.com/s/N-vd6he4nsZp-G3Plc4m6A</a></p>
+</blockquote>
+<p><strong>▍ 一扇窗子，开始自研组件</strong></p>
+<p>后来，我尝试进一步深入使用RocketMQ。</p>
+<ul>
+<li>仿ONS风格封装消息SDK；</li>
+<li>运维侧平滑扩容消息队列；</li>
+<li>生产环境DefaultMQPullConsumer消费模式尝试</li>
+</ul>
+<p>这些做完之后，我们又自研了注册中心、配置中心，任务调度系统。设计这些系统的时候，从RocketMQ源码里汲取了很多的营养，虽然现在看来有很多设计不完善的地方，代码质量也有待提高，但做完这些系统后，还是大大提升我的自信心。</p>
+<p>RocketMQ给我打开了一扇窗子，让我能看到更广阔的Java世界。 对我而言，这就是开源的盛宴。</p>
+<h3> <strong>4.2 Kafka: 大数据生态的不可或缺的部分</strong></h3>
+<p>Kafka是一个拥有高吞吐、可持久化、可水平扩展，支持流式数据处理等多种特性的分布式消息流处理中间件，采用分布式消息发布与订阅机制，在日志收集、流式数据传输、在线/离线系统分析、实时监控等领域有广泛的应用。</p>
+<p><strong>▍ 日志同步</strong></p>
+<p>在大型业务系统设计中，为了快速定位问题，全链路追踪日志，以及故障及时预警监控，通常需要将各系统应用的日志集中分析处理。</p>
+<p>Kafka设计初衷就是为了应对大量日志传输场景，应用通过可靠异步方式将日志消息同步到消息服务，再通过其他组件对日志做实时或离线分析，也可用于关键日志信息收集进行应用监控。</p>
+<p>日志同步主要有三个关键部分：日志采集客户端，Kafka消息队列以及后端的日志处理应用。</p>
+<ol>
+<li>日志采集客户端，负责用户各类应用服务的日志数据采集，以消息方式将日志“批量”“异步”发送Kafka客户端。 Kafka客户端批量提交和压缩消息，对应用服务的性能影响非常小。</li>
+<li>Kafka将日志存储在消息文件中，提供持久化。</li>
+<li>日志处理应用，如Logstash，订阅并消费Kafka中的日志消息，最终供文件搜索服务检索日志，或者由Kafka将消息传递给Hadoop等其他大数据应用系统化存储与分析。</li>
+</ol>
+<p>日志同步示意图：</p>
+<figure><img src="https://pic4.zhimg.com/80/v2-ea9701e39e78c4b153f8046eb912cc2b_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>▍<strong>流计算处理</strong></p>
+<p>在很多领域，如股市走向分析、气象数据测控、网站用户行为分析，由于数据产生快、实时性强且量大，您很难统一采集这些数据并将其入库存储后再做处理，这便导致传统的数据处理架构不能满足需求。Kafka以及Storm、Samza、Spark等流计算引擎的出现，就是为了更好地解决这类数据在处理过程中遇到的问题，流计算模型能实现在数据流动的过程中对数据进行实时地捕捉和处理，并根据业务需求进行计算分析，最终把结果保存或者分发给需要的组件。</p>
+<p><strong>▍ 数据中转枢纽</strong></p>
+<p>近10多年来，诸如KV存储（HBase）、搜索（ElasticSearch）、流式处理（Storm、Spark、Samza）、时序数据库（OpenTSDB）等专用系统应运而生。这些系统是为单一的目标而产生的，因其简单性使得在商业硬件上构建分布式系统变得更加容易且性价比更高。通常，同一份数据集需要被注入到多个专用系统内。例如，当应用日志用于离线日志分析时，搜索单个日志记录同样不可或缺，而构建各自独立的工作流来采集每种类型的数据再导入到各自的专用系统显然不切实际，利用消息队列Kafka版作为数据中转枢纽，同份数据可以被导入到不同专用系统中。</p>
+<p>下图是美团 MySQL 数据实时同步到 Hive 的架构图，也是一个非常经典的案例。</p>
+<figure><img src="https://pic4.zhimg.com/80/v2-8ac62729fb8adb03e53a5ba885703543_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<h3> <strong>4.3 如何技术选型</strong></h3>
+<p>2018年去哪儿QMQ开源了，2019年腾讯TubeMQ开源了，2020年Pulsar如火如荼。</p>
+<p>消息队列的生态是如此的繁荣，那我们如何选型呢？</p>
+<p>我想我们不必局限于消息队列，可以再扩大一下。简单谈一谈我的看法。</p>
+<blockquote>
+<p>Databases are specializing – the “one size fits all” approach no longer applies ----- MongoDB设计哲学</p>
+</blockquote>
+<p>第一点：先有场景，然后再有适配这种场景的技术。什么样的场景选择什么样的技术。</p>
+<p>第二点：现实往往很复杂，当我们真正做技术选型，并需要落地的时候，<strong>技术储备</strong>和<strong>成本</strong>是两个我们需要重点考量的因素。</p>
+<p><strong>▍ 技术储备</strong></p>
+<ul>
+<li>技术团队有无使用这门技术的经验，是否踩过生产环境的坑，以及针对这些坑有没有完备的解决方案；</li>
+<li>架构团队是否有成熟的SDK，工具链，甚至是技术产品。</li>
+</ul>
+<p><strong>▍ 成本</strong></p>
+<ul>
+<li>研发，测试，运维投入人力成本；</li>
+<li>服务器资源成本；</li>
+<li>招聘成本等。</li>
+</ul>
+<p>最后一点是<strong>人</strong>的因素，特别是管理者的因素。每一次大的技术选型考验技术管理者的视野，格局，以及管理智慧。</p>
+<h2> <strong>5 写到最后</strong></h2>
+<blockquote>
+<p>我觉得这个世界上没有什么毫无道理的横空出世，真的，如果没有大量的积累大量的思考是不会把事情做好的。。。 总之，在经历了这部电影以后，我觉得我要学的太多了，这世界上有太多的能人，你以为的极限，弄不好，只是别人的起点。所以只有不停地进取，才能不丢人。那，人可以不上学，但一定要学习，真的。 ------ 韩寒《后会无期》演讲</p>
+</blockquote>
+<p>我学习消息队列的过程是不断思考，不断实践的过程，虽然我以为的极限，弄不好，只是别人的起点，但至少现在，当我面对这门技术的时候，我的内心充满了好奇心，同时也是无所畏惧的。</p>
+<p>我始终相信：每天学习一点点，比昨天进步一点点就好。</p>
+]]></content>
+    <category term="技术人生"/>
+    <published>2023-11-20T06:53:02.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">追源码的平凡之路</title>
+    <id>https://javayong.cn/codelife/runningforcode.html</id>
+    <link href="https://javayong.cn/codelife/runningforcode.html"/>
+    <updated>2023-11-20T06:32:00.000Z</updated>
+    <summary type="html"><![CDATA[<figure><img src="https://pica.zhimg.com/80/v2-43738226ef4af0ef6eee3844123cfa52_720w.png" alt="" tabindex="0"><figcaption></figcaption></figure>
+<p>在斯坦福大学, 乔布斯做了一场我认为他最精彩的演讲。他讲的第一个故事是 <code>connecting the dots</code>，这也是贯穿他一生非常重要的思想。</p>
+<blockquote>
+<p>你不可能充满预见地将生命的点滴串联起来；只有在你回头看的时候，你才发现这些点点滴滴之间的联系。所以，你要坚信，你现在所经历的将在你未来的生命中串联起来… 正是这种信仰让我不会失去希望，它让我的人生变得与众不同。</p>
+</blockquote>]]></summary>
+    <content type="html"><![CDATA[<figure><img src="https://pica.zhimg.com/80/v2-43738226ef4af0ef6eee3844123cfa52_720w.png" alt="" tabindex="0"><figcaption></figcaption></figure>
+<p>在斯坦福大学, 乔布斯做了一场我认为他最精彩的演讲。他讲的第一个故事是 <code>connecting the dots</code>，这也是贯穿他一生非常重要的思想。</p>
+<blockquote>
+<p>你不可能充满预见地将生命的点滴串联起来；只有在你回头看的时候，你才发现这些点点滴滴之间的联系。所以，你要坚信，你现在所经历的将在你未来的生命中串联起来… 正是这种信仰让我不会失去希望，它让我的人生变得与众不同。</p>
+</blockquote>
+<p>我不禁在想：我的编码以及架构生涯中，那些点是什么，又终将会连成怎样的线？</p>
+<p>十年前刚进入 IT 行业的时候，我是一个很普通的工程师，脑袋也不灵光，工作老是得不到要领，而我的同学智商很高，他看一次代码基本就会写了，我得花很长时间去消化吸收，我对自己能不能在这一行生存下去都产生了质疑。</p>
+<p>没有办法，只能笨鸟先飞，当遇到问题的时候，我都抱着死咬不放的心态去寻找最佳解决方案。洗澡的时候、吃饭的时候、甚至上厕所的时候都会去思考。<strong>很自然的，"追" 源码也成为我程序人生的一部分。</strong></p>
+<p>我阅读过很多源码，和大家分享几个对我职业影响比较大的源码追寻经历。</p>
+<hr>
+<h2> <strong>01 数据库连接池 Durid</strong></h2>
+<p>这是在2013年，我负责重构一个彩票算奖服务，原有代码是 C# 版本的，每次计算订单金额需要耗费 2~3 个小时，很多用户反馈体验很差，因为收到奖金很晚。</p>
+<p>我当时采用 Druid 作为新项目的数据库连接池，重构后效果很明显，算奖性能提升到了原来的 10 倍。</p>
+<p>不过，有一个问题是：每天第一次数据库请求总会报连接错误。当时我也不怎么会看源码，就直接给 Druid 的作者温少（也是 FastJson 作者）发了一封邮件：</p>
+<figure><img src="https://pic3.zhimg.com/80/v2-7ca20947be50d941c9cf9d4d16de31de_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>温少给我回复了邮件，我马上翻看源码，发现我配置的连接心跳有问题。核心点在于连接池每隔一段时间就会发送心跳包到数据库服务器，而数据库为了节省资源，会关闭掉长期没有读写的连接。</p>
+<p>这次简单的源码之旅给了我很大的激励，也让我更加关注技术背后的原理。</p>
+<blockquote>
+<p>1、精神层面：向别人请教问题是会上瘾的。
+2、技能层面：理解连接池的实现原理。druid是基于数组实现的，后来用到的 jedis 连接池基于 commons-pool 实现的，netty 连接池是基于 FixChannelPool 实现的。
+3、架构层面：客户端和服务端的长连接通信需要考虑心跳。类似 druid 连接池发送心跳的机制，以及 netty 中的 idleStateHandler。</p>
+</blockquote>
+<hr>
+<h2> <strong>02 分库中间件 Cobar</strong></h2>
+<p>还是在 2013 年，当时移动互联网大潮奔涌而来，各大互联网公司的数据爆炸般的增长。</p>
+<p>我曾在 JavaEye 上看到淘宝订单的技术人员分享他们分库分表的帖子，顿时觉得如获至宝，可惜受限于篇幅，文章没讲很细节的原理，总感觉隔靴搔痒。</p>
+<p>没曾想到不久后阿里将 Cobar 开源了，用 Navicat 配置好 Cobar 信息，就像连单个 MySQL 一样，而且数据会均匀地分布到多个数据库中。这对于我当时还很孱弱的技术思维来讲，简直就像三体里的水滴遇到人类舰队般，给了我很大的刺激。</p>
+<p>因为对分库分表原理的渴求，我花了大约 3 个月的时间把整个 Cobar 的核心代码抄了一次。真的是智商不够，体力来凑。</p>
+<p>但光有体力是真的不够，经常会陷入怀疑，有些地方还是看不懂，边抄代码边学习好像进步没那么明显。那好，总得找一个突破口吧。</p>
+<p>网络通讯是非常重要的一环，因此我决定把 Cobar 的网络通讯模块剥离出来，去深刻理解使用原生 NIO 实现通讯的模式。剥离的过程同样很痛苦，但我有目标了，不至于像没头的苍蝇，后来也就有了人生第一个 GitHub 项目。</p>
+<figure><img src="https://pic1.zhimg.com/80/v2-072c1e1249e3d33d5330f9837d8bca9c_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>在写 NIO 工程的同时，我还学习到了 Maven 的 Assemble 打包模式，这个现在听起来很简单，但在 2013 年还是以 Tomcat 部署 war 包占主流的年代，让当时的我眼前一亮。</p>
+<p>追 Cobar 的过程中，我也找到了和阿里大牛面对面交流的机会，虽然我资质驽钝，但这位大牛对我的问题耐心解答，似乎打通了我的任督二脉。因此，这次经历说成是我编码生涯中最重要的一次经历也不为过。</p>
+<figure><img src="https://pic4.zhimg.com/80/v2-fe2ac8e12029dfd11ab7f52ffbeb8cb7_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>后来在艺龙网工作，和艺龙做数据库中间件的架构师沟通时，因为我有研究 Cobar 源码的底子，理解他的思路也很快。另外，也帮助他找到了分布式事务的一个 Bug。</p>
+<hr>
+<h2> <strong>03 阿里的消息中间件 MetaQ</strong></h2>
+<p>2015年我加入神州专车，那个时候神州专车处于上升期，各个系统遇到了较大的瓶颈。MetaQ 在那个时期发挥了很重要的作用，相关引申的知识点也很多。</p>
+<h3> <strong>3.1 广播消息在推送系统中的使用</strong></h3>
+<p>当时我们使用的 MetaQ 是庄晓丹在 GitHub 开源的版本。2016年初，我 checkout 了 MetaQ 的源码，边理解业务边深入理解它的机制。</p>
+<p>很有幸地和架构部的同事讨论了专车推送的设计方案。最开始的时候，我们也是使用极光推送，后来因为定制化的需求越来越多，因此决定自研推送系统。</p>
+<p>那服务器如何推送消息到每一个连接的专车 APP 呢？方案很简单：采用 MetaQ 的广播模式就可以实现这个功能。</p>
+<figure><img src="https://pic4.zhimg.com/80/v2-5b3aa8fb41799928519130b1ee855b6b_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<blockquote>
+<p>1、业务系统推送消息到 MetaQ
+2、TCP 网关广播模式消费 MetaQ 的消息
+3、TCP 网关获取当前服务器所持有的 Session 会话，推送数据给 App</p>
+</blockquote>
+<p>后来，我仔细研读了京东京麦系统的 TCP 网关设计，关于推送方面的实现和我们上面的方案非常相似。</p>
+<p>2018年，我服务的电商公司研发直播答题系统，我用这个方案又实现了推送题目的功能。</p>
+<h3> <strong>3.2 ZK 崩溃引申的一连串知识</strong></h3>
+<p>我们都知道 MetaQ 依赖 ZooKeeper 来实现负载均衡。突然有一天，专车整个 ZK 集群 down 掉了。架构负责人修改了 ZK 的 JVM 参数，问题貌似解决了，但疑问随之产生了。</p>
+<p><strong>MetaQ 和服务治理共用一套 ZK 集群合适吗？</strong></p>
+<p>阅读 MetaQ 源码后，我发现 MetaQ 在消费者很多的情况下，启动时会频繁的争抢锁，另外消费的过程，也会对 offset 频繁的修改。在 Topic 数量增多，partition 数量增多的情况下，MetaQ 对 ZK 实际上是有写压力的。</p>
+<p>后来，神州架构部确实也是将 MetaQ 的 ZK 集群和服务治理的 ZK 集群分开了。当然迁移也是有技巧的，这里就不展开了。</p>
+<p><strong>ZK 作为神州体系的注册中心是否有瓶颈?</strong></p>
+<p>ZK 会存储各个服务的 IP 和端口，以及对外暴露的方法。随着专车系统的服务越来越多，ZK 真的可以承受得了吗？后来，公司领导邀请了京东的研发同学来给大家答疑。</p>
+<p>京东的注册中心服务信息用什么实现的呢？京东同学的回答是：MySQL。我在旁边听得目瞪口呆，什么？MySQL？后来，淘宝中间件博客出了一篇文章：阿里巴巴为什么不用 ZooKeeper 做服务发现？</p>
+<p>当数据中心服务规模超过一定的数量，作为注册中心的 ZooKeeper 很快就会像驴子一样不堪重负。</p>
+<p>后来我参考张开涛写的一篇博客以及在 GitHub 上零落的 JSF 代码， 手撸了一个 AP 模型、客户端使用 BerkeleyDB 的注册中心。</p>
+<p>我们也知道 2019年，阿里在 SpringCloud 生态上发力，Nacos 诞生了。Nacos 同时支持 AP 和 CP 两种模型，开源世界的选择更有多样性了。当我们使用 ZooKeeper 的时候，一定要注意集群规模和使用场景。</p>
+<hr>
+<h2> <strong>04 任务调度系统 XXL-Job</strong></h2>
+<p>时间已经到了 2018 年，技术部需要一个可靠的任务调度系统。最开始使用的是 XXL-Job，但不知道怎么搞的，老是使用遇到有问题。从追源码到优化改造共经历了 3 个阶段。</p>
+<figure><img src="https://pic3.zhimg.com/80/v2-045cd57add4d876187cffb03d286cf16_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>第 1 阶段，我看了 XXL-Job 的源码后，第一直觉是「简单」。因为作者已经最大限度的将这个系统做成了开箱即用，去掉了 Quartz 的集群调度模式，自研基于数据库的调度器。</p>
+<p>但当前公司已经有自研的 RPC 服务，让其他团队配合 XXL-Job 添加JobHandler 好像也不太容易。所以最开始，我修改了调度器的代码，使用了公司的 RPC 来执行，只不过将 XXL-Job 的 JobHandler 替换为公司 RPC 的ServiceId。运行起来还行，能满足公司要求。</p>
+<p>第 2 阶段，为什么我想再优化一波呢？因为当前的 RPC 调度是同步执行，不支持异步，假如 RPC 执行任务很长，那么 XXL-Job 的调度线程就会被阻塞。</p>
+<p>我找到了美团的朋友，向他请教他们公司是如何设计任务调度系统的。他给我演示了美团任务调度系统 Crane 的执行过程，考虑到保密他仅仅给我讲了其中的原理。我根据他的描述做了如下架构设计：</p>
+<figure><img src="https://pic1.zhimg.com/80/v2-f9c518f9eb6ffb3144f8739790279ad0_720w.webp" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
+<p>Schedule-Client 收到调度请求后，会将任务丢到线程池中异步执行，同时立马返回给调度服务器，这样就不会阻塞了。</p>
+<p>第 3 阶段，光有架构设计没用，工程上如何做到更优雅的实现呢? 我想到了阿里云的schedulex，假如我是一名阿里云的开发者，我会怎么设计一个好的任务调度系统以支持每天千亿级别的任务调度呢？</p>
+<p>我翻看了 schedulex 的开放文档以及 client 端源码，想不到真的是宝藏。schedulex client 里包含如下几个亮点：</p>
+<blockquote>
+<p>1、RPC 调用类似 RocketMQ remoting
+2、任务调度通过 RPC 触发，有统一的注册中心（NameServer 模式）
+3、支持多端口启动，以防当前端口启动失败
+4、任务执行和任务调度的线程池做了隔离</p>
+</blockquote>
+<p>借鉴这些优点，我很快完成了工程实现，技术同事们对这个改造还算满意。但我深知，当前的系统还有两个待解决的问题：</p>
+<blockquote>
+<p>1、任务调度重度依赖数据库, 当真正有 10 万、20 万级别的任务的时候，任务的分配以及调度的触发肯定会有瓶颈。
+2、当系统是容器的时候，是否可以正常使用？</p>
+</blockquote>
+<p>于是，今年年初我在 GitHub 上写下了自己相对完整的一个任务调度系统，将 Quartz 替换成了时间轮，将任务触发改成服务端推送模式。</p>
+<p>在写任务调度的过程中，实际上也是不断超越自己的过程，我想把它做成一个可以和行业对标的作品，就必须向业界最先进的技术产品以及优秀的同行们学习。</p>
+<hr>
+<h2> <strong>05 写在最后</strong></h2>
+<p>回顾那些追源码的点滴，心潮澎湃，久久不能平复。它们是我架构师之路最美好的记忆。</p>
+<p>乔布斯的演讲里提到：工作将占据你生命中的很大一部分，只有从事你认为具有非凡意义的工作，方能给你带来真正的满足。而从事一份伟大工作的唯一方法，就是去热爱这份工作。</p>
+<p>专注当前做的事情，并且把每件事情做到能力范围内的极限，也许此时没有那么大的成就感，但在未来的某个时间节点，你可能突然就有一种「蓦然回首，那人却在灯火阑珊处」的后知后觉。</p>
+<p>亲爱的程序员朋友，爱你所选，全情投入，相信你必有所得。</p>
+]]></content>
+    <category term="技术人生"/>
+    <published>2023-11-20T06:25:57.000Z</published>
+  </entry>
   <entry>
     <title type="text">聊聊本地缓存和分布式缓存</title>
     <id>https://javayong.cn/cache/00localandclustercache.html</id>
     <link href="https://javayong.cn/cache/00localandclustercache.html"/>
-    <updated>2023-11-17T13:31:29.000Z</updated>
+    <updated>2023-11-20T05:21:16.000Z</updated>
     <summary type="html"><![CDATA[<p>缓存的世界很广阔，对于<strong>应用系统</strong>来讲，我们经常将缓存划分为<strong>本地缓存</strong>和<strong>分布式缓存</strong>。</p>
 <p><strong>本地缓存</strong> ：应用中的缓存组件，缓存组件和应用在同一进程中，缓存的读写非常快，没有网络开销。但各应用或集群的各节点都需要维护自己的单独缓存，无法共享缓存。</p>
 <p><strong>分布式缓存</strong>：和应用分离的缓存组件或服务，与本地应用隔离，多个应用可直接共享缓存。</p>
@@ -357,17 +997,17 @@
     <title type="text">详解布隆过滤器</title>
     <id>https://javayong.cn/cache/05boolfilter.html</id>
     <link href="https://javayong.cn/cache/05boolfilter.html"/>
-    <updated>2023-11-17T07:53:52.000Z</updated>
+    <updated>2023-11-20T05:15:08.000Z</updated>
     <summary type="html"><![CDATA[<p>布隆过滤器是一个精巧而且经典的数据结构。</p>
 <p>你可能没想到： RocketMQ、 Hbase 、Cassandra 、LevelDB 、RocksDB 这些知名项目中都有布隆过滤器的身影。</p>
 <p>对于后端程序员来讲，学习和理解布隆过滤器有很大的必要性。来吧，我们一起品味布隆过滤器的设计之美。</p>
 <figure><img src="https://www.javayong.cn/pics/temp//gGTKn38KyF.webp!large" alt="" tabindex="0"><figcaption></figcaption></figure>
-<h1> 1 缓存穿透</h1>]]></summary>
+<h2> 1 缓存穿透</h2>]]></summary>
     <content type="html"><![CDATA[<p>布隆过滤器是一个精巧而且经典的数据结构。</p>
 <p>你可能没想到： RocketMQ、 Hbase 、Cassandra 、LevelDB 、RocksDB 这些知名项目中都有布隆过滤器的身影。</p>
 <p>对于后端程序员来讲，学习和理解布隆过滤器有很大的必要性。来吧，我们一起品味布隆过滤器的设计之美。</p>
 <figure><img src="https://www.javayong.cn/pics/temp//gGTKn38KyF.webp!large" alt="" tabindex="0"><figcaption></figcaption></figure>
-<h1> 1 缓存穿透</h1>
+<h2> 1 缓存穿透</h2>
 <p>我们先来看一个商品服务查询详情的接口：</p>
 <div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><figure><img src="https://www.javayong.cn/pics/temp//szzXnQVHGA.webp!large" alt="" tabindex="0"><figcaption></figcaption></figure>
 <p>假设此商品既不存储在缓存中，也不存在数据库中，则没有办法<strong>回写缓存</strong>，当有类似这样大量的请求访问服务时，数据库的压力就会极大。</p>
@@ -375,7 +1015,7 @@
 <p>为了解决这个问题呢，通常我们可以向分布式缓存中写入一个过期时间较短的空值占位，但这样会占用较多的存储空间，性价比不足。</p>
 <p>问题的本质是："<strong>如何以极小的代价检索一个元素是否在一个集合中</strong>？"</p>
 <p>我们的主角<strong>布隆过滤器</strong>出场了，它就能游刃有余的<strong>平衡好时间和空间两种维度</strong>。</p>
-<h1> 2 原理解析</h1>
+<h2> 2 原理解析</h2>
 <p><strong>布隆过滤器</strong>（英语：Bloom Filter）是1970年由布隆提出的。它实际上是一个很长的<strong>二进制向量</strong>和一系列<strong>随机映射函数</strong>。</p>
 <p>布隆过滤器可以用于检索一个元素是否在一个集合中。它的优点是<strong>空间效率</strong>和<strong>查询时间</strong>都<strong>远远超过一般的算法</strong>，缺点是有一定的误识别率和删除困难。</p>
 <p>布隆过滤器的原理：当一个元素被加入集合时，通过 K 个散列函数将这个元素映射成一个位数组中的 K 个点，把它们置为 1。检索时，我们只要看看这些点是不是都是 1 就（大约）知道集合中有没有它了：如果这<strong>些点有任何一个 0</strong>，则<strong>被检元素一定不在</strong>；如果<strong>都是 1</strong>，则被检元素<strong>很可能在</strong>。</p>
@@ -417,7 +1057,7 @@
 <p>布隆过滤器的空间复杂度为 O(m) ，插入和查询时间复杂度都是 O(k) 。 存储空间和插入、查询时间都不会随元素增加而增大。 空间、时间效率都很高。</p>
 <p><strong>▍哈希函数类型</strong></p>
 <p>Murmur3，FNV 系列和 Jenkins 等非密码学哈希函数适合，因为 Murmur3 算法简单，能够平衡好速度和随机分布，很多开源产品经常选用它作为哈希函数。</p>
-<h1> 3 Guava实现</h1>
+<h2> 3 Guava实现</h2>
 <p>Google Guava是 Google 开发和维护的开源 Java开发库，它包含许多基本的工具类，例如字符串处理、集合、并发工具、I/O和数学函数等等。</p>
 <p><strong>1、添加Maven依赖</strong></p>
 <div class="language-xml line-numbers-mode" data-ext="xml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>2、创建布隆过滤器</strong></p>
@@ -427,7 +1067,7 @@
 <div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>Guava 的计算位数组长度和哈希次数和原理解析这一节展示的公式保持一致。</p>
 <p>重点来了，Bloom filter 是如何判断元素存在的 ？</p>
 <p>方法名就非常有 google 特色 ， ”<strong>mightContain</strong>“ 的中文表意是：”可能存在“ 。<strong>方法的返回值为 true ，元素可能存在，但若返回值为 false ，元素必定不存在。</strong></p>
-<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> 4 Redisson实现</h1>
+<div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 4 Redisson实现</h2>
 <p>Redisson 是一个用 Java 编写的 Redis 客户端，它实现了分布式对象和服务，包括集合、映射、锁、队列等。Redisson的API简单易用，使得在分布式环境下使用Redis 更加容易和高效。</p>
 <p><strong>1、添加Maven依赖</strong></p>
 <div class="language-xml line-numbers-mode" data-ext="xml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>2、配置 Redisson 客户端</strong></p>
@@ -442,7 +1082,7 @@
 <p>为了方便大家理解，我做了一个简单的测试。</p>
 <figure><img src="https://www.javayong.cn/pics/temp//9GDwxhCukO.webp!large" alt="" tabindex="0"><figcaption></figcaption></figure>
 <p>通过 Redisson API 创建 key 为 <code>mybitset </code>的 位图 ，设置索引 3 ，5，6，8 位为 1 ，右侧的<strong>二进制值</strong>也完全匹配。</p>
-<h1> 5 实战要点</h1>
+<h2> 5 实战要点</h2>
 <p>通过 Guava 和 Redisson 创建和使用布隆过滤器比较简单，我们下面讨论实战层面的注意事项。</p>
 <p><strong>1、缓存穿透场景</strong></p>
 <p>首先我们需要<strong>初始化</strong>布隆过滤器，然后当用户请求时，判断过滤器中是否包含该元素，若不包含该元素，则直接返回不存在。</p>
@@ -460,7 +1100,7 @@
 <li>商品服务根据布隆过滤器的映射，选择新的布隆过滤器 B进行相关的查询操作 ；</li>
 <li>选择合适的时间点，删除旧的布隆过滤器 A。</li>
 </ol>
-<h1> 6 总结</h1>
+<h2> 6 总结</h2>
 <p><strong>布隆过滤器</strong>是一个很长的<strong>二进制向量</strong>和一系列<strong>随机映射函数</strong>，用于<strong>检索一个元素是否在一个集合中</strong>。</p>
 <p>它的<strong>空间效率</strong>和<strong>查询时间</strong>都<strong>远远超过一般的算法</strong>，但是有一定的误判率 （函数返回 true , 意味着元素可能存在，函数返回 false ，元素必定不存在）。</p>
 <p>布隆过滤器的四个核心属性：</p>
@@ -495,7 +1135,7 @@
     <title type="text">聊聊 Redis 事务</title>
     <id>https://javayong.cn/cache/07Redistransaction.html</id>
     <link href="https://javayong.cn/cache/07Redistransaction.html"/>
-    <updated>2023-11-17T07:53:52.000Z</updated>
+    <updated>2023-11-20T05:20:32.000Z</updated>
     <summary type="html"><![CDATA[<p>准确的讲，Redis 事务包含两种模式 : <strong>事务模式</strong> 和 <strong>Lua 脚本</strong>。</p>
 <p>先说结论：</p>
 <p>Redis 的事务模式具备如下特点：</p>
@@ -562,8 +1202,8 @@
 <p>在事务开启之前，我们可以 watch 命令监听 Redis key 。在事务执行之前，我们修改 key 值 ，事务执行失败，返回 <strong>nil</strong> 。</p>
 <figure><img src="https://www.javayong.cn/pics/temp//s5X2lsfqGT.webp!large" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
 <p>通过上面的例子，watch 命令可以<strong>实现类似乐观锁的效果</strong> 。</p>
-<h1> 2 事务的ACID</h1>
-<h2> 2.1 原子性</h2>
+<h2> 2 事务的ACID</h2>
+<h3> 2.1 原子性</h3>
 <p>原子性是指：一个事务中的所有操作，或者全部完成，或者全部不完成，不会结束在中间某个环节。事务在执行过程中发生错误，会被回滚到事务开始前的状态，就像这个事务从来没有执行过一样。</p>
 <p>第一个例子：</p>
 <p>在执行 EXEC 命令前，客户端发送的操作命令错误，比如：语法错误或者使用了不存在的命令。</p>
@@ -577,7 +1217,7 @@
 <li>命令入队时正常，执行 EXEC 命令后报错，不保证原子性；</li>
 </ol>
 <p>也就是：<strong>Redis 事务在特定条件下，才具备一定的原子性</strong> 。</p>
-<h2> 2.2 隔离性</h2>
+<h3> 2.2 隔离性</h3>
 <p>数据库的隔离性是指：数据库允许多个并发事务同时对其数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致。</p>
 <p>事务隔离分为不同级别 ，分别是：</p>
 <ul>
@@ -596,7 +1236,7 @@
 <li>EXEC 命令执行后</li>
 </ol>
 <p>因为 Redis 是单线程执行操作命令， EXEC 命令执行后，Redis 会保证命令队列中的所有命令执行完 。 这样就可以保证事务的隔离性。</p>
-<h2> 2.3 持久性</h2>
+<h3> 2.3 持久性</h3>
 <p>数据库的持久性是指 ：事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。</p>
 <p>Redis 的数据是否持久化取决于 Redis 的持久化配置模式 。</p>
 <ol>
@@ -605,7 +1245,7 @@
 <li>使用了 AOF 模式；AOF 模式的三种配置选项 no 、everysec 都会存在数据丢失的情况  。always 可以保证事务的持久性，但因为性能太差，在生产环境一般不推荐使用。</li>
 </ol>
 <p>综上，<strong>redis 事务的持久性是无法保证的</strong> 。</p>
-<h2> 2.4 一致性</h2>
+<h3> 2.4 一致性</h3>
 <p>一致性的概念一直很让人困惑，在我搜寻的资料里，有两类不同的定义。</p>
 <ol>
 <li>维基百科</li>
@@ -655,7 +1295,7 @@
 <li>数据库本身的约束，比如字符串长度不能超过列的限制或者唯一性约束；</li>
 <li>业务层面同样需要进行保障 。</li>
 </ol>
-<h2> 2.5 事务特点</h2>
+<h3> 2.5 事务特点</h3>
 <p>我们通常称 Redis 为内存数据库 ,  不同于传统的关系数据库，为了提供了更高的性能，更快的写入速度，在设计和实现层面做了一些平衡，并不能完全支持事务的 ACID。</p>
 <p>Redis 的事务具备如下特点：</p>
 <ul>
@@ -665,8 +1305,8 @@
 <li>一致性的概念有分歧，假设在一致性的核心是约束的语意下，Redis 的事务可以保证一致性。</li>
 </ul>
 <p>从工程角度来看，假设事务操作中每个步骤需要依赖上一个步骤返回的结果，则需要通过 watch 来实现乐观锁 。</p>
-<h1> 3 Lua 脚本</h1>
-<h2> 3.1 简介</h2>
+<h2> 3 Lua 脚本</h2>
+<h3> 3.1 简介</h3>
 <figure><img src="https://www.javayong.cn/pics/temp//0g0mSCwReL.webp!large" alt="" tabindex="0"><figcaption></figcaption></figure>
 <p>Lua 由标准 C 编写而成，代码简洁优美，几乎在所有操作系统和平台上都可以编译，运行。Lua 脚本可以很容易的被 C/C ++ 代码调用，也可以反过来调用 C/C++ 的函数，这使得 Lua 在应用程序中可以被广泛应用。</p>
 <p>Lua 脚本在游戏领域大放异彩，大家耳熟能详的《大话西游II》，《魔兽世界》都大量使用 Lua 脚本。Java 后端工程师接触过的 api 网关，比如 <strong>Openresty</strong> ，<strong>Kong</strong> 都可以看到 Lua 脚本的身影。</p>
@@ -712,7 +1352,7 @@
 </tr>
 </tbody>
 </table>
-<h2> 3.2 EVAL 命令</h2>
+<h3> 3.2 EVAL 命令</h3>
 <p>命令格式：</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>说明：</p>
 <ul>
@@ -723,13 +1363,13 @@
 </ul>
 <p>简单实例：</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>下面演示下 Lua 如何调用 Redis 命令 ，通过<code>redis.call()</code>来执行了 Redis 命令 。</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 3.3 EVALSHA 命令</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 3.3 EVALSHA 命令</h3>
 <p>使用 EVAL 命令每次请求都需要传输 Lua 脚本 ，若 Lua 脚本过长，不仅会消耗网络带宽，而且也会对 Redis 的性能造成一定的影响。</p>
 <p>思路是先将 Lua 脚本先缓存起来 ,  返回给客户端 Lua 脚本的 sha1 摘要。 客户端存储脚本的 sha1 摘要 ，每次请求执行 EVALSHA  命令即可。</p>
 <figure><img src="https://www.javayong.cn/pics/temp//zokNNe0Swx.webp!large" alt="img" tabindex="0"><figcaption>img</figcaption></figure>
 <p>EVALSHA  命令基本语法如下：</p>
 <div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>实例如下：</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1> 4 事务 VS Lua 脚本</h1>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 4 事务 VS Lua 脚本</h2>
 <blockquote>
 <p>从定义上来说， <strong>Redis 中的脚本本身就是一种事务</strong>， 所以任何在事务里可以完成的事， 在脚本里面也能完成。 并且一般来说， 使用<strong>脚本要来得更简单，并且速度更快</strong>。</p>
 <p>因为脚本功能是 Redis 2.6 才引入的， 而事务功能则更早之前就存在了， 所以 Redis 才会同时存在两种处理事务的方法。</p>
@@ -3125,7 +3765,7 @@ producer<span class="token punctuation">.</span><span class="token function">sen
     <title type="text">阅读目录</title>
     <id>https://javayong.cn/home.html</id>
     <link href="https://javayong.cn/home.html"/>
-    <updated>2023-11-17T13:49:18.000Z</updated>
+    <updated>2023-11-20T07:15:36.000Z</updated>
     <summary type="html"><![CDATA[<hr>
 <h2> 缓存实战</h2>
 <ul>
@@ -3161,6 +3801,13 @@ producer<span class="token punctuation">.</span><span class="token function">sen
 <li><a href="/mq/rocketmq4/10RocketMQ4_transaction.html" target="blank">RocketMQ事务原理</a></li>
 <li><a href="/mq/rocketmq4/11RocketMQ4_messagetrack.html" target="blank">RocketMQ消息轨迹</a></li>
 <li><a href="/mq/rocketmq4/13RocketMQ4_subscribe_consistent.html" target="blank">RocketMQ订阅关系保证一致</a></li>
+</ul>
+<h2> 技术人生</h2>
+<ul>
+<li><a href="/codelife/runningforcode.html" target="blank">追源码的平凡之路</a></li>
+<li><a href="/codelife/messagequeuecareer.html" target="blank">我与消息队列的八年情缘</a></li>
+<li><a href="/codelife/howtolearnopenproject.html" target="blank">聊聊如何学习开源项目</a></li>
+<li><a href="/codelife/guotuxuexistorm.html" target="blank">聊聊我与流式计算的故事</a></li>
 </ul>
 <h2> 公众号</h2>
 <p>如果大家想要实时关注我更新的文章以及分享的干货的话，可以关注我的公众号“<strong>勇哥java实战分享</strong>”。</p>
