@@ -6,8 +6,8 @@
     <link>https://javayong.cn/</link>
     <description>Java 基础、高并发三剑客（缓存、消息队列、分库分表）、实战项目讲解。</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 20 Nov 2023 07:24:06 GMT</pubDate>
-    <lastBuildDate>Mon, 20 Nov 2023 07:24:06 GMT</lastBuildDate>
+    <pubDate>Sat, 25 Nov 2023 04:23:41 GMT</pubDate>
+    <lastBuildDate>Sat, 25 Nov 2023 04:23:41 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>技术人生</category>
@@ -2910,7 +2910,7 @@ Consumer 的一种，应用通常向 Consumer 对象注册一个 Listener 接口
       <category>RocketMQ</category>
       <pubDate>Thu, 16 Nov 2023 02:18:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>这篇文章我们聊聊广播消费，因为广播消费在某些场景下真的有奇效。笔者会从<strong>基础概念</strong>、<strong>实现机制</strong>、<strong>实战案例</strong>三个方面一一展开，希望能帮助到大家。</p>
-<h1> 1 基础概念</h1>
+<h2> 1 基础概念</h2>
 <p>RocketMQ 支持两种消息模式：<code>集群消费</code>（ Clustering ）和<code>广播消费</code>（ Broadcasting ）。</p>
 <p><strong>集群消费</strong>：</p>
 <p>同一 Topic 下的一条消息只会被同一消费组中的一个消费者消费。也就是说，消息被负载均衡到了同一个消费组的多个消费者实例上。</p>
@@ -2918,7 +2918,7 @@ Consumer 的一种，应用通常向 Consumer 对象注册一个 Listener 接口
 <p><strong>广播消费</strong>：</p>
 <p>当使用广播消费模式时，每条消息推送给集群内所有的消费者，保证消息至少被每个消费者消费一次。</p>
 <figure><img src="https://javayong.cn/pics/rocketmq/broadcast.png?b=3" alt="" tabindex="0"><figcaption></figcaption></figure>
-<h1> 2 源码解析</h1>
+<h2> 2 源码解析</h2>
 <p>首先下图展示了广播消费的代码示例。</p>
 <div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>和集群消费不同的点在于下面的代码：</p>
 <div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>接下来，我们从源码角度来看看广播消费和集群消费有哪些差异点 ？</p>
@@ -2947,9 +2947,9 @@ Consumer 的一种，应用通常向 Consumer 对象注册一个 Listener 接口
 <p>进入并发消息消费类<code>ConsumeMessageConcurrentlyService</code> 的处理消费结果方法 <code>processConsumeResult</code>。</p>
 <div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>消费消息失败后，集群消费时，消费者实例会通过 <strong>CONSUMER_SEND_MSG_BACK</strong> 请求，将失败消息发回到 Broker 端。</p>
 <p>但在广播模式下，仅仅是打印了消息信息。因此，<strong>广播模式下，并没有消息重试</strong>。</p>
-<h1> 3 实战案例</h1>
+<h2> 3 实战案例</h2>
 <p>广播消费主要用于两种场景：<strong>消息推送</strong>和<strong>缓存同步</strong>。</p>
-<h2> 3.1 消息推送</h2>
+<h3> 3.1 消息推送</h3>
 <p>笔者第一次接触广播消费的业务场景是神州专车司机端的消息推送。</p>
 <p>用户下单之后，订单系统生成专车订单，派单系统会根据相关算法将订单派给某司机，司机端就会收到派单推送。</p>
 <figure><img src="https://javayong.cn/pics/rocketmq/drivercarpush.png" alt="" tabindex="0"><figcaption></figcaption></figure>
@@ -2965,13 +2965,13 @@ Consumer 的一种，应用通常向 Consumer 对象注册一个 Listener 接口
 <p>当推送服务没有收到司机端的 ACK 时 ，也会一定时限内再次推送，达到阈值后，不再推送。</p>
 </li>
 </ol>
-<h2> 3.2 缓存同步</h2>
+<h3> 3.2 缓存同步</h3>
 <p>高并发场景下，很多应用使用本地缓存，提升系统性能 。</p>
 <p>本地缓存可以是 HashMap 、ConcurrentHashMap ，也可以是缓存框架 Guava Cache 或者 Caffeine cache 。</p>
 <figure><img src="https://javayong.cn/pics/rocketmq/broadcastcachepush.png" alt="" tabindex="0"><figcaption></figcaption></figure>
 <p>如上图，应用A启动后，作为一个 RocketMQ 消费者，消息模式设置为广播消费。为了提升接口性能，每个应用节点都会将字典表加载到本地缓存里。</p>
 <p>当字典表数据变更时，可以通过业务系统发送一条消息到 RocketMQ ，每个应用节点都会消费消息，刷新本地缓存。</p>
-<h1> 4 总结</h1>
+<h2> 4 总结</h2>
 <p>集群消费和广播消费模式下，各功能的支持情况如下：</p>
 <table>
 <thead>
@@ -3298,13 +3298,13 @@ Consumer 的一种，应用通常向 Consumer 对象注册一个 Listener 接口
       <pubDate>Thu, 16 Nov 2023 02:18:17 GMT</pubDate>
       <content:encoded><![CDATA[<p>这篇文章，我们聊一聊 RocketMQ 的<strong>消息轨迹</strong>设计思路。</p>
 <p>查询消息轨迹可作为生产环境中排查问题强有力的数据支持 ，也是研发同学解决线上问题的重要武器之一。</p>
-<h1> 1 基础概念</h1>
+<h2> 1 基础概念</h2>
 <p>消息轨迹是指一条消息从生产者发送到 Broker , 再到消费者消费，整个过程中的各个相关节点的时间、状态等数据汇聚而成的完整链路信息。</p>
 <figure><img src="https://javayong.cn/pics/rocketmq/rocketmqtrack.png?a=1" alt="" tabindex="0"><figcaption></figcaption></figure>
 <p>当我们需要查询消息轨迹时，需要明白一点：<strong>消息轨迹数据是存储在 Broker 服务端，我们需要定义一个主题，在生产者，消费者端定义轨迹钩子</strong>。</p>
-<h1> 2 开启轨迹</h1>
-<h2> 2.1 修改 Broker 配置文件</h2>
-<div class="language-properties line-numbers-mode" data-ext="properties"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2> 2.2 生产者配置</h2>
+<h2> 2 开启轨迹</h2>
+<h3> 2.1 修改 Broker 配置文件</h3>
+<div class="language-properties line-numbers-mode" data-ext="properties"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3> 2.2 生产者配置</h3>
 <div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在生产者的构造函数里，有两个核心参数：</p>
 <ul>
 <li><strong>enableMsgTrace</strong>：是否开启消息轨迹</li>
@@ -3318,11 +3318,11 @@ Consumer 的一种，应用通常向 Consumer 对象注册一个 Listener 接口
 <figure><img src="https://javayong.cn/pics/rocketmq/dashboardtrack.png" alt="" tabindex="0"><figcaption></figcaption></figure>
 <figure><img src="https://javayong.cn/pics/rocketmq/traceproducer.png" alt="" tabindex="0"><figcaption></figcaption></figure>
 <p>从图中可以看到，消息轨迹中存储了消息的<code> 存储时间</code> 、<code> 存储服务器IP</code>  、<code>发送耗时</code> 。</p>
-<h2> 2.3 消费者配置</h2>
+<h3> 2.3 消费者配置</h3>
 <p>和生产者类似，消费者的构造函数可以传递轨迹参数：</p>
 <div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>执行如下的消费者代码：</p>
 <div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><figure><img src="https://javayong.cn/pics/rocketmq/consumertrack.png" alt="" tabindex="0"><figcaption></figcaption></figure>
-<h1> 3 实现原理</h1>
+<h2> 3 实现原理</h2>
 <p>轨迹的实现原理主要是在生产者发送、消费者消费时添加相关的钩子。 因此，我们只需要了解钩子的实现逻辑即可。</p>
 <p>下面的代码是 <code>DefaultMQProducer </code> 的构造函数。</p>
 <div class="language-java line-numbers-mode" data-ext="java"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当是否<strong>开启轨迹开关</strong>打开时，创建<strong>异步轨迹分发器</strong> <code>AsyncTraceDispatcher</code> ，然后给默认的生产者实现类在发送消息的钩子 <code>SendMessageTraceHookImpl</code>。</p>

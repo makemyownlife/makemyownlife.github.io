@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o,c as t,a as c}from"./app-9277c8b6.js";const a={},l=c("p",null,"google-site-verification: googlef80b0a25b49e7dc1.html",-1),s=[l];function _(n,r){return o(),t("div",null,s)}const d=e(a,[["render",_],["__file","googlef80b0a25b49e7dc1.html.vue"]]);export{d as default};
