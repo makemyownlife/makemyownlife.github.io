@@ -11,3 +11,4 @@ devenv
 .DS_Store
 .idea/*.iml
 .idea/*.xml
+.idea

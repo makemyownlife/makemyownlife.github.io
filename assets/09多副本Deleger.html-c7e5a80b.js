@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o as _,c as r}from"./app-ebb415e0.js";const t={};function c(o,n){return _(),r("div")}const a=e(t,[["render",c],["__file","09多副本Deleger.html.vue"]]);export{a as default};
